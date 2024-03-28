@@ -13,7 +13,7 @@ class aboutMe:
       
       self.id = 'b1'  
       self.waitVideo = 2
-      self.maxHeight = 515
+      self.maxHeight = 512
       self.file = 'aboutMe'
       self.title = 'about me'
    
@@ -96,9 +96,9 @@ class aboutMe:
                      children = DashPlayer(
                         
                         muted = True,
-                        width = '300px',
-                        height = '300px',
+                        width = '312px',
                         playing = False,
+                        height = '312px',
                         id = 'profileVideoId',
                         url = pContent[self.file]['profileVideo'],
                         style = {

@@ -38,7 +38,7 @@
          
          "overflow" : "hidden",
          "borderRadius" : "50%",
-         "margin" : "0 0 0 -8px"
+         "margin" : "0 0 0 -12px"
 
       },
       "row" : {
