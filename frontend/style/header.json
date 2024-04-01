@@ -17,8 +17,8 @@
       },
       "titleImg" : {
 
-         "width" : "auto",
-         "height" : "4.3rem",
+         "width" : "70px",
+         "height" : "70px",
          "borderRadius" : "50%",
          "margin" : "5px 0 8px 0"
 

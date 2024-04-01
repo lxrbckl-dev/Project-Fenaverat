@@ -31,67 +31,55 @@
 
       "div" : {
 
-         "position" : "relative"
+         "backgroundSize" : "cover",
+         "backgroundPosition" : "center",
+         "padding" : "10px 22px 10px 22px"
 
       },
-      "dashPlayer" : {
-         
-         "overflow" : "hidden",
-         "borderRadius" : "50%",
-         "margin" : "0 0 0 -12px"
+      "profileCol" : {
+
+         "padding" : 5
 
       },
-      "row" : {
-
-         "top" : 0,
-         "margin" : 0,
-         "width" : "100%",
-         "padding" : "5px",
-         "position" : "absolute"
-
-      },
-      "col" : {
+      "titleBioCol" : {
 
          "margin" : 0,
-         "padding" : 0,
-         "overflow" : "auto",
+         "minHeight" : 318,
+         "maxHeight" : 318,
          "overflow-y" : "scroll",
-         "overflow-x" : "hidden",
+         "padding" : "0 5px 0 5px",
          "scrollbar-width" : "thin"
-
-      },
-      "stack" : {
-
-         "padding" : "3px 0px 1px 9px"
 
       },
       "titleH1" : {
 
-         "margin" : 0,
          "fontSize" : 36,
+         "fontWeight" : "900",
+         "margin" : "-2px 0 0 0",
          "fontFamily" : "helvetica"
 
       },
-      "symbolsImg" : {
+      "bioDiv" : {
 
-         "width" : "auto",
-         "height" : "2rem",
-         "borderRadius" : "50%"
+         "margin" : "-4px 0 -16px 0"
 
       },
       "contentMarkdown" : {
 
+         "margin" : 0,
+         "padding" : 0,
          "fontSize" : 15,
          "textAlign" : "justify",
-         "margin" : "0 0 -13px 0",
-         "fontFamily" : "helvetica",
-         "padding" : "4px 10px 1px 9px"
+         "fontFamily" : "helvetica"
 
       },
-      "ecosystemDiv" : {
+      "ecosystemRow" : {
 
-         "padding" : "7px 8px 8px 8px",
-         "margin" : "-13px 0px 0px 0px"
+         "padding" : 3,
+         "minHeight" : 140,
+         "maxHeight" : 140,
+         "overflow-y" : "scroll",
+         "scrollbar-width" : "thin"
 
       }
 

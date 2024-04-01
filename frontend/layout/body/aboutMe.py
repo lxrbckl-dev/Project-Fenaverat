@@ -71,153 +71,114 @@ class aboutMe:
 
       return html.Div(
          
-         style = pStyle[self.file][pKey]['div'],
+         style = {
+            
+            **pStyle[self.file][pKey]['div'],
+            'backgroundImage' : pContent[self.file]['coverPhoto']
+
+            
+         },
          children = [
             
-            html.Img(
+            # (profile, bio) <
+            # ecosystem <
+            dbc.Row(
                
                style = {
                   
-                  'width' : '100%',
-                  'maxHeight' : self.maxHeight
+                  'borderTop' : pStyle['framework']['borderBlack'],
+                  'borderLeft' : pStyle['framework']['borderBlack'],
+                  'borderRight' : pStyle['framework']['borderBlack']
                   
                },
-               src = pContent[self.file]['coverPhoto']
-               
-            ),
-            dbc.Row(
-               
-               style = pStyle[self.file][pKey]['row'],
                children = [
                   
                   dbc.Col(
                      
                      width = 4,
+                     style = pStyle[self.file][pKey]['profileCol'],
                      children = DashPlayer(
                         
                         muted = True,
-                        width = '312px',
+                        width = '100%',
+                        height = '100%',
                         playing = False,
-                        height = '312px',
                         id = 'profileVideoId',
-                        url = pContent[self.file]['profileVideo'],
-                        style = {
-                           
-                           **pStyle[self.file][pKey]['dashPlayer'],
-                           'border' : pStyle['framework']['borderBlack'],
-                           'background' : pStyle['framework']['colorBlack']
-                           
-                        }
+                        url = pContent[self.file]['profileVideo']
                         
                      )
-                  
+                     
                   ),
                   dbc.Col(
                      
                      width = 8,
                      style = {
-                        
-                        'maxHeight' : self.maxHeight,                        
-                        **pStyle[self.file][pKey]['col'],
-                        'border' : pStyle['framework']['borderBlack'],
+
+                        **pStyle[self.file][pKey]['titleBioCol'],
+                        'borderLeft' : pStyle['framework']['borderBlack'],
                         'backdropFilter' : pStyle['framework']['backdropFilter']
                         
                      },
                      children = [
                         
-                        # stack <
-                        # content <
-                        # ecosystem <
-                        dbc.Stack(
+                        html.H1(
                            
-                           gap = 2,
-                           direction = 'horizontal',
+                           children = pContent[self.file]['title'],
                            style = {
+
+                              **pStyle[self.file][pKey]['titleH1'],
+                              'color' : pStyle['framework']['colorBlack']
                               
-                              **pStyle[self.file][pKey]['stack'],
-                              'borderBottom' : pStyle['framework']['borderBlack']
-                              
-                           },
-                           children = [
-                              
-                              # title <
-                              # symbols <
-                              html.H1(
-                                 
-                                 children = pContent[self.file]['title'],
-                                 style = {
-                                    
-                                    'fontWeight' : '900',
-                                    **pStyle[self.file][pKey]['titleH1'],
-                                    'color' : pStyle['framework']['colorBlack']
-                                 
-                                 }
-                                 
-                              ),
-                              *[
-                                 
-                                 html.Img(
-                                    
-                                    src = i,
-                                    style = {
-                                       
-                                       **pStyle[self.file][pKey]['symbolsImg'],
-                                       'border' : pStyle['framework']['borderBlack']
-                                       
-                                    }
-                                    
-                                 )
-                                 
-                              for i in pContent[self.file]['symbols']]
-                              
-                              # >
-                              
-                           ]
+                           }
                            
                         ),
-                        *[
-                           
-                           dcc.Markdown(
-                              
-                              children = i,
-                              style = {
-                                 
-                                 
-                                 'color' : pStyle['framework']['colorBlack'],
-                                 **pStyle[self.file][pKey]['contentMarkdown']
-                                 
-                              }
-                              
-                           )
-                           
-                        for i in pContent[self.file]['content']],
                         html.Div(
                            
-                           style = {
+                           style = pStyle[self.file][pKey]['bioDiv'],
+                           children = [
                               
-                              **pStyle[self.file][pKey]['ecosystemDiv'],
-                              'borderTop' : pStyle['framework']['borderBlack']
-                           
-                           },
-                           children = self.badge(
+                              dcc.Markdown(
+                                 
+                                 children = i,
+                                 style = {
+                                    
+                                    'color' : pStyle['framework']['colorBlack'],
+                                    **pStyle[self.file][pKey]['contentMarkdown']
+                                    
+                                 }
+                                 
+                              )
                               
-                              pStyle = pStyle,
-                              pIterable = pContent[self.file]['ecosystem']
-                              
-                           )
+                           for i in pContent[self.file]['content']]
                            
                         )
-                        
-                        # >
                         
                      ]
                      
                   )
-                  
+                                    
                ]
-
+               
+            ),
+            dbc.Row(
+               
+               style = {
+                  
+                  **pStyle[self.file][pKey]['ecosystemRow'],       
+                  'border' : pStyle['framework']['borderBlack']
+                                    
+               },
+               children = self.badge(
+                  
+                  pStyle = pStyle,
+                  pIterable = pContent[self.file]['ecosystem']
+                  
+               )
+               
             )
             
+            # >
+                        
          ]
          
       )
