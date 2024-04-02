@@ -1,6 +1,6 @@
 {
    "coverPhoto" : "url(https://i.postimg.cc/KzgL8bYn/Screenshot-from-2024-03-28-17-30-38-1.png)",
-   "profileVideo" : "https://www.w3schools.com/html/mov_bbb.mp4",
+   "profileVideo" : "https://packaged-media.redd.it/trpitzpvmyrc1/pb/m2-res_720p.mp4?m=DASHPlaylist.mpd&v=1&e=1712034000&s=50d9261a18c06fcca04749e563daa35df77afca7#t=2.88",
    "title" : "alex arbuckle",
    "symbols" : [
 
@@ -10,8 +10,8 @@
    ],
    "content" : [
 
-      "I'm a software developer who lives in Kansas City, Missouri. I have a Bachelor of Science degree in **Computer Science**. I've previously done contract work for a group of venture capitalists where I built **algorithms**, **visualization** and **interactivity** components for large sets of data. I have had the honor of participating in university class group projects, as well as various distinctive **independent projects**, including the development of [**this website**](https://github.com/lxRbckl/Project-Fenaverat/wiki).",
-      "As a developer, I consider myself a life-long learner, so I enjoy learning more about software development and deployment every opportunity I get. I'm a fan of both object-oriented and functional paradigms and I enjoy combining the skills I learn into projects that I display on my GitHub. *You can find more about them in the segment, **my projects**!*"
+      "Currently active as a software developer residing in Kansas City, Missouri. I graduated cum laude earning a Bachelor of Science degree in Computer Science. Prior and current work experience includes working with a group of venture capitalists where I designed **algorithms**, **visualization** and **interface components** suited for large sets of data. I have had the opportunity of participating in university class group projects, as well as various distinctive independent projects, including the development of this website.",
+      "As a developer, I consider myself a life-long learner, so I challenge myself constantly to further build my knowledge base regarding software development and deployment. I'm a fan of both object-oriented and functional paradigms. I enjoy combining the skills learned into projects which are displayed in detail on my GitHub. Please browse the segment MY PROJECTS for more details and examples."
 
    ],
    "ecosystem" : {

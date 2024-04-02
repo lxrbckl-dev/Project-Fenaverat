@@ -103,8 +103,11 @@ class aboutMe:
                         width = '100%',
                         height = '100%',
                         playing = False,
+                        controls = False,
                         id = 'profileVideoId',
-                        url = pContent[self.file]['profileVideo']
+                        url = pContent[self.file]['profileVideo'],
+                        
+                        style = {'padding' : '0 0 0 0', 'margin' : '0px 0 -6px 0'}
                         
                      )
                      
