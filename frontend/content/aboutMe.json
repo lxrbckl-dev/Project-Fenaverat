@@ -16,7 +16,8 @@
          "C++",
          "JavaScript",
          "MySQL",
-         "BASH"
+         "BASH",
+         "PostgreSQL"
 
       ],
       "packages" : [
