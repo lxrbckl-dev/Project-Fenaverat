@@ -131,11 +131,16 @@
          "display" : "grid",
          "overflow-x" : "auto",
          "overflow-y" : "hidden",
-         "backgroundSize" : "cover",
          "scrollbar-width" : "thin",
          "grid-auto-flow" : "column",
-         "padding" : "5px 16px 5px 16px",
-         "backgroundPosition" : "center"
+         "padding" : "7px 19px 7px 19px"
+
+      },
+      "background" : {
+
+         "backgroundSize" : "cover",
+         "backgroundPosition" : "bottom",
+         "backgroundRepeat" : "no-repeat"
 
       }
 

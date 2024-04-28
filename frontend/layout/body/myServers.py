@@ -135,12 +135,13 @@ class myServers(myProjects):
    
    ):
       '''  '''
-            
+      
       return dbc.Row(
          
          style = {
 
             **pStyle['myProjects'][pKey]['row'],
+            **pStyle[self.file][pKey]['background'],
             'backgroundImage' : 'url({})'.format(pContent[self.file]['background'])
          
          },

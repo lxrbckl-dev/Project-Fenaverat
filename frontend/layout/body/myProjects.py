@@ -331,7 +331,8 @@ class myProjects(aboutMe):
          style = {
 
             **pStyle[self.file][pKey]['row'],
-            'background' : 'url({})'.format(pContent[self.file]['background'])
+            **pStyle[self.file][pKey]['background'],
+            'backgroundImage' : 'url({})'.format(pContent[self.file]['background'])
          
          },
          children = self.cardsLoad(

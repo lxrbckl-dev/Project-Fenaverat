@@ -74,7 +74,7 @@ class aboutMe:
          style = {
             
             **pStyle[self.file][pKey]['div'],
-            'backgroundImage' : pContent[self.file]['coverPhoto']
+            'backgroundImage' : pContent[self.file]['background']
 
             
          },

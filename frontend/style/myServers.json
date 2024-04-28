@@ -46,6 +46,17 @@
 
       }
 
+   },
+   "board" : {
+
+      "background" : {
+
+         "backgroundSize" : "cover",
+         "backgroundRepeat" : "no-repeat",
+         "backgroundPosition" : "center -650px"
+
+      }
+
    }
 
 }

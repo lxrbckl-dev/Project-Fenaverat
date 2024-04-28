@@ -32,7 +32,8 @@
       "div" : {
 
          "backgroundSize" : "cover",
-         "backgroundPosition" : "center",
+         "backgroundPosition" : "top",
+         "backgroundRepeat" : "no-repeat",
          "padding" : "10px 22px 10px 22px"
 
       },
@@ -54,7 +55,8 @@
       "titleH1" : {
 
          "fontSize" : 36,
-         "fontWeight" : "900",
+         "letterSpacing" : 1,
+         "fontWeight" : "500",
          "margin" : "-2px 0 0 0",
          "fontFamily" : "helvetica"
 
