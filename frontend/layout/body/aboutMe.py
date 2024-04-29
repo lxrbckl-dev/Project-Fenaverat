@@ -74,8 +74,7 @@ class aboutMe:
          style = {
             
             **pStyle[self.file][pKey]['div'],
-            'backgroundImage' : pContent[self.file]['background']
-
+            'backgroundImage' : 'url({})'.format(pContent[self.file]['background'])
             
          },
          children = [
@@ -106,7 +105,6 @@ class aboutMe:
                         controls = False,
                         id = 'profileVideoId',
                         url = pContent[self.file]['profileVideo'],
-                        
                         style = {'padding' : '0 0 0 0', 'margin' : '0px 0 -6px 0'}
                         
                      )
