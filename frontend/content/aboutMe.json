@@ -14,14 +14,14 @@
 
          "Python",
          "C++",
-         "JavaScript",
-         "MySQL",
+         "SQL",
          "BASH",
-         "PostgreSQL"
 
       ],
       "packages" : [
 
+         "MySQL",
+         "PostgreSQL",
          "Dash",
          "Plotly",
          "PyGitHub",
