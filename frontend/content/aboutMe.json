@@ -25,6 +25,7 @@
          "PostgreSQL",
          "Dash",
          "Plotly",
+         "MongoDB",
          "PyGitHub",
          "discord.py",
          "xlrd",
