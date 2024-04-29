@@ -21,11 +21,8 @@
       ],
       "packages" : [
 
-         "MySQL",
-         "PostgreSQL",
          "Dash",
          "Plotly",
-         "MongoDB",
          "PyGitHub",
          "discord.py",
          "xlrd",
@@ -37,7 +34,6 @@
          "suntime",
          "pytest",
          "Asyncio",
-         "Gunicorn",
          "wmctrl",
          "guvcview",
          "IPInfoDB",
@@ -62,9 +58,12 @@
       ],
       "other" : [
 
+         "MySQL",
+         "PostgreSQL",
          "Git",
          "NPM",
          "PyPI",
+         "MongoDB",
          "Poetry",
          "Linux",
          "CSS",
@@ -72,6 +71,8 @@
          "Raspberry Pi",
          "pyenv",
          "Docker",
+         "Gunicorn",
+         "nginx",
          "crontab",
          "Git Hooks",
          "Kubernetes",
