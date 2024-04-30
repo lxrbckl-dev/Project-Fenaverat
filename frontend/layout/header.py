@@ -20,7 +20,6 @@ class header(framework):
       self,
       pStyle,
       pContent,
-      pUpdateRate,
       
       pKey = 'component'
    
@@ -42,49 +41,20 @@ class header(framework):
             justify = 'between',
             children = [
                
-               # left <
-               # right <
+               # title <
+               # profiles <
                dbc.Col(
                   
-                  width = 'auto',    
-                  children = dbc.Stack(
+                  width = 'auto',
+                  children = html.H1(
                      
-                     gap = 3,
-                     direction = 'horizontal',
-                     children = [
+                     children = pContent[self.file]['title'],
+                     style = {
                         
-                        # title <
-                        # profiles <
-                        html.H1(
-                           
-                           children = pContent[self.file]['title'],
-                           style = {
-                              
-                              **pStyle[self.file][pKey]['titleH1'],
-                              'background' : pStyle['framework']['colorWhite']
-                              
-                           }
-                           
-                        ),
-                        *[
-                           
-                           html.Img(
-                              
-                              src = i,
-                              style = {
-                                 
-                                 **pStyle[self.file][pKey]['titleImg'],
-                                 'border' : pStyle['framework']['borderBlack']
-                                 
-                              }
-                              
-                           )
-                           
-                        for i in pContent[self.file]['profiles']]
+                        **pStyle[self.file][pKey]['titleH1'],
+                        'background' : pStyle['framework']['colorWhite']
                         
-                        # >
-                        
-                     ]
+                     }
                      
                   )
                   
@@ -93,39 +63,27 @@ class header(framework):
                   
                   width = 'auto',
                   style = pStyle[self.file][pKey]['rightCol'],
-                  children = [
+                  children = dbc.Stack(
                      
-                     # loader <
-                     html.Div(
+                     gap = 3,
+                     direction = 'horizontal',
+                     children = [
                         
-                        id = 'loaderDivId',
-                        style = pStyle[self.file][pKey]['loaderDiv'],
-                        children = dbc.Spinner(
+                        html.Img(
                            
-                           size = 'sm',
-                           id = 'loaderSpinnerId',
-                           color = pStyle['framework']['colorBlack'],
-                           spinner_style = pStyle[self.file][pKey]['loaderSpinner']
+                           src = i,
+                           style = {
+                              
+                              **pStyle[self.file][pKey]['titleImg'],
+                              'border' : pStyle['framework']['borderBlack']
+                              
+                           }
                            
                         )
                         
-                     ),
-                     dbc.Tooltip(
-                        
-                        placement = 'bottom',
-                        target = 'loaderDivId',
-                        children = dcc.Markdown(
-                           
-                           style = pStyle[self.file][pKey]['loaderMarkdown'],
-                           children = f'Refreshed every **{pUpdateRate}** minutes.'
-                        
-                        )
-                           
-                     )
+                     for i in pContent[self.file]['profiles']]
                      
-                     # >
-                     
-                  ]
+                  )
                   
                )
                

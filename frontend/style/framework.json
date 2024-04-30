@@ -16,9 +16,10 @@
    },
    "bodyCol" : {
 
-      "paddingBottom" : 5
+      "padding" : "10px 10px 10px 10px"
 
    },
+   
    "borders" : {
 
       "host" : "2px solid #6B796A",

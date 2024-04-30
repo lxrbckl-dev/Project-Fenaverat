@@ -61,8 +61,7 @@ class framework:
       self, 
       pData,
       pStyle,
-      pContent,
-      pIntervalRate
+      pContent
       
    ):
       '''  '''
@@ -78,8 +77,7 @@ class framework:
             children = self.header.component(
                
                pStyle = pStyle,
-               pContent = pContent,
-               pUpdateRate = self.database.updateRate
+               pContent = pContent
                
             )
             
@@ -104,7 +102,9 @@ class framework:
                   active_item = None,
                   id = 'bodyAccordionId',
                   style = {
-                                          
+                     
+                     "margin" : "-4px 0 0 0",
+                     "padding" : "3px 0 7px 0",             
                      'borderTop' : pStyle[self.file]['borderBlack'],
                      'borderBottom' : pStyle[self.file]['borderBlack']
                      
@@ -205,8 +205,13 @@ class framework:
       def intervalCallback(i):
          '''  '''
 
-         data, style, content = self.database.get().values()
-
+         (
+            
+            data,
+            style,
+            content
+            
+         ) = (self.database.get(isBootup = (i == 0))).values()
          
          return [
             
@@ -220,8 +225,7 @@ class framework:
                
                pData = data,
                pStyle = style,
-               pContent = content,
-               pIntervalRate = self.database.intervalRate
+               pContent = content
                
             )
             

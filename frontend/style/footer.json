@@ -4,7 +4,8 @@
 
       "col" : {
 
-         "paddingBottom" : 9
+         "margin" : "-3px 0 0 0",
+         "padding" : "0px 10px 9px 10px"
 
       },
       "iconImg" : {

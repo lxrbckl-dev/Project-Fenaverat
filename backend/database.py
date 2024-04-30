@@ -10,7 +10,7 @@ class database:
    def __init__(self):
       '''  '''
       
-      self.updateRate = 30
+      self.updateRate = 60
       self.developerMode = False
       self.intervalRate = (60000 * self.updateRate)
       self.links = {
@@ -44,7 +44,12 @@ class database:
       }
       
       
-   def get(self):
+   def get(
+      
+      self,
+      isBootup = False
+   
+   ):
       '''  '''
       
       rData = {}
@@ -56,14 +61,14 @@ class database:
             rData[k1][k2] = {
                                  
                # if (data) <
-               # else (then style/content) <
+               # else (then style or content) <
                False : requestsGet(v),
                True : {
                   
                   False : lambda : requestsGet(v),
                   True : lambda : fileGet(f'frontend/{k1}/{k2}.json')
                
-               }[self.developerMode]()
+               }[isBootup or self.developerMode]()
                
                # >
                

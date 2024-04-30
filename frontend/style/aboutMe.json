@@ -68,8 +68,8 @@
       },
       "contentMarkdown" : {
 
-         "margin" : "0 0 10px 0",
          "fontSize" : 15,
+         "margin" : "0 0 10px 0",
          "padding" : "0 0 0 5px",
          "textAlign" : "justify",
          "fontFamily" : "helvetica"
