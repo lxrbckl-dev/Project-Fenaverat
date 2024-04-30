@@ -5,7 +5,7 @@
 
          "margin" : 2,
          "fontFamily" : "helvetica",
-         "border" : "1px solid #F7F5F1"
+         "border" : "1px solid #181A1B"
 
       },
       "type" : {
@@ -63,14 +63,14 @@
       },
       "bioDiv" : {
 
-         "margin" : "-4px 0 -16px 0"
+         "margin" : "-4px 0 -11px 0"
 
       },
       "contentMarkdown" : {
 
-         "margin" : 0,
-         "padding" : 0,
+         "margin" : "0 0 10px 0",
          "fontSize" : 15,
+         "padding" : "0 0 0 5px",
          "textAlign" : "justify",
          "fontFamily" : "helvetica"
 

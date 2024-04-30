@@ -144,7 +144,8 @@ class aboutMe:
                                  style = {
                                     
                                     'color' : pStyle['framework']['colorBlack'],
-                                    **pStyle[self.file][pKey]['contentMarkdown']
+                                    **pStyle[self.file][pKey]['contentMarkdown'],
+                                    'borderLeft' : pStyle['framework']['borderBlack']
                                     
                                  }
                                  
