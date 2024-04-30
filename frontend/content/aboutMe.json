@@ -58,6 +58,7 @@
       ],
       "other" : [
 
+         "NodeJS",
          "MySQL",
          "PostgreSQL",
          "Git",
