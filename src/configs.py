@@ -9,12 +9,13 @@ app = Dash(
    
    name = 'lxRbckl',
    title = 'lxRbckl',
-   assets_folder = './assets',
+   assets_folder = 'src/assets',
    suppress_callback_exceptions = True,
    external_stylesheets = [
       
       themes.GRID,
-      themes.BOOTSTRAP
+      themes.BOOTSTRAP,
+      './assets/layout.css'
       
    ]
    
