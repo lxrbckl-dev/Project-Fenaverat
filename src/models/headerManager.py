@@ -11,3 +11,18 @@ class headerManager(dataManager):
       '''  '''
       
       super().__init__()
+
+      self.useGithub = False
+      self.url = ''
+      
+      
+   def getTitle(self):
+      '''  '''
+      
+      pass
+   
+   
+   def getPictures(self):
+      '''  '''
+      
+      pass
