@@ -5,12 +5,11 @@ from dash_bootstrap_components import themes
 # >
 
 
-# setup <
-application = Dash(
+app = Dash(
    
    name = 'lxRbckl',
    title = 'lxRbckl',
-   assets_folder = 'backend/assets',
+   assets_folder = './assets',
    suppress_callback_exceptions = True,
    external_stylesheets = [
       
@@ -20,6 +19,5 @@ application = Dash(
    ]
    
 )
-server = application.server
 
-# >
+server = app.server
