@@ -1,6 +1,7 @@
 # import <
 from github import Github
-from lxrbckl.remote import (githubGet, requestsGet)
+from lxrbckl.local import fileGet
+from lxrbckl.remote import requestsGet
 
 # >
 
@@ -11,10 +12,8 @@ class dataManager:
    def __init__(self):
       '''  '''
       
-      self.useGithub = True
-      self.token = ''
-      
-      self.github = Github(self.token)
+      self.loadType = 'local'
+      self.contentPath = '/src/content'
    
    
    def fileGet(
@@ -27,15 +26,9 @@ class dataManager:
    ):
       '''  '''
       
-      if (self.useGithub):
+      if (self.loadType == 'local'):
       
-         return githubGet(
-            
-            pFilename = file,
-            pRepository = repo,
-            pGithub = self.github
-            
-         )
+         fileGet(pFile = '{}'.format())
          
       else: return requestsGet(link)
          
