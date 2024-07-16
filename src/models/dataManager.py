@@ -16,20 +16,17 @@ class dataManager:
       self.contentPath = '/src/content'
    
    
-   def fileGet(
-      
-      self, 
-      link = None,
-      file = None, 
-      repo = None
-      
-   ):
+   def fetch(self, url = None, file = None):
       '''  '''
-      
-      if (self.loadType == 'local'):
-      
-         fileGet(pFile = '{}'.format())
          
-      else: return requestsGet(link)
+      return {
          
-      
+         'remote' : lambda : requestsGet(url),
+         'local' : lambda : fileGet('{}{}'.format(
+            
+            self.contentPath,
+            file
+            
+         ))
+         
+      }[self.loadType]()
