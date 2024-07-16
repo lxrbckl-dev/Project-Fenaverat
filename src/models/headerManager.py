@@ -1,5 +1,5 @@
 # import <
-from .dataManager import dataManager
+from .resourceManager import dataManager
 
 # >
 
@@ -12,8 +12,6 @@ class headerManager(dataManager):
       
       super().__init__()
 
-      self.useGithub = False
-      self.url = ''
       
       
    def getTitle(self):
