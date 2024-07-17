@@ -30,11 +30,12 @@ class header:
                
                width = 'auto',
                id = 'headerTitleColId',
+               className = 'headerTitleCol',
                children = html.H1(
                   
                   children = None,
-                  id = 'headerTitleId',
-                  className = 'headerTitle'
+                  id = 'headerTitleH1Id',
+                  className = 'headerTitleH1'
                   
                )
                
@@ -44,15 +45,16 @@ class header:
                width = 'auto',
                align = 'center',
                id = 'headerImagesColId',
+               className = 'headerImagesCol',
                children = dbc.Stack(
                   
                   gap = 3,
                   children = None,
-                  id = 'headerImagesId',
-                  direction = 'horizontal'
+                  direction = 'horizontal',
+                  id = 'headerImagesStackId'
                   
                )
-                                 
+               
             )
             
             # >

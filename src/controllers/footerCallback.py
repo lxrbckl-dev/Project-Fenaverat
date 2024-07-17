@@ -2,7 +2,7 @@
 from dash.dependencies import (Input, Output)
 
 from ..configs import app
-from ..views.components.footer import footer
+from ..views.footer import footer
 from ..models.footerManager import footerManager
 
 # >
@@ -31,8 +31,8 @@ class footerCallback:
       
       @app.callback(
          
-         output = Output('footerRowId', 'children'),
-         inputs = [Input('footerColId', 'children')]
+         inputs = [Input('footerColId', 'children')],
+         output = Output('footerConnectionsRowId', 'children')
          
       )
       def func(*args):

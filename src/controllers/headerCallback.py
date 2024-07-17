@@ -2,7 +2,7 @@
 from dash.dependencies import (Input, Output)
 
 from ..configs import app
-from ..views.components.header import header
+from ..views.header import header
 from ..models.headerManager import headerManager
 
 # >
@@ -32,7 +32,7 @@ class headerCallback:
    
       @app.callback(
          
-         output = Output('headerTitleId', 'children'),
+         output = Output('headerTitleH1Id', 'children'),
          inputs = [Input('headerTitleColId', 'children')]
          
       )
@@ -44,8 +44,8 @@ class headerCallback:
    
       @app.callback(
          
-         output = Output('headerImagesId', 'children'),
-         inputs = [Input('headerImagesColId', 'children')]
+         inputs = [Input('headerImagesColId', 'children')],
+         output = Output('headerImagesStackId', 'children')
          
       )
       def func(*args): 

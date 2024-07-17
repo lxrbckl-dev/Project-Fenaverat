@@ -22,13 +22,20 @@ class footer:
          
          id = 'footerColId',
          className = 'footerCol',
-         children = dbc.Row(
+         children = [
             
-            children = None,
-            id = 'footerRowId',
-            justify = 'between'
+            # connections <
+            dbc.Row(
+               
+               children = None,
+               justify = 'between',
+               id = 'footerConnectionsRowId'
+               
+            )
             
-         )
+            # >
+            
+         ]
          
       )
       
