@@ -4,7 +4,7 @@ from .resourceManager import resourceManager
 # >
 
 
-class headerManager(resourceManager):
+class footerManager(resourceManager):
    
    
    def __init__(self):
@@ -12,15 +12,12 @@ class headerManager(resourceManager):
       
       super().__init__(
          
-         file = 'header', 
+         file = 'footer',
          loadType = 'local'
          
       )
       
       self.content = super().fetchContent()
-
       
-   def getTitle(self): return self.content['title']
-   
-   
-   def getImages(self): return self.content['images']
+      
+   def getConnections(self): return self.content['connections']

@@ -1,0 +1,15 @@
+.footerCol {
+
+   margin: 0;
+   padding: var(--padding);
+   border: var(--borderBlack);
+   background-color: var(--colorWhite);
+
+}
+
+
+.footerConnection {
+
+   height: 2rem;
+
+}

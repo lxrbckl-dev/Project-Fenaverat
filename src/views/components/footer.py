@@ -1,5 +1,6 @@
 # import <
-from dash import html
+from dash import (dcc, html)
+import dash_bootstrap_components as dbc
 
 # >
 
@@ -17,4 +18,42 @@ class footer:
    def property(self):
       '''  '''
       
-      return html.H1('ok')
+      return dbc.Col(
+         
+         id = 'footerColId',
+         className = 'footerCol',
+         children = dbc.Row(
+            
+            children = None,
+            id = 'footerRowId',
+            justify = 'between'
+            
+         )
+         
+      )
+      
+      
+   def buildConnections(self, connections):
+      '''  '''
+      
+      return [
+         
+         dbc.Col(
+            
+            width = 'auto',
+            children = html.A(
+               
+               href = v['url'],
+               target = '_blank',
+               children = html.Img(
+                  
+                  src = v['icon'],
+                  className = 'footerConnection'
+                  
+               )
+               
+            )
+            
+         )
+         
+      for k, v in connections.items()]

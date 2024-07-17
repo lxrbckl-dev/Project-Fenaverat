@@ -1,14 +1,9 @@
 # import <
-from ..configs import app
-from ..models.headerManager import headerManager
+from dash.dependencies import (Input, Output)
 
-from dash.dependencies import (
-   
-   Input,
-   State,
-   Output
-   
-)
+from ..configs import app
+from ..views.components.header import header
+from ..models.headerManager import headerManager
 
 # >
 
@@ -19,29 +14,41 @@ class headerCallback:
    def __init__(self):
       '''  '''
       
+      self.header = header()
       self.headerManager = headerManager()
-   
-   
+      
+      
    def register(self):
       '''  '''
       
+      self.callbackTitle()
+      self.callbackPictures()
+      
+      return self.header.property
+   
+   
+   def callbackTitle(self):
+      '''  '''
+   
       @app.callback(
          
-         output = [
-            
-            Output('headerTitleId', 'children'),
-            Output('headerPicturesId', 'children')
-            
-         ],
-         inputs = [Input('headerColId', 'children')]
+         output = Output('headerTitleId', 'children'),
+         inputs = [Input('headerTitleColId', 'children')]
          
       )
-      def func(*args):
-         '''  '''         
+      def func(*args): return self.headerManager.getTitle()
+   
+   
+   def callbackPictures(self):
+      '''  '''
+   
+      @app.callback(
          
-         return [
-            
-            'ok', 
-            'here'
-            
-         ]
+         output = Output('headerImagesId', 'children'),
+         inputs = [Input('headerImagesColId', 'children')]
+         
+      )
+      def func(*args): 
+         
+         images = self.headerManager.getImages()
+         return self.header.buildPictures(images)

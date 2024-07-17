@@ -2,8 +2,6 @@
 from dash import (dcc, html)
 import dash_bootstrap_components as dbc
 
-from ...controllers.headerCallback import headerCallback
-
 # >
 
 
@@ -13,56 +11,67 @@ class header:
    def __init__(self):
       '''  '''
       
-      self.headerCallback = headerCallback()
-      self.headerCallback.register()
+      pass
    
-   
+
    @property
    def property(self):
       '''  '''
-      
-      return dbc.Col(
+
+      return dbc.Row(
          
-         id = 'headerColId',
-         className = 'headerCol',
-         children = dbc.Row(
+         justify = 'between',
+         className = 'headerRow',
+         children = [
             
-            justify = 'between',
-            children = [
+            # title <
+            # images <
+            dbc.Col(
                
-               # title <
-               # pictures <
-               dbc.Col(
+               width = 'auto',
+               id = 'headerTitleColId',
+               children = html.H1(
                   
-                  width = 'auto',
-                  children = html.H1(
-                     
-                     children = None,
-                     id = 'headerTitleId',
-                     className = 'headerTitle'
-                     
-                  )
+                  children = None,
+                  id = 'headerTitleId',
+                  className = 'headerTitle'
                   
-               ),
-               dbc.Col(
-                  
-                  width = 'auto',
-                  className = 'headerPictures',
-                  children = dbc.Stack(
-                     
-                     gap = 3,
-                     children = None,
-                     id = 'headerPicturesId',
-                     direction = 'horizontal'
-                     
-                  )
-                                    
                )
                
-               # >
+            ),
+            dbc.Col(
                
-            ]
+               width = 'auto',
+               align = 'center',
+               id = 'headerImagesColId',
+               children = dbc.Stack(
+                  
+                  gap = 3,
+                  children = None,
+                  id = 'headerImagesId',
+                  direction = 'horizontal'
+                  
+               )
+                                 
+            )
+            
+            # >
+            
+         ]
+         
+      )
+      
+      
+   def buildPictures(self, urls):
+      '''  '''
+      
+      return [
+         
+         html.Img(
+            
+            src = url,
+            className = 'headerImage'
             
          )
          
-      )
+      for url in urls]
