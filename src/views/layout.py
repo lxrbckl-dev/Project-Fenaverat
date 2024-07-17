@@ -2,12 +2,6 @@
 from dash import (dcc, html)
 import dash_bootstrap_components as dbc
 
-# from .components.header import header
-# from .components.footer import footer
-# from .components.aboutMe import aboutMe
-# from .components.myServers import myServers
-# from .components.myProjects import myProjects
-
 from ..controllers.headerCallback import headerCallback
 from ..controllers.footerCallback import footerCallback
 
