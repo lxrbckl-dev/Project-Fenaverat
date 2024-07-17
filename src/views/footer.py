@@ -54,6 +54,7 @@ class footer:
                target = '_blank',
                children = html.Img(
                   
+                  alt = k,
                   src = v['icon'],
                   className = 'footerConnection'
                   
