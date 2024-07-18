@@ -2,6 +2,7 @@
 from ..body import body
 
 from dash import (dcc, html)
+from dash_player import DashPlayer
 import dash_bootstrap_components as dbc
 
 # >
@@ -60,10 +61,20 @@ class aboutMe(body):
       )
       
       
-   def buildPhoto(self):
+   def buildPhoto(self, url):
       '''  '''
       
-      pass
+      return DashPlayer(
+         
+         url = url,
+         muted = True,
+         width = '100%',
+         height = '100%',
+         playing = False,
+         controls = False,
+         id = 'aboutMePhotoId'
+         
+      )
    
    
    def buildEcosystem(self, ecosystem):

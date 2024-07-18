@@ -25,3 +25,41 @@ class aboutMeCallback:
       '''  '''
       
       return self.aboutMe.property
+   
+   
+   def callbackLeftStack(self):
+      '''  '''
+      
+      @app.callback(
+         
+         output = Output('leftStackId', 'children'),
+         inputs = [Input('leftStackId', 'children')]
+         
+      )
+      def func(*args):
+         
+         return [
+            
+            self.aboutMe.buildPhoto,
+            self.aboutMe.buildEcosystem
+            
+         ]
+      
+      
+   def callbackRightStack(self):
+      '''  '''
+      
+      @app.callback(
+         
+         inputs = [Input('rightCol', 'children')],
+         output = Output('rightStackId', 'children')
+         
+      )
+      def func(*args):
+         
+         return [
+            
+            self.aboutMe.buildTitle,
+            self.aboutMe.buildDescription
+            
+         ]
