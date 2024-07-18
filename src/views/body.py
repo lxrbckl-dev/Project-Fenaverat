@@ -48,3 +48,15 @@ class body:
          )
          
       for i in accordionItems]
+      
+      
+   def buildCards(self):
+      '''  '''
+      
+      pass
+      
+      
+   def buildBadges(self):
+      '''  '''
+      
+      pass

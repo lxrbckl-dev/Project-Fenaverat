@@ -1,17 +1,19 @@
 # import <
+from ..body import body
+
 from dash import (dcc, html)
 import dash_bootstrap_components as dbc
 
 # >
 
 
-class myProjects:
+class myProjects(body):
    
    
    def __init__(self):
       '''  '''
       
-      pass
+      super().__init__()
    
    
    @property

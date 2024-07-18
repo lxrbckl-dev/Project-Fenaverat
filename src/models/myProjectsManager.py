@@ -16,3 +16,5 @@ class myProjectsManager(resourceManager):
          loadType = 'remote'
          
       )
+      
+      self.content = super().fetchContent()

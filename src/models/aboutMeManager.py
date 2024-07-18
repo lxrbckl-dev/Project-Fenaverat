@@ -18,4 +18,3 @@ class aboutMeManager(resourceManager):
       )
       
       self.content = super().fetchContent()
-      print(self.content)

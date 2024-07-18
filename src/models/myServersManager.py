@@ -16,3 +16,5 @@ class myServersManager(resourceManager):
          loadType = 'remote'
          
       )
+      
+      self.content = super().fetchContent()
