@@ -12,7 +12,10 @@ class aboutMeManager(resourceManager):
       
       super().__init__(
          
-         file = 'body',
+         file = 'aboutMe',
          loadType = 'remote'
          
       )
+      
+      self.content = super().fetchContent()
+      print(self.content)

@@ -12,7 +12,7 @@ class myProjectsManager(resourceManager):
       
       super().__init__(
          
-         file = 'body',
+         file = 'myProjects',
          loadType = 'remote'
          
       )
