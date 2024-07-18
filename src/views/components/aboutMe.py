@@ -24,19 +24,18 @@ class aboutMe(body):
       return dbc.Row(
          
          id = 'aboutMeRowId',
-         className = 'aboutMeRow',
          children = [
             
-            # (photo, ecosystem) <
-            # (title, description) <
+            # left (photo, ecosystem) <
+            # right (title, description) <
             dbc.Col(
                
                width = 4,
-               className = 'leftCol',
+               className = 'aboutMeLeftColId',
                children = dbc.Stack(
                   
                   children = None,
-                  id = 'leftStackId'
+                  id = 'aboutMeLeftStackId'
                   
                )
                
@@ -44,11 +43,11 @@ class aboutMe(body):
             dbc.Col(
                
                width = 8,
-               className = 'rightCol',
+               className = 'aboutMeRightColId',
                children = dbc.Stack(
                   
                   children = None,
-                  id = 'rightStackId'
+                  id = 'aboutMeRightStackId'
                   
                )
                
@@ -72,7 +71,8 @@ class aboutMe(body):
          height = '100%',
          playing = False,
          controls = False,
-         id = 'aboutMePhotoId'
+         id = 'aboutMePhotoDashPlayerId',
+         className = 'aboutMePhotoDashPlayer'
          
       )
    
@@ -80,16 +80,26 @@ class aboutMe(body):
    def buildEcosystem(self, ecosystem):
       '''  '''
       
-      pass
+      return self.buildBadges(ecosystem)
    
    
    def buildTitle(self, title):
       '''  '''
       
-      pass
+      return html.H1(
+         
+         children = title,
+         className = 'aboutMeTitleH1'
+         
+      )
    
    
    def buildDescription(self, description):
       '''  '''
       
-      pass
+      return dcc.Markdown(
+         
+         children = description,
+         className = 'aboutMeDescriptionMarkdown'
+         
+      )

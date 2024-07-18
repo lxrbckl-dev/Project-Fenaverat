@@ -56,7 +56,7 @@ class body:
       pass
       
       
-   def buildBadges(self):
+   def buildBadges(self, ecosystem):
       '''  '''
       
       pass

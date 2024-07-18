@@ -20,6 +20,7 @@ class header:
 
       return dbc.Row(
          
+         id = 'headerRowId',
          justify = 'between',
          className = 'headerRow',
          children = [
@@ -29,31 +30,18 @@ class header:
             dbc.Col(
                
                width = 'auto',
+               children = None,
                id = 'headerTitleColId',
-               className = 'headerTitleCol',
-               children = html.H1(
-                  
-                  children = None,
-                  id = 'headerTitleH1Id',
-                  className = 'headerTitleH1'
-                  
-               )
+               className = 'headerTitleCol'
                
             ),
             dbc.Col(
                
                width = 'auto',
+               children = None,
                align = 'center',
                id = 'headerImagesColId',
-               className = 'headerImagesCol',
-               children = dbc.Stack(
-                  
-                  gap = 3,
-                  children = None,
-                  direction = 'horizontal',
-                  id = 'headerImagesStackId'
-                  
-               )
+               className = 'headerImagesCol'
                
             )
             
@@ -64,16 +52,35 @@ class header:
       )
       
       
-   def buildPictures(self, urls):
+   def buildTitle(self, title):
       '''  '''
       
-      return [
+      return html.H1(
          
-         html.Img(
-            
-            src = url,
-            className = 'headerImage'
-            
-         )
+         children = title,
+         id = 'headerTitleH1Id',
+         className = 'headerTitleH1'
          
-      for url in urls]
+      )
+      
+      
+   def buildImages(self, images):
+      '''  '''
+      
+      return dbc.Stack(
+         
+         gap = 3,
+         direction = 'horizontal',
+         id = 'headerImagesStackId',
+         children = [
+            
+            html.Img(
+               
+               src = image,
+               className = 'headerImagesImg'
+               
+            )
+            
+         for image in images]
+         
+      )

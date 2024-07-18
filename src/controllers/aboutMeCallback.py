@@ -23,43 +23,45 @@ class aboutMeCallback:
    
    def register(self):
       '''  '''
+
+      self.callbackRow()
       
       return self.aboutMe.property
    
-   
-   def callbackLeftStack(self):
+
+   def callbackRow(self):
       '''  '''
-      
+
       @app.callback(
          
-         output = Output('leftStackId', 'children'),
-         inputs = [Input('leftStackId', 'children')]
-         
-      )
-      def func(*args):
-         
-         return [
+         inputs = [Input('aboutMeRowId', 'children')],
+         output = [
             
-            self.aboutMe.buildPhoto,
-            self.aboutMe.buildEcosystem
+            Output('aboutMeLeftStackId', 'children'),
+            Output('aboutMeRightStackId', 'children')
             
          ]
-      
-      
-   def callbackRightStack(self):
-      '''  '''
-      
-      @app.callback(
-         
-         inputs = [Input('rightCol', 'children')],
-         output = Output('rightStackId', 'children')
          
       )
       def func(*args):
-         
+      
          return [
             
-            self.aboutMe.buildTitle,
-            self.aboutMe.buildDescription
+            # left <
+            # right <
+            [
+               
+               self.aboutMe.buildPhoto(self.aboutMeManager.getPhoto()),
+               self.aboutMe.buildEcosystem(self.aboutMeManager.getEcosystem())
+                  
+            ],
+            [
+               
+               self.aboutMe.buildTitle(self.aboutMeManager.getTitle()),
+               self.aboutMe.buildDescription(self.aboutMeManager.getDescription())
+               
+            ]
+            
+            # >
             
          ]

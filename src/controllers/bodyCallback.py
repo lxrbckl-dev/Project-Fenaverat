@@ -24,12 +24,15 @@ class bodyCallback:
       self.sleepTime = 1
       self.activeItem = 'aboutMe'
       self.bodyManager = bodyManager()
+      self.aboutMeCallback = aboutMeCallback()
+      self.myServersCallback = myServersCallback()
+      self.myProjectsCallback = myProjectsCallback()
       
       self.items = [
          
-         aboutMeCallback(),
-         myServersCallback(),
-         myProjectsCallback()
+         self.aboutMeCallback,
+         self.myServersCallback,
+         self.myProjectsCallback
          
       ]
    
@@ -39,6 +42,9 @@ class bodyCallback:
       
       self.callbackAccordion()
       self.callbackActiveItem()
+      self.aboutMeCallback.register()
+      self.myServersCallback.register()
+      self.myProjectsCallback.register()
       
       return self.body.property
    

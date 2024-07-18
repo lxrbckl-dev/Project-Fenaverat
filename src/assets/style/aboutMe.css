@@ -1,10 +1,3 @@
-.aboutMeRow {
-
-
-   
-}
-
-
 .leftCol {
 
 
@@ -13,6 +6,28 @@
 
 
 .rightCol {
+
+
+
+}
+
+
+.aboutMePhotoDashPlayer {
+
+   padding-bottom: var(--padding);
+   border-bottom: var(--borderBlack);
+
+}
+
+
+.aboutMeTitleH1 {
+
+
+
+}
+
+
+.aboutMeDescriptionMarkdown {
 
 
 

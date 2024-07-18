@@ -30,7 +30,7 @@ class layout:
          className = 'layoutRow',
          children = dbc.Col(
             
-            width = 9,
+            width = 10,
             children = [
                
                # header <

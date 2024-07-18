@@ -21,34 +21,33 @@ class headerCallback:
    def register(self):
       '''  '''
       
-      self.callbackTitle()
-      self.callbackPictures()
+      self.callbackRow()
       
       return self.header.property
    
-   
-   def callbackTitle(self):
+
+   def callbackRow(self):
       '''  '''
-   
+
       @app.callback(
          
-         output = Output('headerTitleH1Id', 'children'),
-         inputs = [Input('headerTitleColId', 'children')]
+         inputs = [Input('headerRowId', 'children')],
+         output = [
+            
+            Output('headerTitleColId', 'children'),
+            Output('headerImagesColId', 'children')
+            
+         ]
          
       )
-      def func(*args): return self.headerManager.getTitle()
-   
-   
-   def callbackPictures(self):
-      '''  '''
-   
-      @app.callback(
+      def func(*args):
          
-         inputs = [Input('headerImagesColId', 'children')],
-         output = Output('headerImagesStackId', 'children')
-         
-      )
-      def func(*args): 
-         
+         title = self.headerManager.getTitle()
          images = self.headerManager.getImages()
-         return self.header.buildPictures(images)
+
+         return [
+            
+            self.header.buildTitle(title),
+            self.header.buildImages(images)
+            
+         ]
