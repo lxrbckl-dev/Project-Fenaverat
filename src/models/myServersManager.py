@@ -4,7 +4,7 @@ from .resourceManager import resourceManager
 # >
 
 
-class bodyManager(resourceManager):
+class myServersManager(resourceManager):
    
    
    def __init__(self):
@@ -16,4 +16,3 @@ class bodyManager(resourceManager):
          loadType = 'local'
          
       )
-      

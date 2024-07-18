@@ -1,0 +1,8 @@
+.bodyCol {
+
+   padding: var(--padding);
+   background: var(--colorWhite);
+   border-left: var(--borderBlack);
+   border-right: var(--borderBlack);
+
+}
