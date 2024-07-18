@@ -1,3 +1,13 @@
+.aboutMeRow {
+
+   background-size: cover;
+   background-position: top;
+   background-repeat: no-repeat;
+   background-image: var(--background);
+
+}
+
+
 .aboutMeLeftCol {
 
    overflow-y: scroll;

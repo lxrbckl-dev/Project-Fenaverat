@@ -24,6 +24,7 @@ class aboutMe(body):
       return dbc.Row(
          
          id = 'aboutMeRowId',
+         className = 'aboutMeRow',
          children = [
             
             # left (photo, ecosystem) <
