@@ -31,7 +31,7 @@ class aboutMe(body):
             dbc.Col(
                
                width = 4,
-               className = 'aboutMeLeftColId',
+               className = 'aboutMeLeftCol',
                children = dbc.Stack(
                   
                   children = None,
@@ -43,7 +43,7 @@ class aboutMe(body):
             dbc.Col(
                
                width = 8,
-               className = 'aboutMeRightColId',
+               className = 'aboutMeRightCol',
                children = dbc.Stack(
                   
                   children = None,

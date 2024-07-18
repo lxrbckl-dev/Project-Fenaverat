@@ -1,14 +1,22 @@
-.aboutMeLeftColId {
+.aboutMeLeftCol {
 
-
+   overflow-y: scroll;
+   scrollbar-width: none;
+   padding-left: var(--padding);
+   max-height: var(--maxHeight);
 
 }
 
 
-.aboutMeRightColId {
+.aboutMeRightCol {
 
-   padding-left: var(--padding);
+   /* margin: 0; */
+   /* padding: 0; */
+   overflow-y: scroll;
+   scrollbar-width: none;
+   max-height: var(--maxHeight);
    border-left: var(--borderBlack);
+
 
 }
 

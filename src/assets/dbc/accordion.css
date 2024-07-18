@@ -98,7 +98,7 @@
  
  .accordion-item {
     border: 0;
-    overflow: hidden; 
+    overflow: hidden;
     color: var(--bs-accordion-color);
     background-color: rgba(255, 255, 255, 0);
  }
