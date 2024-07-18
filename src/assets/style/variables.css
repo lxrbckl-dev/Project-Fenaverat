@@ -2,6 +2,7 @@
 
    --padding: 1%;
 
+   --maxWidth: 1000px;
    --maxHeight: 450px;
 
    --filterBlur: blur(20px);

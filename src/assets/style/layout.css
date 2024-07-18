@@ -6,3 +6,10 @@
    height: 100vh;
    
 }
+
+
+.layoutCol {
+
+   max-width: var(--maxWidth);
+
+}
