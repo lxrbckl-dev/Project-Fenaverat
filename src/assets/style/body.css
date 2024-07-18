@@ -1,6 +1,7 @@
 .bodyCol {
 
-   padding: var(--padding);
+   padding-left: var(--padding);
+   padding-right: var(--padding);
    background: var(--colorWhite);
    border-left: var(--borderBlack);
    border-right: var(--borderBlack);

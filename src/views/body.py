@@ -20,7 +20,6 @@ class body:
 
       return dbc.Col(
          
-         # accordion <
          id = 'bodyColId',
          className = 'bodyCol',
          children = dbc.Accordion(
@@ -31,9 +30,7 @@ class body:
             id = 'bodyAccordionId'
             
          )
-         
-         # >
-         
+                  
       )
       
       
