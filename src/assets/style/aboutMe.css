@@ -1,7 +1,8 @@
 .aboutMeRow {
 
+   padding: var(--padding);
    background-size: cover;
-   background-position: top;
+   background-position: 50% 50%;
    background-repeat: no-repeat;
    background-image: var(--background);
 
@@ -48,13 +49,17 @@
 
 .aboutMeTitleH1 {
 
-
+   backdrop-filter: var(--filterBlur);
 
 }
 
 
 .aboutMeDescriptionMarkdown {
 
+   margin: 0;
+   padding: 0;
    text-align: justify;
+   font-family: var(--font);
+   backdrop-filter: var(--filterBlur);
 
 }

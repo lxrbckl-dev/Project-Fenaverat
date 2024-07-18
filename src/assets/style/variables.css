@@ -2,14 +2,18 @@
 
    --padding: 1%;
 
-   --maxHeight: 404px;
+   --maxHeight: 450px;
+
+   --filterBlur: blur(20px);
 
    --colorBlack: #181A1B;
    --colorWhite: #F7F5F1;
    
+   --font: Arial, Helvetica, sans-serif;
+
    --borderWhite: 1px solid var(--colorWhite);
    --borderBlack: 1px solid var(--colorBlack);
 
-   --background: 'url(https://i.postimg.cc/rsr3CDNk/IMG-2663.png)';
+   --background: url('https://i.postimg.cc/rsr3CDNk/IMG-2663.png');
    
 }
