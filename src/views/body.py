@@ -59,4 +59,13 @@ class body:
    def buildBadges(self, ecosystem):
       '''  '''
       
-      pass
+      return [
+         
+         dbc.Badge(
+            
+            children = i,
+            className = 'badge'
+            
+         )
+         
+      for k, v in ecosystem.items() for i in v]

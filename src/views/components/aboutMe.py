@@ -80,7 +80,13 @@ class aboutMe(body):
    def buildEcosystem(self, ecosystem):
       '''  '''
       
-      return self.buildBadges(ecosystem)
+      # return self.buildBadges(ecosystem)
+      return html.Div(
+         
+         className = 'ecosystemDiv',
+         children = self.buildBadges(ecosystem)
+         
+      )
    
    
    def buildTitle(self, title):
@@ -99,7 +105,7 @@ class aboutMe(body):
       
       return dcc.Markdown(
          
-         children = description,
+         children = '\n\n'.join(description),
          className = 'aboutMeDescriptionMarkdown'
          
       )

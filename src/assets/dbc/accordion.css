@@ -31,11 +31,11 @@
    display: flex;
    align-items: center;
    width: 100%;
-   font-size: 30px;
+   font-size: 34px;
    padding-top: 0;
    padding-left: 0;
    padding-right: 0;
-   padding-bottom: 5;
+   padding-bottom: 0;
  
    font-weight: 100;
    color: var(--bs-accordion-btn-color);

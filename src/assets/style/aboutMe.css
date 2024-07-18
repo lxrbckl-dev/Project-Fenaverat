@@ -1,13 +1,14 @@
-.leftCol {
+.aboutMeLeftColId {
 
 
 
 }
 
 
-.rightCol {
+.aboutMeRightColId {
 
-
+   padding-left: var(--padding);
+   border-left: var(--borderBlack);
 
 }
 
@@ -16,6 +17,13 @@
 
    padding-bottom: var(--padding);
    border-bottom: var(--borderBlack);
+
+}
+
+
+.ecosystemDiv {
+
+   padding-top: var(--padding);
 
 }
 
@@ -29,6 +37,6 @@
 
 .aboutMeDescriptionMarkdown {
 
-
+   text-align: justify;
 
 }

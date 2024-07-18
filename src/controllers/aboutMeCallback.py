@@ -52,7 +52,7 @@ class aboutMeCallback:
             [
                
                self.aboutMe.buildPhoto(self.aboutMeManager.getPhoto()),
-               self.aboutMe.buildEcosystem(self.aboutMeManager.getEcosystem())
+               *self.aboutMe.buildEcosystem(self.aboutMeManager.getEcosystem())
                   
             ],
             [
