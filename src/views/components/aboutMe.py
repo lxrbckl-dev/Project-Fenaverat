@@ -1,5 +1,6 @@
 # import <
-from dash import html
+from dash import (dcc, html)
+import dash_bootstrap_components as dbc
 
 # >
 
@@ -17,4 +18,13 @@ class aboutMe:
    def property(self):
       '''  '''
       
-      return html.H1('ok')
+      return dbc.Row(
+         
+         id = 'aboutMeRowId',
+         children = [
+            
+            
+            
+         ]
+         
+      )

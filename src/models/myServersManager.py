@@ -13,6 +13,6 @@ class myServersManager(resourceManager):
       super().__init__(
          
          file = 'body',
-         loadType = 'local'
+         loadType = 'remote'
          
       )

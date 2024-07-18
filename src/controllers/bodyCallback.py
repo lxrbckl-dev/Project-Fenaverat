@@ -1,4 +1,5 @@
 # import <
+from time import sleep
 from dash.dependencies import (Input, Output)
 
 from ..configs import app
@@ -20,6 +21,8 @@ class bodyCallback:
       '''  '''
       
       self.body = body()
+      self.sleepTime = 1
+      self.activeItem = 'aboutMe'
       self.bodyManager = bodyManager()
       
       self.items = [
@@ -35,6 +38,7 @@ class bodyCallback:
       '''  '''
       
       self.callbackAccordion()
+      self.callbackActiveItem()
       
       return self.body.property
    
@@ -49,3 +53,18 @@ class bodyCallback:
          
       )
       def func(*args): return self.body.buildAccordion(self.items)
+      
+      
+   def callbackActiveItem(self):
+      '''  '''
+      
+      @app.callback(
+         
+         output = Output('bodyAccordionId', 'active_item'),
+         inputs = [Input((self.activeItem + 'RowId'), 'children')]
+         
+      )
+      def func(*args): 
+         
+         sleep(self.sleepTime)
+         return self.activeItem

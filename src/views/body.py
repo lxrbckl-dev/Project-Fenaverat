@@ -41,7 +41,7 @@ class body:
          
          dbc.AccordionItem(
             
-            id = i.id,
+            item_id = i.id,
             title = i.title,
             children = i.register()
             
