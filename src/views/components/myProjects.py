@@ -22,11 +22,7 @@ class myProjects(body):
       
       return dbc.Row(
          
-         id = 'myProjectsRowId',
-         children = [
-            
-            
-            
-         ]
+         children = None,
+         id = 'myProjectsRowId'
          
       )

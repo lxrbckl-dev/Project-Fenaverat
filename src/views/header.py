@@ -64,11 +64,10 @@ class header:
             html.H1(
                
                children = i,
-               id = 'headerTitleH1Id',
                className = {
                   
-                  True : 'headerTitleH1Pixel',
-                  False : 'headerTitleH1Normal'
+                  True : 'letterH1Pixel',
+                  False : 'letterH1Normal'
                   
                }[(randint(1, 3) == 1)]
                           
