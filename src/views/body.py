@@ -50,10 +50,52 @@ class body:
       for i in accordionItems]
       
       
-   def buildCards(self):
+   def buildCard(
+      
+      self,
+      header,
+      body,
+      footer
+      
+   ):
       '''  '''
       
-      pass
+      return dbc.Col(
+         
+         className = 'cardCol',
+         children = dbc.Card(
+            
+            children = [
+               
+               # header <
+               # body <
+               # footer <
+               dbc.CardHeader(
+                  
+                  children = header,
+                  className = 'cardHeader'
+                  
+               ),
+               dbc.CardBody(
+                  
+                  children = body,
+                  className = 'cardBody'
+                  
+               ),
+               dbc.CardFooter(
+                  
+                  children = footer,
+                  className = 'cardFooter'
+                  
+               )
+               
+               # >
+               
+            ]
+            
+         )
+         
+      )
       
       
    def buildBadges(

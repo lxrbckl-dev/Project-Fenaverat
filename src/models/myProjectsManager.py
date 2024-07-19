@@ -18,3 +18,4 @@ class myProjectsManager(resourceManager):
       )
       
       self.content = super().fetchContent()
+      print(self.content) # remove
