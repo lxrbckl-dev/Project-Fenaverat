@@ -1,0 +1,9 @@
+.aboutMeRow {
+
+   padding: var(--padding);
+   background-size: cover;
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-image: var(--background);
+
+}

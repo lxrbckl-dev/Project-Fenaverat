@@ -19,10 +19,15 @@ class myProjects(body):
    @property
    def property(self):
       '''  '''
-      
-      return dbc.Row(
+
+      return dbc.Col(
          
-         children = None,
-         id = 'myProjectsRowId'
+         id = 'myProjectsColId',
+         children = dbc.Row(
+            
+            children = None,
+            id = 'myProjectsRowId'
+            
+         )
          
       )

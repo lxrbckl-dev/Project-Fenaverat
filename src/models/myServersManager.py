@@ -18,3 +18,12 @@ class myServersManager(resourceManager):
       )
       
       self.content = super().fetchContent()
+      
+      
+   def getServers(self):
+      '''  '''
+      
+      servers = []
+      for kind in (self.content).keys():
+         
+         print(kind) # remove

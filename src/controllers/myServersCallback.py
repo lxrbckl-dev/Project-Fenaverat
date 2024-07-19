@@ -30,4 +30,22 @@ class myServersCallback(bodyCallback):
    def registerCallbacks(self):
       '''  '''
       
-      pass
+      self.callbackRow()
+   
+   
+   def callbackRow(self):
+      '''  '''
+      
+      @app.callback(
+         
+         output = Output('myServersRowId', 'children'),
+         inputs = [Input('myServersColId', 'children')]
+         
+      )
+      def func(*args):
+         
+         return [
+            
+            None
+            
+         for server in self.myServersManager.getServers()]

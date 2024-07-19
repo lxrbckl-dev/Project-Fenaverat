@@ -30,4 +30,18 @@ class myProjectsCallback(bodyCallback):
    def registerCallbacks(self):
       '''  '''
       
-      pass
+      self.callbackRow()
+   
+   
+   def callbackRow(self):
+      '''  '''
+      
+      @app.callback(
+         
+         output = Output('myProjectsRowId', 'children'),
+         inputs = [Input('myProjectsColId', 'children')]
+         
+      )
+      def func(*args):
+         
+         pass
