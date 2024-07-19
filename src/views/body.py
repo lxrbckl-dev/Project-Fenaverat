@@ -74,9 +74,9 @@ class body:
             dbc.Badge(
                
                children = i,
-               # color = textColor[k],
                className = 'badge',
-               # text_color = textColor
+               text_color = textColor,
+               color = backgroundColors[k]
                
             )
                         

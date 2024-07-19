@@ -11,13 +11,14 @@
 
 .badgeDiv {
 
-   
+   border: var(--borderBlack);
 
 }
 
 
 .badge {
 
-
+   padding: 4px;
+   border: var(--borderBlack);
 
 }
