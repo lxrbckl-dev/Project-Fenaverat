@@ -1,4 +1,5 @@
 # import <
+from random import randint
 from dash import (dcc, html)
 import dash_bootstrap_components as dbc
 
@@ -55,11 +56,27 @@ class header:
    def buildTitle(self, title):
       '''  '''
       
-      return html.H1(
+      return html.Div(
          
-         children = title,
-         id = 'headerTitleH1Id',
-         className = 'headerTitleH1'
+         children = [
+            
+            # letter <
+            html.H1(
+               
+               children = i,
+               id = 'headerTitleH1Id',
+               className = {
+                  
+                  True : 'headerTitleH1Pixel',
+                  False : 'headerTitleH1Normal'
+                  
+               }[(randint(1, 4) == 1)]
+                          
+            )
+            
+            # >
+            
+         for i in title]
          
       )
       

@@ -1,28 +1,43 @@
 .headerRow {
-
    margin: 0;
    padding: var(--padding);
    border: var(--borderBlack);
-   background-color: var(--colorWhite);
+   background: var(--colorWhite);
 
 }
-
 
 .headerTitleCol {
 
    padding: 0;
-   margin-left: -6px;
+   /* color: var(--colorBlack); */
 
 }
 
 
-.headerTitleH1 {
+.headerTitleH1Pixel {
 
    margin: 0;
    padding: 0;
    line-height: 1;
-   font-size: 80px;
+   display: inline;
+   font-size: 74px;
+   letter-spacing: 0rem;
+   font-family: pixeloid;
    color: var(--colorBlack);
+
+}
+
+
+.headerTitleH1Normal {
+
+   margin: 0;
+   padding: 0;
+   line-height: 1;
+   display: inline;
+   font-size: 80px;
+   letter-spacing: 0.25rem;
+   color: var(--colorBlack);
+   font-family: Arial, Helvetica, sans-serif;
 
 }
 
