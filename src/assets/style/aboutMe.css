@@ -15,6 +15,7 @@
    scrollbar-width: none;
    max-height: var(--maxHeight);
    padding-right: var(--padding);
+   border-right: var(--borderBlack);
 
 }
 
@@ -25,8 +26,6 @@
    scrollbar-width: none;
    max-height: var(--maxHeight);
    padding-left: var(--padding);
-   padding-right: var(--padding);
-   border-left: var(--borderBlack);
 
 }
 
@@ -34,7 +33,7 @@
 .aboutMePhotoDashPlayer {
 
    margin: 0;
-   padding: 0 0 var(--padding) 0;
+   padding: 0;
    border-bottom: var(--borderBlack);
 
 }
@@ -42,14 +41,16 @@
 
 .ecosystemDiv {
 
-   margin: 0 -2px 0 -2px;
-   padding: calc(var(--padding) * 2) 0 0 0;
+   margin: 3px -2px 0 -2px;
+   padding: 0 0 0 0;
 
 }
 
 
 .aboutMeTitleH1 {
 
+   margin: 0;
+   padding: 0;
    backdrop-filter: var(--filterBlur);
    font-family: Arial, Helvetica, sans-serif;
 
@@ -59,8 +60,9 @@
 .aboutMeDescriptionMarkdown {
 
    margin: 0;
-   padding: 0;
    text-align: justify;
+   padding: var(--padding) 0 0 0;
+   border-top: var(--borderBlack);
    backdrop-filter: var(--filterBlur);
    font-family: Arial, Helvetica, sans-serif;
 
