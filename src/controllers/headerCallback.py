@@ -18,13 +18,14 @@ class headerCallback:
       self.headerManager = headerManager()
       
       
-   def register(self):
+   def getProperty(self): return self.header.property
+      
+      
+   def registerCallbacks(self):
       '''  '''
       
       self.callbackRow()
-      
-      return self.header.property
-   
+               
 
    def callbackRow(self):
       '''  '''

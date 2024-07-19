@@ -17,14 +17,15 @@ class footerCallback:
       self.footer = footer()
       self.footerManager = footerManager()
       
+      
+   def getProperty(self): return self.footer.property
+      
    
-   def register(self):
+   def registerCallbacks(self):
       '''  '''
       
       self.callbackConnections()
-      
-      return self.footer.property
-   
+            
    
    def callbackConnections(self):
       '''  '''

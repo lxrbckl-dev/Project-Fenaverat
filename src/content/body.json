@@ -1,0 +1,11 @@
+{
+   "badgeTextColor" : "#181A1B",
+   "badgeBackgroundColors" : {
+
+      "package" : "#AA7F74",
+      "service" : "##C0A49A",
+      "language" : "#96867F"
+
+   }
+
+}

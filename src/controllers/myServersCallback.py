@@ -3,16 +3,19 @@ from dash.dependencies import (Input, Output)
 
 from ..configs import app
 from ..views.components.myServers import myServers
+from ..controllers.bodyCallback import bodyCallback
 from ..models.myServersManager import myServersManager
 
 # >
 
 
-class myServersCallback:
+class myServersCallback(bodyCallback):
    
    
    def __init__(self):
       '''  '''
+      
+      super().__init__()
       
       self.id = 'myServers'
       self.title = 'my servers'
@@ -21,7 +24,10 @@ class myServersCallback:
       self.myServersManager = myServersManager()
    
    
-   def register(self):
+   def getProperty(self): return self.myProjects.property
+   
+   
+   def registerCallbacks(self):
       '''  '''
       
-      return self.myProjects.property
+      pass

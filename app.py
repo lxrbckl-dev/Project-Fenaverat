@@ -8,8 +8,10 @@ from src.views.layout import layout
 # >
 
 
-# initialize object <
+# initialize layout <
+# register callbacks <
 layout = layout()
+layout.registerCallbacks()
 
 # >
 

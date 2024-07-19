@@ -43,7 +43,7 @@ class body:
             
             item_id = i.id,
             title = i.title,
-            children = i.register()
+            children = i.getProperty()
             
          )
          
@@ -56,16 +56,30 @@ class body:
       pass
       
       
-   def buildBadges(self, ecosystem):
-      '''  '''
+   def buildBadges(
       
-      return [
-         
-         dbc.Badge(
+      self, 
+      textColor,
+      ecosystem,
+      backgroundColors
+      
+   ):
+      '''  '''
             
-            children = i,
-            className = 'badge'
-            
-         )
+      return html.Div(
          
-      for k, v in ecosystem.items() for i in v]
+         className = 'badgeDiv',
+         children = [
+            
+            dbc.Badge(
+               
+               children = i,
+               # color = textColor[k],
+               className = 'badge',
+               # text_color = textColor
+               
+            )
+                        
+         for k, v in ecosystem.items() for i in v]
+                  
+      )
