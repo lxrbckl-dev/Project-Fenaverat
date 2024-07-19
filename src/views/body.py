@@ -65,7 +65,7 @@ class body:
       
    ):
       '''  '''
-            
+      
       return html.Div(
          
          className = 'badgeDiv',
@@ -75,8 +75,8 @@ class body:
                
                children = i,
                className = 'badge',
-               text_color = textColor,
-               color = backgroundColors[k]
+               color = backgroundColors[k],
+               style = {'color' : textColor}
                
             )
                         

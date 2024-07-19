@@ -2,7 +2,7 @@
    "badgeTextColor" : "#181A1B",
    "badgeBackgroundColors" : {
 
-      "other" : "##C0A49A",
+      "other" : "#C0A49A",
       "packages" : "#AA7F74",
       "languages" : "#96867F",
 

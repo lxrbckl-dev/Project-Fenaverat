@@ -42,8 +42,8 @@
 
 .ecosystemDiv {
 
-   margin: 0;
-   padding-top: var(--padding);
+   margin: 0 -2px 0 -2px;
+   padding: calc(var(--padding) * 2) 0 0 0;
 
 }
 
