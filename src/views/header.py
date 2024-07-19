@@ -69,7 +69,7 @@ class header:
                   True : 'letterH1Pixel',
                   False : 'letterH1Normal'
                   
-               }[(randint(1, 3) == 1)]
+               }[(randint(1, 4) == 1)]
                           
             )
             

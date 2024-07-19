@@ -1,4 +1,5 @@
 .headerRow {
+
    margin: 0;
    padding: var(--padding);
    border: var(--borderBlack);
@@ -19,7 +20,7 @@
    padding: 0;
    line-height: 1;
    display: inline;
-   font-size: 74px;
+   font-size: 65px;
    letter-spacing: 0rem;
    font-family: pixeloid;
    color: var(--colorBlack);
