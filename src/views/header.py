@@ -70,7 +70,7 @@ class header:
                   True : 'headerTitleH1Pixel',
                   False : 'headerTitleH1Normal'
                   
-               }[(randint(1, 4) == 1)]
+               }[(randint(1, 3) == 1)]
                           
             )
             
