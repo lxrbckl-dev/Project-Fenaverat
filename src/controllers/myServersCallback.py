@@ -20,7 +20,7 @@ class myServersCallback(bodyCallback):
       self.id = 'myServers'
       self.title = 'my servers'
       
-      self.myProjects = myServers()
+      self.myServers = myServers()
       self.myServersManager = myServersManager()
    
    
@@ -46,6 +46,21 @@ class myServersCallback(bodyCallback):
          
          return [
             
-            None
+            self.body.buildCard(
+               
+               header = self.myServers.buildHeader(
+                  
+                  name = server['name'],
+                  status = server['status']
+               
+               ),
+               body = self.myServers.buildBody(
+                  
+                  services = server['services']
+                  
+               ),
+               footer = self.myServers.buildFooter()
+               
+            )
             
          for server in self.myServersManager.getServers()]

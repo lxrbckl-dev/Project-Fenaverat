@@ -31,3 +31,21 @@ class myServers(body):
          )
          
       )
+      
+      
+   def buildHeader(self):
+      '''  '''
+      
+      pass
+   
+   
+   def buildBody(self):
+      '''  '''
+      
+      pass
+   
+   
+   def buildFooter(self):
+      '''  '''
+      
+      pass

@@ -43,3 +43,9 @@ class resourceManager:
          'local' : lambda : fileGet('{}{}.json'.format(self.contentPath, self.file))
          
       }[self.loadType]()
+      
+      
+   def fetchExternalContent(self):
+      '''  '''
+      
+      pass

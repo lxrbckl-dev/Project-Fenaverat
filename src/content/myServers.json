@@ -1,0 +1,20 @@
+{
+
+   "os" : {
+
+      "ubuntu" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png"
+
+   },
+   "compter" : {
+
+      "raspberryPi" : "https://i.postimg.cc/Y0ZWQvn5/card-Raspberry-Pi.png"
+
+   },
+   "deployment" : {
+
+      "docker" : "https://i.postimg.cc/hjbLQKXH/card-Docker.png",
+      "dockerSwarm" : "https://i.postimg.cc/x86Lggy5/card-Docker-Swarm.png"
+
+   }
+
+}

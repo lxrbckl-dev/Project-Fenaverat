@@ -24,6 +24,25 @@ class myServersManager(resourceManager):
       '''  '''
       
       servers = []
+      
+      # iterate (host, swarm) <
       for kind in (self.content).keys():
          
-         print(kind) # remove
+         # iterate (host, swarm)->node <
+         for sid, svals in self.content[kind].items():
+            
+            servers.append({
+               
+               'kind' : kind,
+               ''
+               'services' : svals['service'],
+               'name' : sid if (kind == 'host') else svals['hostname'],
+               'status' : True if (kind == 'host') else svals['status']
+               
+            })
+            
+         # >
+         
+      # >
+            
+      return servers
