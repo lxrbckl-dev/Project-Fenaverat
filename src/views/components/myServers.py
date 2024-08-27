@@ -37,6 +37,9 @@ class myServers(body):
    def buildCard(self, node):
       '''  '''
 
+      name, properties = node
+      print(name)
+      
       return dbc.Col(
          
          className = 'myServersCol',
@@ -47,14 +50,3 @@ class myServers(body):
          ]
          
       )
-      
-      # return html.Div(
-         
-      #    className = 'myServersCard',
-      #    children = [
-            
-      #       html.H1('ok')
-            
-      #    ]
-         
-      # )

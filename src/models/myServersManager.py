@@ -20,4 +20,4 @@ class myServersManager(resourceManager):
       self.content = super().fetchContent()
       
       
-   def getServers(self): return self.content
+   def getServers(self): return self.content.items()

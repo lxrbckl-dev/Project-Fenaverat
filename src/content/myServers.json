@@ -2,15 +2,12 @@
 
    "os" : {
 
-      "iconUbuntu" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png"
+      "Linux" : "",
+      "Raspberry Pi, Ubuntu" : "",
+      "Ubuntu" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png"
 
    },
-   "compter" : {
-
-      "iconRaspberryPi" : "https://i.postimg.cc/Y0ZWQvn5/card-Raspberry-Pi.png"
-
-   },
-   "deployment" : {
+   "deploymentType" : {
 
       "iconDocker" : "https://i.postimg.cc/hjbLQKXH/card-Docker.png",
       "iconDockerSwarm" : "https://i.postimg.cc/x86Lggy5/card-Docker-Swarm.png"
