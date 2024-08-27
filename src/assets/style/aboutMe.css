@@ -1,7 +1,7 @@
 .aboutMeRow {
 
-   padding: var(--padding);
    background-size: cover;
+   padding: var(--padding);
    background-position: 50% 50%;
    background-repeat: no-repeat;
    background-image: var(--background);
@@ -60,9 +60,9 @@
 .aboutMeDescriptionMarkdown {
 
    margin: 0;
+   padding: 0;
    font-size: 16px;
    text-align: justify;
-   padding: var(--padding) 0 0 0;
    border-top: var(--borderBlack);
    backdrop-filter: var(--filterBlur);
    font-family: Arial, Helvetica, sans-serif;

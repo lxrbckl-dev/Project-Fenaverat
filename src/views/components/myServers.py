@@ -20,9 +20,10 @@ class myServers(body):
    def property(self):
       '''  '''
 
-      return dbc.Col(
+      return html.Div(
          
-         id = 'myServersColId',
+         id = 'myServersDivId',
+         className = 'myServerDiv',
          children = dbc.Row(
             
             children = None,
@@ -31,21 +32,29 @@ class myServers(body):
          )
          
       )
+
       
-      
-   def buildHeader(self):
+   def buildCard(self, node):
       '''  '''
+
+      return dbc.Col(
+         
+         className = 'myServersCol',
+         children = [
+            
+            html.H1('ok')
+            
+         ]
+         
+      )
       
-      pass
-   
-   
-   def buildBody(self):
-      '''  '''
-      
-      pass
-   
-   
-   def buildFooter(self):
-      '''  '''
-      
-      pass
+      # return html.Div(
+         
+      #    className = 'myServersCard',
+      #    children = [
+            
+      #       html.H1('ok')
+            
+      #    ]
+         
+      # )

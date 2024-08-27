@@ -21,8 +21,8 @@ class bodyCallback:
       '''  '''
       
       self.body = body()
-      self.sleepTime = 1
-      self.activeItem = 'aboutMe'
+      self.sleepTime = 0
+      self.activeItem = 'myServers'
       self.components = components
       self.bodyManager = bodyManager()
    
@@ -58,7 +58,7 @@ class bodyCallback:
 
       @app.callback(
          
-         inputs = [Input('bodyColId', 'children')],
+         inputs = [Input('bodyDivId', 'children')],
          output = Output('bodyAccordionId', 'children')
          
       )

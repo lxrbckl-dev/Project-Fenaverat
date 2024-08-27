@@ -44,4 +44,4 @@ class myProjectsCallback(bodyCallback):
       )
       def func(*args):
          
-         pass
+         return None

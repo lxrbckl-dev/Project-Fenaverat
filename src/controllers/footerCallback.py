@@ -32,7 +32,7 @@ class footerCallback:
       
       @app.callback(
          
-         inputs = [Input('footerColId', 'children')],
+         inputs = [Input('footerDivId', 'children')],
          output = Output('footerConnectionsRowId', 'children')
          
       )

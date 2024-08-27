@@ -18,10 +18,10 @@ class body:
    def property(self):
       '''  '''
 
-      return dbc.Col(
+      return html.Div(
          
-         id = 'bodyColId',
-         className = 'bodyCol',
+         id = 'bodyDivId',
+         className = 'bodyDiv',
          children = dbc.Accordion(
             
             flush = True,

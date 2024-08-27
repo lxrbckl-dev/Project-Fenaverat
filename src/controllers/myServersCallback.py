@@ -39,28 +39,14 @@ class myServersCallback(bodyCallback):
       @app.callback(
          
          output = Output('myServersRowId', 'children'),
-         inputs = [Input('myServersColId', 'children')]
+         inputs = [Input('myServersDivId', 'children')]
          
       )
       def func(*args):
-         
-         return [
+
+         return list(map(
             
-            self.body.buildCard(
-               
-               header = self.myServers.buildHeader(
-                  
-                  name = server['name'],
-                  status = server['status']
-               
-               ),
-               body = self.myServers.buildBody(
-                  
-                  services = server['services']
-                  
-               ),
-               footer = self.myServers.buildFooter()
-               
-            )
+            self.myServers.buildCard,
+            self.myServersManager.getServers()
             
-         for server in self.myServersManager.getServers()]
+         ))

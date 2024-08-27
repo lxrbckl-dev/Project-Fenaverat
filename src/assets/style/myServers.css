@@ -1,0 +1,16 @@
+.myServerDiv {
+
+   background-size: cover;
+   padding: var(--padding);
+   background-position: 50% 50%;
+   background-repeat: no-repeat;
+   background-image: var(--background);
+
+}
+
+
+.myServersCol {
+
+   
+
+}

@@ -1,4 +1,4 @@
-.bodyCol {
+.bodyDiv {
 
    padding-left: var(--padding);
    padding-right: var(--padding);
@@ -9,7 +9,7 @@
 }
 
 
-.cardCol {
+/* .cardCol {
 
 
 
@@ -34,7 +34,7 @@
 
 
    
-}
+} */
 
 
 .badgeDiv {

@@ -18,10 +18,10 @@ class footer:
    def property(self):
       '''  '''
       
-      return dbc.Col(
+      return html.Div(
          
-         id = 'footerColId',
-         className = 'footerCol',
+         id = 'footerDivId',
+         className = 'footerDiv',
          children = [
             
             # connections <
