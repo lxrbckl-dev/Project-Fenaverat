@@ -26,8 +26,8 @@ class resourceManager:
          'header' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/header.json',
          
          'aboutMe' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/aboutMe.json',
-         'myServers' : 'https://raw.githubusercontent.com/lxRbckl/Project-Acta-Mea/V5/data.json',
-         'myProjects' : 'https://raw.githubusercontent.com/lxRbckl/Project-Acta-Mea/V5/data.json',
+         'myServers' : 'https://raw.githubusercontent.com/lxRbckl/Project-Acta-Mea/V6/resources/nodeArchive.json',
+         'myProjects' : 'https://raw.githubusercontent.com/lxRbckl/Project-Heimir/V2/data/repositoryArchive.json',
          
          'footer' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/footer.json'
          

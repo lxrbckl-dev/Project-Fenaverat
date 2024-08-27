@@ -23,26 +23,34 @@ class myServersManager(resourceManager):
    def getServers(self):
       '''  '''
       
-      servers = []
+      server = []
       
-      # iterate (host, swarm) <
-      for kind in (self.content).keys():
+      return server
+      
+      
+   # def getServers(self):
+   #    '''  '''
+      
+   #    servers = []
+      
+   #    # iterate (host, swarm) <
+   #    for kind in (self.content).keys():
          
-         # iterate (host, swarm)->node <
-         for sid, svals in self.content[kind].items():
+   #       # iterate (host, swarm)->node <
+   #       for sid, svals in self.content[kind].items():
             
-            servers.append({
+   #          servers.append({
                
-               'kind' : kind,
-               ''
-               'services' : svals['service'],
-               'name' : sid if (kind == 'host') else svals['hostname'],
-               'status' : True if (kind == 'host') else svals['status']
+   #             'kind' : kind,
+   #             ''
+   #             'services' : svals['service'],
+   #             'name' : sid if (kind == 'host') else svals['hostname'],
+   #             'status' : True if (kind == 'host') else svals['status']
                
-            })
+   #          })
             
-         # >
+   #       # >
          
-      # >
+   #    # >
             
-      return servers
+   #    return servers

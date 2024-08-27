@@ -102,23 +102,34 @@ class aboutMe(body):
       )
          
    
-   def buildTitle(self, title):
-      '''  '''
+   # def buildTitle(self, title):
+   #    '''  '''
       
-      return html.H1(
+   #    return html.H1(
          
-         children = title,
-         className = 'aboutMeTitleH1'
+   #       children = title,
+   #       className = 'aboutMeTitleH1'
          
-      )
+   #    )
    
    
-   def buildDescription(self, description):
+   # def buildDescription(self, description):
+   #    '''  '''
+      
+   #    return dcc.Markdown(
+         
+   #       children = '\n\n'.join(description),
+   #       className = 'aboutMeDescriptionMarkdown'
+         
+   #    )
+      
+      
+   def buildText(self, text):
       '''  '''
       
       return dcc.Markdown(
          
-         children = '\n\n'.join(description),
+         children = '\n\n'.join(text),
          className = 'aboutMeDescriptionMarkdown'
          
       )

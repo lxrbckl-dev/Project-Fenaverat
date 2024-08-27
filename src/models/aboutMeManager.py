@@ -20,13 +20,10 @@ class aboutMeManager(resourceManager):
       self.content = super().fetchContent()
       
       
-   def getTitle(self): return self.content['title']
-
+   def getText(self): return self.content['text']
+      
 
    def getPhoto(self): return self.content['photo']
    
    
    def getEcosystem(self): return self.content['ecosystem']
-   
-   
-   def getDescription(self): return self.content['description']

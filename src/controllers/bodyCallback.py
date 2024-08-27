@@ -22,7 +22,7 @@ class bodyCallback:
       
       self.body = body()
       self.sleepTime = 1
-      self.activeItem = 'myProjects'
+      self.activeItem = 'aboutMe'
       self.components = components
       self.bodyManager = bodyManager()
    

@@ -67,9 +67,8 @@ class aboutMeCallback(bodyCallback):
             ],
             [
                
-               self.aboutMe.buildTitle(self.aboutMeManager.getTitle()),
-               self.aboutMe.buildDescription(self.aboutMeManager.getDescription())
-               
+               self.aboutMe.buildText(self.aboutMeManager.getText())
+                
             ]
             
             # >

@@ -24,7 +24,7 @@ class myServersCallback(bodyCallback):
       self.myServersManager = myServersManager()
    
    
-   def getProperty(self): return self.myProjects.property
+   def getProperty(self): return self.myServers.property
    
    
    def registerCallbacks(self):
