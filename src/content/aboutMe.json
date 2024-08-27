@@ -81,7 +81,7 @@
    },
    "text" : [
 
-      "# Alex Arbuckle",
+      "## My name is Alex Arbuckle",
       "Currently active as a software developer residing in Kansas City, Missouri. I graduated cum laude earning a *Bachelor of Science* degree in **Computer Science**. Prior and current work experience includes working with a group of venture capitalists where I designed **algorithms**, **BI Dashboards**, and other components designed for large sets of data. I've also had the opportunity of participating in university class group projects, as well as various distinctive independent projects, including the development of this website.",
       "As a software developer, I consider myself a life-long learner, constantly pushing my boundaries to enhance my understanding of software development and deployment. I embrace both object-oriented and functional paradigms, and find joy in integrating the expertise I gain into projects showcased in **my projects**.",
       "I practice the software development cycle from design to deployment and maintenance using my Raspberry Pi cluster. I currently run a 10-node Docker Swarm where I deploy my applications using *Docker* and *Docker Compose*. The status of each node is fetched daily, and uploaded here. You can find them in **my servers**."
