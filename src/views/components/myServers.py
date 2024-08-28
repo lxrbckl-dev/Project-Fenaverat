@@ -47,7 +47,19 @@ class myServers(body):
 
       name, properties = node
 
-
+      return html.Div(
+         
+         className = 'myServersCardDiv',
+         children = [
+            
+            # (header, body, footer) <
+            html.P(name)
+            
+            # >
+            
+         ]
+         
+      )
       
       # # print(name)
       # # print(properties)

@@ -62,13 +62,13 @@ class body:
             
       return html.Div(
          
-         className = 'badgeDiv',
+         className = 'bodyBadgeDiv',
          children = [
             
             dbc.Badge(
                
                children = i,
-               className = 'badge',
+               className = 'bodyBadge',
                style = styleMargins[k],
                color = backgroundColors[k]
                

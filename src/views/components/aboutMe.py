@@ -90,7 +90,7 @@ class aboutMe(body):
       
       return html.Div(
          
-         className = 'ecosystemDiv',
+         className = 'aboutMeEcosystemDiv',
          children = self.buildBadges(
          
             ecosystem = ecosystem,
