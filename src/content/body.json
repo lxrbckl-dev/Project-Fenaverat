@@ -10,7 +10,7 @@
    "badgeBackgroundColors" : {
 
       "other" : "#C0A49A",
-      "services" : "",
+      "services" : "#",
       "packages" : "#AA7F74",
       "languages" : "#96867F"
 

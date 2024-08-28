@@ -34,7 +34,14 @@ class myServers(body):
       )
 
       
-   def buildCard(self, node):
+   def buildCard(
+      
+      self, 
+      node,
+      styleMargins,
+      backgroundColors
+      
+   ):
       '''  '''
 
       name, properties = node
@@ -48,7 +55,22 @@ class myServers(body):
          className = 'myServersCol',
          children = [
             
-            html.H1('ok')
+            # (header, body, footer) <
+            dbc.Row(),
+            dbc.Row(
+               
+               children = self.buildBadges(
+                  
+                  styleMargins = styleMargins,
+                  backgroundColors = backgroundColors,
+                  ecosystem = {'services' : properties['services']}
+                  
+               )
+               
+            ),
+            dbc.Row()
+            
+            # >
             
          ]
          

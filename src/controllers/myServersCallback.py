@@ -44,9 +44,14 @@ class myServersCallback(bodyCallback):
       )
       def func(*args):
 
-         return list(map(
+         return [
             
-            self.myServers.buildCard,
-            self.myServersManager.getServers()
+            self.myServers.buildCard(
+               
+               node = node,
+               styleMargins = self.bodyManager.getBadgeStyleMargins(),
+               backgroundColors = self.bodyManager.getBadgeBackgroundColors()
+               
+            )
             
-         ))
+         for node in self.myServersManager.getServers()]

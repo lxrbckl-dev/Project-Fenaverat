@@ -55,5 +55,6 @@
    padding: 0;
    height: 80px;
    border-radius: 50%;
+   /* border: var(--borderBlack); */
 
 }
