@@ -38,8 +38,8 @@ class myServersCallback(bodyCallback):
       
       @app.callback(
          
-         output = Output('myServersRowId', 'children'),
-         inputs = [Input('myServersDivId', 'children')]
+         inputs = [Input('myServersDivId', 'children')],
+         output = Output('myServersStackId', 'children')
          
       )
       def func(*args):

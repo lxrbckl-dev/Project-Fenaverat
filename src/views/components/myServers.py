@@ -20,14 +20,15 @@ class myServers(body):
    def property(self):
       '''  '''
 
-      return html.Div(
+      return dbc.Row(
          
-         id = 'myServersDivId',
-         className = 'myServerDiv',
-         children = dbc.Row(
+         id = 'myServersRowId',
+         className = 'myServersRow',
+         children = dbc.Stack(
             
             children = None,
-            id = 'myServersRowId'
+            id = 'myServersStackId',
+            direction = 'horizontal'
             
          )
          
@@ -45,38 +46,52 @@ class myServers(body):
       '''  '''
 
       name, properties = node
+
+
       
-      print(name)
-      print(properties)
-      print('==========')
+      # # print(name)
+      # # print(properties)
+      # # print('==========')
       
-      return dbc.Col(
+      # return dbc.Col(
          
-         width = 3,
-         className = 'myServersCol',
-         children = [
+      #    # width = 3,
+      #    # className = 'myServersCol',
+      #    # children = dbc.Card(
             
-            # (header, body, footer) <
-            dbc.Row(
+      #    #    children = [
+               
+      #    #       dbc.CardHeader(children = 'header'),
+      #    #       dbc.CardBody(children = 'card body'),
+      #    #       dbc.CardFooter(children = 'footer')
+               
+      #    #    ]
             
-               children = html.H1(name)   
+      #    # )
+
+      #    # children = [
+            
+      #    #    # # (header, body, footer) <
+      #    #    # dbc.Row(
+            
+      #    #    #    children = html.H1(name)   
                
-            ),
-            dbc.Row(
+      #    #    # ),
+      #    #    # dbc.Row(
                
-               children = self.buildBadges(
+      #    #    #    children = self.buildBadges(
                   
-                  styleMargins = styleMargins,
-                  backgroundColors = backgroundColors,
-                  ecosystem = {'services' : properties['services']}
+      #    #    #       styleMargins = styleMargins,
+      #    #    #       backgroundColors = backgroundColors,
+      #    #    #       ecosystem = {'services' : properties['services']}
                   
-               )
+      #    #    #    )
                
-            ),
-            dbc.Row()
+      #    #    # ),
+      #    #    # dbc.Row()
             
-            # >
+      #    #    # # >
             
-         ]
+      #    # ]
          
-      )
+      # )
