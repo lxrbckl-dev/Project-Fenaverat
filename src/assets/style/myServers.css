@@ -1,5 +1,6 @@
 .myServerDiv {
 
+   overflow-x: scroll;
    background-size: cover;
    padding: var(--padding);
    background-position: 50% 50%;
@@ -11,6 +12,9 @@
 
 .myServersCol {
 
-   
+   /* margin: 2px 2px 2px 2px; */
+   margin: 0;
+   padding: 0;
+   border: var(--borderBlack);
 
 }

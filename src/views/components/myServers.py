@@ -52,11 +52,16 @@ class myServers(body):
       
       return dbc.Col(
          
+         width = 3,
          className = 'myServersCol',
          children = [
             
             # (header, body, footer) <
-            dbc.Row(),
+            dbc.Row(
+            
+               children = html.H1(name)   
+               
+            ),
             dbc.Row(
                
                children = self.buildBadges(
