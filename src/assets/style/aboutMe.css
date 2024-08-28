@@ -2,7 +2,7 @@
 
    background-size: cover;
    padding: var(--padding);
-   background-position: 50% 50%;
+   background-position: 50% 55%;
    background-repeat: no-repeat;
    background-image: var(--background);
 
@@ -47,17 +47,7 @@
 }
 
 
-.aboutMeTitleH1 {
-
-   margin: 0;
-   padding: 0;
-   backdrop-filter: var(--filterBlur);
-   font-family: Arial, Helvetica, sans-serif;
-
-}
-
-
-.aboutMeDescriptionMarkdown {
+.aboutMeTextMarkdown {
 
    margin: 0;
    padding: 0;

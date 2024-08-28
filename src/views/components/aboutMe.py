@@ -28,7 +28,7 @@ class aboutMe(body):
          children = [
             
             # left (photo, ecosystem) <
-            # right (title, description) <
+            # right (text) <
             dbc.Col(
                
                width = 4,
@@ -108,6 +108,6 @@ class aboutMe(body):
       return dcc.Markdown(
          
          children = '\n\n'.join(text),
-         className = 'aboutMeDescriptionMarkdown'
+         className = 'aboutMeTextMarkdown'
          
       )
