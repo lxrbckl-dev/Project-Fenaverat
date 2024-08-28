@@ -81,7 +81,7 @@ class aboutMe(body):
    def buildEcosystem(
       
       self, 
-      textColor,
+      styleMargins,
       ecosystem,
       backgroundColors
       
@@ -93,8 +93,8 @@ class aboutMe(body):
          className = 'ecosystemDiv',
          children = self.buildBadges(
          
-            textColor = textColor,
             ecosystem = ecosystem,
+            styleMargins = styleMargins,
             backgroundColors = backgroundColors
          
          )

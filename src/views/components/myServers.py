@@ -38,7 +38,10 @@ class myServers(body):
       '''  '''
 
       name, properties = node
+      
       print(name)
+      print(properties)
+      print('==========')
       
       return dbc.Col(
          

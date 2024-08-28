@@ -1,12 +1,18 @@
 {
-   "badgeTextColor" : "#181A1B",
+   "styleMargins" : {
+
+      "other" : {},
+      "packages" : {},
+      "languages" : {},
+      "services" : {"width" : "100%"}
+
+   },
    "badgeBackgroundColors" : {
 
       "other" : "#C0A49A",
+      "services" : "",
       "packages" : "#AA7F74",
-      "languages" : "#96867F",
-
-      "services" : ""
+      "languages" : "#96867F"
 
    }
 

@@ -20,7 +20,7 @@ class bodyManager(resourceManager):
       self.content = super().fetchContent()
       
    
-   def getBadgeTextColor(self): return self.content['badgeTextColor']
+   def getBadgeStyleMargins(self): return self.content['styleMargins']
 
 
    def getBadgeBackgroundColors(self): return self.content['badgeBackgroundColors']

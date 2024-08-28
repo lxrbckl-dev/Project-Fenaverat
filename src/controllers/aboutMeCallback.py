@@ -59,7 +59,7 @@ class aboutMeCallback(bodyCallback):
                self.aboutMe.buildEcosystem(
                   
                   ecosystem = self.aboutMeManager.getEcosystem(),
-                  textColor = self.bodyManager.getBadgeTextColor(),
+                  styleMargins = self.bodyManager.getBadgeStyleMargins(),
                   backgroundColors = self.bodyManager.getBadgeBackgroundColors()
                   
                )

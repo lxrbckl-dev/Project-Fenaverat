@@ -13,7 +13,7 @@ class aboutMeManager(resourceManager):
       super().__init__(
          
          file = 'aboutMe',
-         loadType = 'remote'
+         loadType = 'local'
          
       )
       

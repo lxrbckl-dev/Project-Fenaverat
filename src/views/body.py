@@ -50,64 +50,16 @@ class body:
       for i in accordionItems]
       
       
-   def buildCard(
-      
-      self,
-      header,
-      body,
-      footer
-      
-   ):
-      '''  '''
-      
-      return dbc.Col(
-         
-         className = 'cardCol',
-         children = dbc.Card(
-            
-            children = [
-               
-               # header <
-               # body <
-               # footer <
-               dbc.CardHeader(
-                  
-                  children = header,
-                  className = 'cardHeader'
-                  
-               ),
-               dbc.CardBody(
-                  
-                  children = body,
-                  className = 'cardBody'
-                  
-               ),
-               dbc.CardFooter(
-                  
-                  children = footer,
-                  className = 'cardFooter'
-                  
-               )
-               
-               # >
-               
-            ]
-            
-         )
-         
-      )
-      
-      
    def buildBadges(
       
       self, 
-      textColor,
       ecosystem,
+      styleMargins,
       backgroundColors
       
    ):
       '''  '''
-      
+            
       return html.Div(
          
          className = 'badgeDiv',
@@ -117,8 +69,8 @@ class body:
                
                children = i,
                className = 'badge',
-               color = backgroundColors[k],
-               style = {'color' : textColor}
+               style = styleMargins[k],
+               color = backgroundColors[k]
                
             )
                         
