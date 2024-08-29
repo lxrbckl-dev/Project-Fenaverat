@@ -10,7 +10,7 @@
 
 .myServersStack {
 
-   padding: var(--padding);
+   padding: 3px;
    overflow-x: scroll;
    
 }
@@ -18,9 +18,52 @@
 
 .myServersCard {
 
-   margin: var(--margin);
-   padding: var(--padding);
+   padding: 0;
+   margin: 2px;
    border: var(--borderBlack);
+   min-width: var(--cardWidth);
+   max-width: var(--cardWidth);
+   min-height: var(--cardHeight);
+   max-height: var(--cardHeight);
    border-radius: var(--borderRadius);
+
+}
+
+
+.myServersRow {
+
+   margin: 0;
+   padding: 0;
+   border-bottom: var(--borderBlack);
+   background-color: var(--colorBlack);
+
+}
+
+
+.myServersCardTitle {
+
+   padding: 3px;
+   font-size: 21px;
+   margin: -1px 0 0 -12px;
+   color: var(--colorWhite);
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.myServersCardStatusOnline {
+
+   margin: 0;
+   padding: 0;
+   color: green;
+
+}
+
+
+.myServersCardStatusOffline {
+
+   margin: 0;
+   padding: 0;
+   color: red;
 
 }

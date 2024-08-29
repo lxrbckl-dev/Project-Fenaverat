@@ -10,6 +10,9 @@
 
    --filterBlur: blur(5px);
 
+   --cardWidth: 225px;
+   --cardHeight: 260px;
+
    --colorBlack: #181A1B;
    --colorWhite: #F7F5F1;
    

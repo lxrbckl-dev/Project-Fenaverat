@@ -48,7 +48,49 @@ class myServers(body):
       return html.Div(
          
          className = 'myServersCard',
-         children = html.H1('okokook')
+         children = [
+            
+            # (header, body, footer) <
+            dbc.Row(
+               
+               justify = 'between',
+               className = 'myServersRow',
+               children = [
+                  
+                  # (title, status) <
+                  dbc.Col(
+                     
+                     width = 11,
+                     children = self.buildCardTitle(name)
+                                             
+                  ),
+                  dbc.Col(
+                     
+                     width = 1,
+                     children = self.buildCardStatus(properties['status'])
+                     
+                  )
+                  
+                  # >
+                  
+               ]
+               
+            )
+            
+            # >
+            
+         ]
+         
+      )
+      
+      
+   def buildCardTitle(self, title):
+      '''  '''
+      
+      return html.H4(
+         
+         children = title,
+         className = 'myServersCardTitle'
          
       )
       
@@ -56,4 +98,16 @@ class myServers(body):
    def buildCardStatus(self, status):
       '''  '''
       
-      return None
+      return dbc.Spinner(
+         
+         type = 'grow',
+         spinnerClassName = {
+            
+            'down' : 'myServersCardStatusOffline',
+            'ready' : 'myServersCardStatusOnline',
+            'online' : 'myServersCardStatusOnline',
+            'offline' : 'myServersCardStatusOffline'
+            
+         }[status]
+         
+      )
