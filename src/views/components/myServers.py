@@ -20,15 +20,16 @@ class myServers(body):
    def property(self):
       '''  '''
 
-      return dbc.Row(
+      return html.Div(
          
-         id = 'myServersRowId',
-         className = 'myServersRow',
+         id = 'myServersDivId',
+         className = 'myServersDiv',
          children = dbc.Stack(
             
             children = None,
             id = 'myServersStackId',
-            direction = 'horizontal'
+            direction = 'horizontal',
+            className = 'myServersStack'
             
          )
          
@@ -43,31 +44,11 @@ class myServers(body):
       
    ):
       '''  '''
-
+      
       return html.Div(
          
-         className = 'myServersCardDiv',
-         children = [
-            
-            # (header, body, footer) <
-            dbc.Row(
-               
-               children = [
-                  
-                  
-                  
-               ]
-               
-            )
-
-            # html.H1(name),
-            # self.buildBadges({'services' : properties['services']}
-               
-            # )
-            
-            # >
-            
-         ]
+         className = 'myServersCard',
+         children = html.H1('okokook')
          
       )
       
@@ -75,4 +56,4 @@ class myServers(body):
    def buildCardStatus(self, status):
       '''  '''
       
-      return 
+      return None

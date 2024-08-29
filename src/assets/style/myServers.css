@@ -1,8 +1,5 @@
-.myServersRow {
+.myServersDiv {
 
-   padding: 0;
-   overflow-x: scroll;
-   scrollbar-width: thin;
    background-size: cover;
    background-repeat: no-repeat;
    background-position: 50% 50%;
@@ -11,10 +8,19 @@
 }
 
 
-.myServersCardDiv {
+.myServersStack {
 
-   margin: 0;
-   padding: 5px;
+   padding: var(--padding);
+   overflow-x: scroll;
+   
+}
+
+
+.myServersCard {
+
+   margin: var(--margin);
+   padding: var(--padding);
    border: var(--borderBlack);
+   border-radius: var(--borderRadius);
 
 }

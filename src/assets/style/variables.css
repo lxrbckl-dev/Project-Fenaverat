@@ -1,6 +1,9 @@
 :root {
 
+   --margin: 5px;
    --padding: 5px;
+
+   --borderRadius: 5px;
 
    --maxWidth: 1000px;
    --maxHeight: 450px;

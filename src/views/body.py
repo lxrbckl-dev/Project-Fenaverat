@@ -25,9 +25,13 @@ class body:
          children = dbc.Accordion(
             
             flush = True,
-            children = None,
             active_item = None,
-            id = 'bodyAccordionId'
+            id = 'bodyAccordionId',
+            children = [
+               
+               
+               
+            ]
             
          )
                   

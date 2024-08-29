@@ -38,7 +38,7 @@ class myServersCallback(bodyCallback):
       
       @app.callback(
          
-         inputs = [Input('myServersRowId', 'children')],
+         inputs = [Input('myServersDivId', 'children')],
          output = Output('myServersStackId', 'children')
          
       )
