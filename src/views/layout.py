@@ -51,22 +51,48 @@ class layout:
          
          justify = 'center',
          className = 'layoutRow',
-         children = dbc.Col(
+         children = [
             
-            className = 'layoutCol',
-            children = [
-               
-               # header <
-               # body <
-               # footer <
-               self.header.getProperty(),
-               self.body.getProperty(),
-               self.footer.getProperty()
-               
-               # >
-               
-            ]
+            dcc.Location(id = 'layoutLocation'),
             
-         )
+            dbc.Col(
+               
+               className = 'layoutCol',
+               children = [
+                  
+                  # header <
+                  # body <
+                  # footer <
+                  self.header.getProperty(),
+                  self.body.getProperty(),
+                  self.footer.getProperty()
+                  
+                  # >
+                  
+               ]
+               
+            )
+            
+         ]
+
+         # children = dbc.Col(
+            
+         #    className = 'layoutCol',
+         #    children = [
+               
+               
+               
+         #       # header <
+         #       # body <
+         #       # footer <
+         #       self.header.getProperty(),
+         #       self.body.getProperty(),
+         #       self.footer.getProperty()
+               
+         #       # >
+               
+         #    ]
+            
+         # )
          
       )

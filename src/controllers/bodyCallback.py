@@ -21,10 +21,18 @@ class bodyCallback:
       '''  '''
       
       self.body = body()
-      self.sleepTime = 0
+      self.sleepDuration = 1
       self.activeItem = 'myServers'
       self.components = components
       self.bodyManager = bodyManager()
+      self.accordionItems = {
+         
+         '/' : 'aboutMe',
+         '/aboutMe' : 'aboutMe',
+         '/myServers' : 'myServers',
+         '/myProjects' : 'myProjects'
+         
+      }
    
    
    def getProperty(self): return self.body.property
@@ -44,14 +52,18 @@ class bodyCallback:
       @app.callback(
          
          output = Output('bodyAccordionId', 'active_item'),
-         inputs = [Input((self.activeItem + 'RowId'), 'children')]
+         inputs = [Input('layoutLocation', 'pathname')]
          
       )
-      def func(*args): 
+      def func(pathname): 
+
+         try:
+            
+            sleep(self.sleepDuration)
+            return self.accordionItems[pathname]
          
-         sleep(self.sleepTime)
-         return self.activeItem
-   
+         except: return self.accordionItems['/']
+                  
    
    def callbackAccordion(self):
       '''  '''
