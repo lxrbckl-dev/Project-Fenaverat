@@ -21,13 +21,13 @@ class bodyCallback:
       '''  '''
       
       self.body = body()
-      self.sleepDuration = 1
-      self.activeItem = 'myServers'
+      self.sleepDuration = 0
       self.components = components
       self.bodyManager = bodyManager()
+      
       self.accordionItems = {
          
-         '/' : 'aboutMe',
+         '/' : 'myServers',
          '/aboutMe' : 'aboutMe',
          '/myServers' : 'myServers',
          '/myProjects' : 'myProjects'
@@ -41,12 +41,12 @@ class bodyCallback:
    def registerCallbacks(self):
       '''  '''
                   
+      self.callbackLocation()
       self.callbackAccordion()
-      self.callbackActiveItem()
       [c.registerCallbacks() for c in self.components]
                
    
-   def callbackActiveItem(self):
+   def callbackLocation(self):
       '''  '''
       
       @app.callback(
