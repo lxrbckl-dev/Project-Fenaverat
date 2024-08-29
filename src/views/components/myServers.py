@@ -84,9 +84,11 @@ class myServers(body):
             ),
             dbc.Row(
                
+               justify = 'end',
                className = 'myServersRowFooter',
                children = [
                   
+                  # (os, host) <
                   dbc.Col(
                      
                      width = 'auto',
@@ -107,6 +109,8 @@ class myServers(body):
                      )
                      
                   )
+                  
+                  # >
                   
                ]
                
@@ -137,23 +141,29 @@ class myServers(body):
          
          spinnerClassName = {
             
-            'down' : 'myServersCardStatusOffline',
-            'ready' : 'myServersCardStatusOnline',
-            'online' : 'myServersCardStatusOnline',
-            'offline' : 'myServersCardStatusOffline'
+            'down' : 'myServersCardStatusDown',
+            'ready' : 'myServersCardStatusReady'
             
          }[status]
          
       )
       
       
-   def buildCardOS(self, os, badgesOS):
+   def buildCardOS(self, badgeOS):
       '''  '''
       
-      pass
+      return html.Img(
+         
+         
+         
+      )
    
    
-   def buildCardDeploymentType(self, host, badgesHost):
+   def buildCardDeploymentType(self, badgeHost):
       '''  '''
       
-      pass
+      return html.Img(
+         
+         
+         
+      )

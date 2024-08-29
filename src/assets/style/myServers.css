@@ -49,11 +49,12 @@
 }
 
 
-.myServersCardStatusOnline {
+.myServersCardStatusDown {
 
    padding: 0;
-   color: green;
+   color: red;
    max-width: 15px;
+   animation: none;
    max-height: 15px;
    border-width: 3px;
    margin: 7px -6px 0 0;
@@ -61,12 +62,11 @@
 }
 
 
-.myServersCardStatusOffline {
+.myServersCardStatusReady {
 
    padding: 0;
-   color: red;
+   color: green;
    max-width: 15px;
-   animation: none;
    max-height: 15px;
    border-width: 3px;
    margin: 7px -6px 0 0;

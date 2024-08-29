@@ -25,7 +25,7 @@ class myServersManager(loadManager):
    def getServers(self): return self.files['nodeArchive']
    
    
-   def getBadgesOS(self): return self.files['myServers']['os']
+   def getBadgeOS(self, os): return self.files['myServers']['badgesOS'][os]
    
    
-   def getBadgesHost(self): return self.files['myServers']['host']
+   def getBadgeHost(self, host): return self.files['myServers']['badgesHost'][host]
