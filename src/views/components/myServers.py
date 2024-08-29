@@ -54,24 +54,59 @@ class myServers(body):
             dbc.Row(
                
                justify = 'between',
-               className = 'myServersRow',
+               className = 'myServersRowHeader',
                children = [
                   
                   # (title, status) <
                   dbc.Col(
                      
-                     width = 11,
+                     width = 'auto',
                      children = self.buildCardTitle(name)
                                              
                   ),
                   dbc.Col(
                      
-                     width = 1,
+                     width = 'auto',
                      children = self.buildCardStatus(properties['status'])
                      
                   )
                   
                   # >
+                  
+               ]
+               
+            ),
+            dbc.Row(
+               
+               className = 'myServersRowBody',
+               children = self.buildBadges({'services' : properties['services']})
+               
+            ),
+            dbc.Row(
+               
+               className = 'myServersRowFooter',
+               children = [
+                  
+                  dbc.Col(
+                     
+                     width = 'auto',
+                     children = self.buildCardOS(
+                        
+                        
+                        
+                     )
+                     
+                  ),
+                  dbc.Col(
+                     
+                     width = 'auto',
+                     children = self.buildCardHost(
+                        
+                        
+                        
+                     )
+                     
+                  )
                   
                ]
                
@@ -100,7 +135,6 @@ class myServers(body):
       
       return dbc.Spinner(
          
-         type = 'grow',
          spinnerClassName = {
             
             'down' : 'myServersCardStatusOffline',
@@ -111,3 +145,15 @@ class myServers(body):
          }[status]
          
       )
+      
+      
+   def buildCardOS(self, os, badgesOS):
+      '''  '''
+      
+      pass
+   
+   
+   def buildCardDeploymentType(self, host, badgesHost):
+      '''  '''
+      
+      pass

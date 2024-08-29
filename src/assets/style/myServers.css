@@ -2,7 +2,7 @@
 
    background-size: cover;
    background-repeat: no-repeat;
-   background-position: 50% 50%;
+   background-position: 50% 75%;
    background-image: var(--background);
 
 }
@@ -20,22 +20,20 @@
 
    padding: 0;
    margin: 2px;
-   border: var(--borderBlack);
    min-width: var(--cardWidth);
    max-width: var(--cardWidth);
-   min-height: var(--cardHeight);
-   max-height: var(--cardHeight);
-   border-radius: var(--borderRadius);
 
 }
 
 
-.myServersRow {
+.myServersRowHeader {
 
    margin: 0;
    padding: 0;
    border-bottom: var(--borderBlack);
    background-color: var(--colorBlack);
+   border-top-left-radius: var(--borderRadius);
+   border-top-right-radius: var(--borderRadius);
 
 }
 
@@ -53,17 +51,50 @@
 
 .myServersCardStatusOnline {
 
-   margin: 0;
    padding: 0;
    color: green;
+   max-width: 15px;
+   max-height: 15px;
+   border-width: 3px;
+   margin: 7px -6px 0 0;
 
 }
 
 
 .myServersCardStatusOffline {
 
-   margin: 0;
    padding: 0;
    color: red;
+   max-width: 15px;
+   animation: none;
+   max-height: 15px;
+   border-width: 3px;
+   margin: 7px -6px 0 0;
+
+}
+
+
+.myServersRowBody {
+
+   margin: 0;
+   overflow-x: hidden;
+   scrollbar-width: none;
+   padding: 1px 5px 3px 1px;
+   border-left: var(--borderBlack);
+   border-right: var(--borderBlack);
+   min-height: var(--cardBodyHeight);
+   max-height: var(--cardBodyHeight);
+   backdrop-filter: var(--filterBlur);
+   
+}
+
+
+.myServersRowFooter {
+
+   margin: 0;
+   padding: 0;
+   background-color: var(--colorBlack);
+   border-bottom-left-radius: var(--borderRadius);
+   border-bottom-right-radius: var(--borderRadius);
 
 }
