@@ -1,29 +1,30 @@
 # import <
-from .resourceManager import resourceManager
+from .loadManager import loadManager
 
 # >
 
 
-class aboutMeManager(resourceManager):
+class aboutMeManager(loadManager):
    
-   
+
    def __init__(self):
       '''  '''
-      
+
       super().__init__(
          
-         file = 'aboutMe',
-         loadType = 'local'
+         resources = {
+            
+            'local' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/aboutMe.json'
+            
+         }
          
       )
       
-      self.content = super().fetchContent()
-      
-      
-   def getText(self): return self.content['text']
+
+   def getText(self): return self.files['aboutMe']['text']
       
 
-   def getPhoto(self): return self.content['photo']
+   def getPhoto(self): return self.files['aboutMe']['photo']
    
    
-   def getEcosystem(self): return self.content['ecosystem']
+   def getEcosystem(self): return self.files['aboutMe']['ecosystem']

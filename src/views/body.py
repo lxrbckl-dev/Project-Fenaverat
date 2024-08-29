@@ -50,16 +50,9 @@ class body:
       for i in accordionItems]
       
       
-   def buildBadges(
-      
-      self, 
-      ecosystem,
-      styleMargins,
-      backgroundColors
-      
-   ):
+   def buildBadges(self, iterDict):
       '''  '''
-            
+      
       return html.Div(
          
          className = 'bodyBadgeDiv',
@@ -68,12 +61,10 @@ class body:
             dbc.Badge(
                
                children = i,
-               className = 'bodyBadge',
-               style = styleMargins[k],
-               color = backgroundColors[k]
+               className = f'{k}Badge'
                
             )
                         
-         for k, v in ecosystem.items() for i in v]
+         for k, v in iterDict.items() for i in v]
                   
       )

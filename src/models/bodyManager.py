@@ -1,26 +1,21 @@
 # import <
-from .resourceManager import resourceManager
+from .loadManager import loadManager
 
 # >
 
 
-class bodyManager(resourceManager):
-   
-   
+class bodyManager(loadManager):
+
+
    def __init__(self):
       '''  '''
-      
+   
       super().__init__(
          
-         file = 'body',
-         loadType = 'local'
+         resources = {
+            
+            'local' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/body.json'
+            
+         }
          
       )
-      
-      self.content = super().fetchContent()
-      
-   
-   def getBadgeStyleMargins(self): return self.content['styleMargins']
-
-
-   def getBadgeBackgroundColors(self): return self.content['badgeBackgroundColors']

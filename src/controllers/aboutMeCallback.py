@@ -56,13 +56,7 @@ class aboutMeCallback(bodyCallback):
             [
                
                self.aboutMe.buildPhoto(self.aboutMeManager.getPhoto()),
-               self.aboutMe.buildEcosystem(
-                  
-                  ecosystem = self.aboutMeManager.getEcosystem(),
-                  styleMargins = self.bodyManager.getBadgeStyleMargins(),
-                  backgroundColors = self.bodyManager.getBadgeBackgroundColors()
-                  
-               )
+               self.aboutMe.buildEcosystem(self.aboutMeManager.getEcosystem())
                   
             ],
             [

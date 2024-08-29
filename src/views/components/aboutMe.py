@@ -78,26 +78,13 @@ class aboutMe(body):
       )
    
    
-   def buildEcosystem(
-      
-      self, 
-      ecosystem,
-      styleMargins,
-      backgroundColors
-      
-   ):
+   def buildEcosystem(self, ecosystem):
       '''  '''
       
       return html.Div(
          
          className = 'aboutMeEcosystemDiv',
-         children = self.buildBadges(
-         
-            ecosystem = ecosystem,
-            styleMargins = styleMargins,
-            backgroundColors = backgroundColors
-         
-         )
+         children = self.buildBadges(ecosystem)
          
       )
       

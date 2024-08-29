@@ -17,12 +17,50 @@
 }
 
 
-.bodyBadge {
+.packagesBadge {
 
    padding: 4px;
    margin: 0 2px 0 1px;
    color: var(--colorBlack);
    border: var(--borderBlack);
+   background-color: #AA7F74!important;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.languagesBadge {
+
+   padding: 4px;
+   margin: 0 2px 0 1px;
+   color: var(--colorBlack);
+   border: var(--borderBlack);
+   background-color: #96867F!important;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.otherBadge {
+
+   padding: 4px;
+   margin: 0 2px 0 1px;
+   color: var(--colorBlack);
+   border: var(--borderBlack);
+   background-color: #C0A49A!important;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.servicesBadge {
+
+   width: 100%;
+   padding: 4px;
+   margin: 0 2px 0 1px;
+   color: var(--colorBlack);
+   border: var(--borderBlack);
+   background-color: #111111!important;
    font-family: Arial, Helvetica, sans-serif;
 
 }

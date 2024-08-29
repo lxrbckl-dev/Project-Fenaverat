@@ -1,23 +1,24 @@
 # import <
-from .resourceManager import resourceManager
+from .loadManager import loadManager
 
 # >
 
 
-class footerManager(resourceManager):
-   
-   
+class footerManager(loadManager):
+
+
    def __init__(self):
       '''  '''
-      
+
       super().__init__(
          
-         file = 'footer',
-         loadType = 'local'
+         resources = {
+            
+            'local' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/footer.json'
+            
+         }
          
       )
+
       
-      self.content = super().fetchContent()
-      
-      
-   def getConnections(self): return self.content['connections']
+   def getConnections(self): return self.files['footer']['connections']

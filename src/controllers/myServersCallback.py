@@ -38,7 +38,7 @@ class myServersCallback(bodyCallback):
       
       @app.callback(
          
-         inputs = [Input('myServersDivId', 'children')],
+         inputs = [Input('myServersRowId', 'children')],
          output = Output('myServersStackId', 'children')
          
       )
@@ -48,10 +48,9 @@ class myServersCallback(bodyCallback):
             
             self.myServers.buildCard(
                
-               node = node,
-               styleMargins = self.bodyManager.getBadgeStyleMargins(),
-               backgroundColors = self.bodyManager.getBadgeBackgroundColors()
+               name = name,
+               properties = properties
                
             )
             
-         for node in self.myServersManager.getServers()]
+         for name, properties in self.myServersManager.getServers().items()]

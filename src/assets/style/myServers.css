@@ -1,10 +1,11 @@
 .myServersRow {
 
+   padding: 0;
    overflow-x: scroll;
+   scrollbar-width: thin;
    background-size: cover;
-   padding: var(--padding);
-   background-position: 50% 50%;
    background-repeat: no-repeat;
+   background-position: 50% 50%;
    background-image: var(--background);
 
 }

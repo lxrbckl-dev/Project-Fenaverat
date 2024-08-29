@@ -1,22 +1,25 @@
 # import <
-from .resourceManager import resourceManager
+from .loadManager import loadManager
 
 # >
 
 
-class myProjectsManager(resourceManager):
+class myProjectsManager(loadManager):
    
    
    def __init__(self):
       '''  '''
-      
+
       super().__init__(
          
-         file = 'myProjects',
-         loadType = 'remote'
+         resources = {
+            
+            'remote' : 'https://raw.githubusercontent.com/lxRbckl/Project-Heimir/V2/data/repositoryArchive.json',
+            'local' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/myProjects.json'
+            
+         }
          
       )
       
-      self.content = super().fetchContent()
-
       
+   def getProjects(self): return self.files['myProjects']

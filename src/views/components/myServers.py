@@ -38,14 +38,11 @@ class myServers(body):
    def buildCard(
       
       self, 
-      node,
-      styleMargins,
-      backgroundColors
+      name,
+      properties
       
    ):
       '''  '''
-
-      name, properties = node
 
       return html.Div(
          
@@ -53,7 +50,20 @@ class myServers(body):
          children = [
             
             # (header, body, footer) <
-            html.P(name)
+            dbc.Row(
+               
+               children = [
+                  
+                  
+                  
+               ]
+               
+            )
+
+            # html.H1(name),
+            # self.buildBadges({'services' : properties['services']}
+               
+            # )
             
             # >
             
@@ -61,49 +71,8 @@ class myServers(body):
          
       )
       
-      # # print(name)
-      # # print(properties)
-      # # print('==========')
       
-      # return dbc.Col(
-         
-      #    # width = 3,
-      #    # className = 'myServersCol',
-      #    # children = dbc.Card(
-            
-      #    #    children = [
-               
-      #    #       dbc.CardHeader(children = 'header'),
-      #    #       dbc.CardBody(children = 'card body'),
-      #    #       dbc.CardFooter(children = 'footer')
-               
-      #    #    ]
-            
-      #    # )
-
-      #    # children = [
-            
-      #    #    # # (header, body, footer) <
-      #    #    # dbc.Row(
-            
-      #    #    #    children = html.H1(name)   
-               
-      #    #    # ),
-      #    #    # dbc.Row(
-               
-      #    #    #    children = self.buildBadges(
-                  
-      #    #    #       styleMargins = styleMargins,
-      #    #    #       backgroundColors = backgroundColors,
-      #    #    #       ecosystem = {'services' : properties['services']}
-                  
-      #    #    #    )
-               
-      #    #    # ),
-      #    #    # dbc.Row()
-            
-      #    #    # # >
-            
-      #    # ]
-         
-      # )
+   def buildCardStatus(self, status):
+      '''  '''
+      
+      return 

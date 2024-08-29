@@ -1,26 +1,27 @@
 # import <
-from .resourceManager import resourceManager
+from .loadManager import loadManager
 
 # >
 
 
-class headerManager(resourceManager):
+class headerManager(loadManager):
    
-   
+
    def __init__(self):
       '''  '''
-      
+
       super().__init__(
          
-         file = 'header', 
-         loadType = 'local'
+         resources = {
+            
+            'local' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/header.json'
+            
+         }
          
       )
       
-      self.content = super().fetchContent()
-
       
-   def getTitle(self): return self.content['title']
+   def getTitle(self): return self.files['header']['title']
    
    
-   def getImages(self): return self.content['images']
+   def getImages(self): return self.files['header']['images']
