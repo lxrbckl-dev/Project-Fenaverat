@@ -26,8 +26,7 @@ class header:
          className = 'headerRow',
          children = [
             
-            # title <
-            # images <
+            # (title, avatars) <
             dbc.Col(
                
                width = 'auto',
@@ -41,8 +40,8 @@ class header:
                width = 'auto',
                children = None,
                align = 'center',
-               id = 'headerImagesColId',
-               className = 'headerImagesCol'
+               id = 'headerAvatarsColId',
+               className = 'headerAvatarsCol'
                
             )
             
@@ -66,8 +65,8 @@ class header:
                children = i,
                className = {
                   
-                  True : 'letterH1Pixel',
-                  False : 'letterH1Normal'
+                  True : 'headerLetterH1Pixel',
+                  False : 'headerLetterH1Normal'
                   
                }[(randint(1, 4) == 1)]
                           
@@ -80,23 +79,26 @@ class header:
       )
       
       
-   def buildImages(self, images):
+   def buildAvatars(self, avatars):
       '''  '''
       
       return dbc.Stack(
          
          gap = 3,
+         id = 'headerStackId',
          direction = 'horizontal',
-         id = 'headerImagesStackId',
          children = [
             
+            # avatar <
             html.Img(
                
-               src = image,
-               className = 'headerImagesImg'
+               src = avatar,
+               className = 'headerAvatarImg'
                
             )
             
-         for image in images]
+            # >
+            
+         for avatar in avatars]
          
       )

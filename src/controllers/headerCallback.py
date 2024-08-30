@@ -36,19 +36,16 @@ class headerCallback:
          output = [
             
             Output('headerTitleColId', 'children'),
-            Output('headerImagesColId', 'children')
+            Output('headerAvatarsColId', 'children')
             
          ]
          
       )
       def func(*args):
-         
-         title = self.headerManager.getTitle()
-         images = self.headerManager.getImages()
 
          return [
             
-            self.header.buildTitle(title),
-            self.header.buildImages(images)
+            self.header.buildTitle(self.headerManager.getTitle()),
+            self.header.buildAvatars(self.headerManager.getAvatars())
             
          ]

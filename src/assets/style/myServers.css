@@ -16,29 +16,7 @@
 }
 
 
-.myServersCard {
-
-   padding: 0;
-   margin: 2px;
-   min-width: var(--cardWidth);
-   max-width: var(--cardWidth);
-
-}
-
-
-.myServersRowHeader {
-
-   margin: 0;
-   padding: 0;
-   border-bottom: var(--borderBlack);
-   background-color: var(--colorBlack);
-   border-top-left-radius: var(--borderRadius);
-   border-top-right-radius: var(--borderRadius);
-
-}
-
-
-.myServersCardTitle {
+.myServersTitleH4 {
 
    padding: 3px;
    font-size: 21px;
@@ -49,7 +27,7 @@
 }
 
 
-.myServersCardStatusDown {
+.myServersStatusDown {
 
    padding: 0;
    color: red;
@@ -62,7 +40,7 @@
 }
 
 
-.myServersCardStatusReady {
+.myServersStatusReady {
 
    padding: 0;
    color: green;
@@ -74,33 +52,7 @@
 }
 
 
-.myServersRowBody {
-
-   margin: 0;
-   overflow-x: hidden;
-   scrollbar-width: none;
-   padding: 1px 5px 3px 1px;
-   border-left: var(--borderBlack);
-   border-right: var(--borderBlack);
-   min-height: var(--cardBodyHeight);
-   max-height: var(--cardBodyHeight);
-   backdrop-filter: var(--filterBlur);
-   
-}
-
-
-.myServersRowFooter {
-
-   margin: 0;
-   padding: 5px;
-   background-color: var(--colorBlack);
-   border-bottom-left-radius: var(--borderRadius);
-   border-bottom-right-radius: var(--borderRadius);
-
-}
-
-
-.myServersCardFooterIcon {
+.myServersIconImg {
 
    padding: 0;
    width: 22px;

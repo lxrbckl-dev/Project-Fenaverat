@@ -10,42 +10,49 @@ import dash_bootstrap_components as dbc
 class myProjects(body):
    
    
-   def __init__(self):
-      '''  '''
-      
-      super().__init__()
+   def __init__(self): super().__init__()
    
    
    @property
    def property(self):
       '''  '''
 
-      return dbc.Col(
+      return html.Div(
          
-         id = 'myProjectsColId',
-         children = dbc.Row(
+         id = 'myProjectsDivId',
+         className = 'myProjectsDiv',
+         children = dbc.Stack(
             
             children = None,
-            id = 'myProjectsRowId'
+            id = 'myProjectsStackId',
+            direction = 'horizontal',
+            className = 'myProjectsStack'
             
          )
          
       )
       
    
-   def buildHeader(self):
-      '''  '''
+   # def buildCard(
       
-      pass
-   
-   
-   def buildBody(self):
-      '''  '''
+   #    self,
+   #    name,
+   #    properties,
+   #    backgroundImage
       
-      pass
-   
-   
-   def buildFooter(self):
-      '''  '''
+   # ):
+   #    '''  '''
       
-      pass
+   #    return html.Div(
+         
+   #       className = 'myServersCard',
+   #       children = [
+            
+   #          # (header, body, footer) <
+            
+            
+   #          # >
+            
+   #       ]
+         
+   #    )

@@ -22,7 +22,7 @@ class myProjectsManager(loadManager):
       )
       
       
-   def getProjects(self): return self.files['myProjects']
+   def getProjects(self): return self.files['repositoryArchive']
    
    
    def getProjectBackground(self, project):

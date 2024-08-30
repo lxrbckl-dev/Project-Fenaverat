@@ -14,7 +14,7 @@
 }
 
 
-.letterH1Pixel {
+.headerLetterH1Pixel {
 
    margin: 0;
    padding: 0;
@@ -28,7 +28,7 @@
 }
 
 
-.letterH1Normal {
+.headerLetterH1Normal {
 
    margin: 0;
    padding: 0;
@@ -42,14 +42,14 @@
 }
 
 
-.headerImagesCol {
+.headerAvatarsCol {
 
    padding: 0;
 
 }
 
 
-.headerImagesImg {
+.headerAvatarImg {
 
    margin: 0;
    padding: 0;

@@ -9,7 +9,7 @@
 }
 
 
-.bodyBadgeDiv {
+.buildBadgesDiv {
 
    padding: 0;
    margin: -1px -2px 0 1px;
@@ -17,7 +17,7 @@
 }
 
 
-.packagesBadge {
+.badgePackages {
 
    padding: 4px;
    margin: 0 2px 0 1px;
@@ -29,7 +29,7 @@
 }
 
 
-.languagesBadge {
+.badgeLanguages {
 
    padding: 4px;
    margin: 0 2px 0 1px;
@@ -41,7 +41,7 @@
 }
 
 
-.otherBadge {
+.badgeOther {
 
    padding: 4px;
    margin: 0 2px 0 1px;
@@ -53,7 +53,7 @@
 }
 
 
-.servicesBadge {
+.badgeServices {
 
    width: 100%;
    padding: 4px;
@@ -62,5 +62,53 @@
    border: var(--borderBlack);
    background-color: #F7F5F1!important;
    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.buildCardDiv {
+
+   padding: 0;
+   margin: 2px;
+   min-width: var(--cardWidth);
+   max-width: var(--cardWidth);
+
+}
+
+
+.buildCardHeaderRow {
+
+   margin: 0;
+   padding: 0;
+   border-bottom: var(--borderBlack);
+   background-color: var(--colorBlack);
+   border-top-left-radius: var(--borderRadius);
+   border-top-right-radius: var(--borderRadius);
+
+}
+
+
+.buildCardBodyRow {
+
+   margin: 0;
+   overflow-x: hidden;
+   scrollbar-width: none;
+   padding: 1px 5px 3px 1px;
+   border-left: var(--borderBlack);
+   border-right: var(--borderBlack);
+   min-height: var(--cardBodyHeight);
+   max-height: var(--cardBodyHeight);
+   backdrop-filter: var(--filterBlur);
+
+}
+
+
+.buildCardFooterRow {
+
+   margin: 0;
+   padding: 5px;
+   background-color: var(--colorBlack);
+   border-bottom-left-radius: var(--borderRadius);
+   border-bottom-right-radius: var(--borderRadius);
 
 }

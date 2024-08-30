@@ -10,10 +10,7 @@ import dash_bootstrap_components as dbc
 class myServers(body):
    
    
-   def __init__(self):
-      '''  '''
-      
-      super().__init__()
+   def __init__(self): super().__init__()
    
    
    @property
@@ -34,11 +31,11 @@ class myServers(body):
          )
          
       )
-
       
-   def buildCard(
       
-      self, 
+   def buildMyServerCard(
+      
+      self,
       name,
       iconOS,
       iconHost,
@@ -46,67 +43,46 @@ class myServers(body):
       
    ):
       '''  '''
-      
-      return html.Div(
+
+      return self.buildCard(
          
-         className = 'myServersCard',
-         children = [
+         justifyHeader = 'between',
+         header = [
             
-            # (header, body, footer) <
-            dbc.Row(
+            # (title, status) <
+            dbc.Col(
                
-               justify = 'between',
-               className = 'myServersRowHeader',
-               children = [
+               width = 'auto',
+               children = self.buildMyServersTitle(name)
+                                       
+            ),
+            dbc.Col(
+               
+               width = 'auto',
+               children = self.buildMyServersStatus(properties['status'])
+               
+            )
+            
+            # >
+            
+         ],
                   
-                  # (title, status) <
-                  dbc.Col(
-                     
-                     width = 'auto',
-                     children = self.buildCardTitle(name)
-                                             
-                  ),
-                  dbc.Col(
-                     
-                     width = 'auto',
-                     children = self.buildCardStatus(properties['status'])
-                     
-                  )
-                  
-                  # >
-                  
-               ]
+         body = self.buildBadges({'services' : properties['services']}),
+         
+         justifyFooter = 'between',
+         footer = [
+            
+            # (os, host) <
+            dbc.Col(
+               
+               width = 'auto',
+               children = self.buildMyServersIcon(iconOS)
                
             ),
-            dbc.Row(
+            dbc.Col(
                
-               className = 'myServersRowBody',
-               children = self.buildBadges({'services' : properties['services']})
-               
-            ),
-            dbc.Row(
-               
-               justify = 'between',
-               className = 'myServersRowFooter',
-               children = [
-                  
-                  # (os, host) <
-                  dbc.Col(
-                     
-                     width = 'auto',
-                     children = self.buildCardIconOS(iconOS)
-                     
-                  ),
-                  dbc.Col(
-                     
-                     width = 'auto',
-                     children = self.buildCardIconHost(iconHost)
-                     
-                  )
-                  
-                  # >
-                  
-               ]
+               width = 'auto',
+               children = self.buildMyServersIcon(iconHost)
                
             )
             
@@ -115,51 +91,40 @@ class myServers(body):
          ]
          
       )
+
       
-      
-   def buildCardTitle(self, title):
+   def buildMyServersTitle(self, title):
       '''  '''
       
       return html.H4(
          
          children = title,
-         className = 'myServersCardTitle'
+         className = 'myServersTitleH4'
          
       )
       
       
-   def buildCardStatus(self, status):
+   def buildMyServersStatus(self, status):
       '''  '''
       
       return dbc.Spinner(
          
          spinnerClassName = {
             
-            'down' : 'myServersCardStatusDown',
-            'ready' : 'myServersCardStatusReady'
+            'down' : 'myServersStatusDown',
+            'ready' : 'myServersStatusReady'
             
          }[status]
          
       )
       
       
-   def buildCardIconOS(self, icon):
+   def buildMyServersIcon(self, icon):
       '''  '''
       
       return html.Img(
          
          src = icon,
-         className = 'myServersCardFooterIcon'
-         
-      )
-   
-   
-   def buildCardIconHost(self, icon):
-      '''  '''
-      
-      return html.Img(
-         
-         src = icon,
-         className = 'myServersCardFooterIcon'
+         className = 'myServersIconImg'
          
       )

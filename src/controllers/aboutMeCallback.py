@@ -1,4 +1,5 @@
 # import <
+from time import sleep
 from dash.dependencies import (Input, Output)
 
 from ..configs import app
@@ -19,6 +20,7 @@ class aboutMeCallback(bodyCallback):
       
       self.id = 'aboutMe'
       self.title = 'about me'
+      self.DashPlayerPlayingDelay = 2
       
       self.aboutMe = aboutMe()
       self.aboutMeManager = aboutMeManager()
@@ -31,6 +33,27 @@ class aboutMeCallback(bodyCallback):
       '''  '''
 
       self.callbackRow()
+      self.callbackDashPlayer()
+      
+      
+   def callbackDashPlayer(self):
+      '''  '''
+           
+      @app.callback(
+         
+         inputs = [Input('bodyAccordionId', 'active_item')],
+         output = Output('aboutMePhotoDashPlayerId', 'playing')
+         
+      )
+      def func(activeItem):
+         '''  '''
+
+         if (activeItem == self.id):
+            
+            sleep(self.DashPlayerPlayingDelay)
+            return True
+         
+         else: return False
          
 
    def callbackRow(self):

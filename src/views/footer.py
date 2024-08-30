@@ -39,29 +39,24 @@ class footer:
          
       )
       
-      
-   def buildConnections(self, connections):
+
+   def buildConnection(self, link, icon):
       '''  '''
-      
-      return [
+
+      return dbc.Col(
          
-         dbc.Col(
+         width = 'auto',
+         children = html.A(
             
-            width = 'auto',
-            children = html.A(
+            href = link,
+            target = '_blank',
+            children = html.Img(
                
-               href = v['url'],
-               target = '_blank',
-               children = html.Img(
-                  
-                  alt = k,
-                  src = v['icon'],
-                  className = 'footerConnection'
-                  
-               )
+               src = icon,
+               className = 'footerConnectionImg'
                
             )
             
          )
          
-      for k, v in connections.items()]
+      )

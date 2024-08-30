@@ -46,7 +46,7 @@ class myServersCallback(bodyCallback):
 
          return [
 
-            self.myServers.buildCard(
+            self.myServers.buildMyServerCard(
                
                name = name,
                properties = properties,

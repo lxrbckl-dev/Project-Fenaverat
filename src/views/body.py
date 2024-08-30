@@ -25,13 +25,9 @@ class body:
          children = dbc.Accordion(
             
             flush = True,
+            children = None,
             active_item = None,
-            id = 'bodyAccordionId',
-            children = [
-               
-               
-               
-            ]
+            id = 'bodyAccordionId'
             
          )
                   
@@ -59,16 +55,62 @@ class body:
       
       return html.Div(
          
-         className = 'bodyBadgeDiv',
+         className = 'buildBadgesDiv',
          children = [
             
             dbc.Badge(
                
                children = i,
-               className = f'{k}Badge'
+               className = f'badge{k.title()}'
                
             )
                         
          for k, v in iterDict.items() for i in v]
                   
+      )
+      
+      
+   def buildCard(
+      
+      self,
+      body,
+      header, 
+      footer,
+      justifyFooter = 'end',
+      justifyHeader = 'between'
+      
+   ):
+      '''  '''
+      
+      return html.Div(
+         
+         className = 'buildCardDiv',
+         children = [
+            
+            # (header, body, footer) <
+            dbc.Row(
+               
+               children = header,
+               justify = justifyHeader,
+               className = 'buildCardHeaderRow'
+               
+            ),
+            dbc.Row(
+               
+               children = body,
+               className = 'buildCardBodyRow'
+               
+            ),
+            dbc.Row(
+               
+               children = footer,
+               justify = justifyFooter,
+               className = 'buildCardFooterRow'
+               
+            )
+            
+            # >
+            
+         ]
+         
       )

@@ -2,30 +2,10 @@
 
    "connections" : {
 
-      "GitHub lxRbckl" : {
-         
-         "url" : "https://github.com/lxRbckl",
-         "icon" : "https://i.postimg.cc/ZRHT9Bx7/footer-Git-Hub.png"
-         
-      },
-      "LeetCode" : {
-         
-         "url" : "https://leetcode.com/lxRbckl/",
-         "icon" : "https://i.postimg.cc/QCMjc86X/footer-Leet-Code.png"
-      
-      },
-      "GitHub ala2q6" : {
-         
-         "url" : "https://github.com/ala2q6",
-         "icon" : "https://i.postimg.cc/ZRHT9Bx7/footer-Git-Hub.png"
-         
-      },
-      "LinkedIn" : {
-         
-         "url" : "https://www.linkedin.com/in/lxRbckl/",
-         "icon" : "https://i.postimg.cc/VLdY6Nrg/footer-Linked-In.png"
-      
-      }
+      "https://github.com/lxRbckl" : "https://i.postimg.cc/ZRHT9Bx7/footer-Git-Hub.png",
+      "https://leetcode.com/lxRbckl/" : "https://i.postimg.cc/QCMjc86X/footer-Leet-Code.png",
+      "https://github.com/ala2q6" : "https://i.postimg.cc/ZRHT9Bx7/footer-Git-Hub.png",
+      "https://www.linkedin.com/in/lxRbckl/" : "https://i.postimg.cc/VLdY6Nrg/footer-Linked-In.png"
 
    }
 

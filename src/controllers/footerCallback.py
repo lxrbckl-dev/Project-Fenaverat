@@ -37,6 +37,15 @@ class footerCallback:
          
       )
       def func(*args):
+         '''  '''
 
-         connections = self.footerManager.getConnections()
-         return self.footer.buildConnections(connections)
+         return [
+            
+            self.footer.buildConnection(
+               
+               link = link,
+               icon = icon
+               
+            )
+            
+         for link, icon in self.footerManager.getConnections().items()]

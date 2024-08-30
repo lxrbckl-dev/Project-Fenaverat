@@ -11,10 +11,7 @@ import dash_bootstrap_components as dbc
 class aboutMe(body):
    
    
-   def __init__(self):
-      '''  '''
-      
-      super().__init__()
+   def __init__(self): super().__init__()
    
    
    @property

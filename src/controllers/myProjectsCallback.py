@@ -38,10 +38,20 @@ class myProjectsCallback(bodyCallback):
       
       @app.callback(
          
-         output = Output('myProjectsRowId', 'children'),
-         inputs = [Input('myProjectsColId', 'children')]
+         inputs = [Input('myProjectsDivId', 'children')],
+         output = Output('myProjectsStackId', 'children')
          
       )
       def func(*args):
          
-         return None
+         return [
+            
+            self.myProjects.buildCard(
+               
+               name = name,
+               properties = properties,
+               backgroundImage = self.myProjectsManager.getProjectBackground(name)
+               
+            )
+            
+         for name, properties in self.myProjectsManager.getProjects().items()]

@@ -24,4 +24,4 @@ class headerManager(loadManager):
    def getTitle(self): return self.files['header']['title']
    
    
-   def getImages(self): return self.files['header']['images']
+   def getAvatars(self): return self.files['header']['avatars']
