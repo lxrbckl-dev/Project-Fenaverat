@@ -25,7 +25,13 @@ class myServersManager(loadManager):
    def getServers(self): return self.files['nodeArchive']
    
    
-   def getBadgeOS(self, os): return self.files['myServers']['badgesOS'][os]
+   def getIconOS(self, os): 
+      
+      try: return self.files['myServers']['iconsOS'][os]
+      except KeyError: return None
    
    
-   def getBadgeHost(self, host): return self.files['myServers']['badgesHost'][host]
+   def getIconHost(self, host): 
+      
+      try: return self.files['myServers']['iconsHost'][host]
+      except KeyError: return None

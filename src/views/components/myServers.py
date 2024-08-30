@@ -40,6 +40,8 @@ class myServers(body):
       
       self, 
       name,
+      iconOS,
+      iconHost,
       properties
       
    ):
@@ -84,7 +86,7 @@ class myServers(body):
             ),
             dbc.Row(
                
-               justify = 'end',
+               justify = 'between',
                className = 'myServersRowFooter',
                children = [
                   
@@ -92,21 +94,13 @@ class myServers(body):
                   dbc.Col(
                      
                      width = 'auto',
-                     children = self.buildCardOS(
-                        
-                        
-                        
-                     )
+                     children = self.buildCardIconOS(iconOS)
                      
                   ),
                   dbc.Col(
                      
                      width = 'auto',
-                     children = self.buildCardHost(
-                        
-                        
-                        
-                     )
+                     children = self.buildCardIconHost(iconHost)
                      
                   )
                   
@@ -149,21 +143,23 @@ class myServers(body):
       )
       
       
-   def buildCardOS(self, badgeOS):
+   def buildCardIconOS(self, icon):
       '''  '''
       
       return html.Img(
          
-         
+         src = icon,
+         className = 'myServersCardFooterIcon'
          
       )
    
    
-   def buildCardDeploymentType(self, badgeHost):
+   def buildCardIconHost(self, icon):
       '''  '''
       
       return html.Img(
          
-         
+         src = icon,
+         className = 'myServersCardFooterIcon'
          
       )

@@ -45,11 +45,13 @@ class myServersCallback(bodyCallback):
       def func(*args):
 
          return [
-            
+
             self.myServers.buildCard(
                
                name = name,
-               properties = properties
+               properties = properties,
+               iconOS = self.myServersManager.getIconOS(properties['os']),
+               iconHost = self.myServersManager.getIconHost(properties['host'])
                
             )
             

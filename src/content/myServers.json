@@ -1,13 +1,13 @@
 {
 
-   "badgesOS" : {
+   "iconsOS" : {
 
-      "Linux" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
-      "Raspberry Pi, Ubuntu" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
-      "Ubuntu" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png"
+      "linux" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
+      "Ubuntu" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
+      "raspberry pi" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png"
 
    },
-   "badgesHost" : {
+   "iconsHost" : {
 
       "standalone" : "https://i.postimg.cc/hjbLQKXH/card-Docker.png",
       "swarm" : "https://i.postimg.cc/x86Lggy5/card-Docker-Swarm.png"
