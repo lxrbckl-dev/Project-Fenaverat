@@ -23,3 +23,10 @@ class myProjectsManager(loadManager):
       
       
    def getProjects(self): return self.files['myProjects']
+   
+   
+   def getProjectBackground(self, project):
+      '''  '''
+      
+      try: return self.files['myProjects']['projectCardBackgrounds'][project]
+      except KeyError: return None
