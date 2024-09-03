@@ -38,3 +38,6 @@ class myProjectsManager(loadManager):
       
       try: return self.files['myProjects']['projectCardBackgrounds'][project]
       except KeyError: return None
+   
+   
+   def getCardIcon(self, icon): return self.files['myProjects']['icons'][icon]

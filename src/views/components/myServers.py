@@ -111,17 +111,6 @@ class myServers(body):
          ]
          
       )
-
-      
-   def buildCardTitle(self, title):
-      '''  '''
-      
-      return html.H4(
-         
-         className = 'myServersTitleH4',
-         children = title.replace('-', ' ')
-         
-      )
       
       
    def buildCardStatus(self, status):
@@ -135,16 +124,5 @@ class myServers(body):
             'ready' : 'myServersStatusReady'
             
          }[status]
-         
-      )
-      
-      
-   def buildCardIcon(self, icon):
-      '''  '''
-      
-      return html.Img(
-         
-         src = icon,
-         className = 'myServersIconImg'
          
       )

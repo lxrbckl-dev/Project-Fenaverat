@@ -44,9 +44,7 @@ class myProjects(myServers):
    ):
       '''  '''
       
-      # print(name)
       # print(properties)
-      # print(backgroundImage) # remove
       # print('---')
             
       return self.buildCard(
@@ -58,7 +56,8 @@ class myProjects(myServers):
             children = [
                
                # (title, description) <
-               self.buildCardTitle(name)
+               self.buildCardTitle(name),
+               self.buildCardDescription(properties['description'])
                
                # >
                
@@ -81,4 +80,12 @@ class myProjects(myServers):
       )
       
       
-   
+   def buildCardDescription(self, description):
+      '''  '''
+      
+      return html.P(
+         
+         children = description,
+         className = 'myProjectsDescriptionP'
+         
+      )

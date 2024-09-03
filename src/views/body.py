@@ -114,3 +114,25 @@ class body:
          ]
          
       )
+      
+      
+   def buildCardIcon(self, icon):
+      '''  '''
+      
+      return html.Img(
+         
+         src = icon,
+         className = 'buildCardIconImg'
+         
+      )
+      
+      
+   def buildCardTitle(self, title):
+      '''  '''
+      
+      return html.H4(
+         
+         className = 'buildCardTitleH4',
+         children = title.replace('-', ' ')
+         
+      )

@@ -1,20 +1,14 @@
 {
 
-   "iconsOS" : {
+   "icons" : {
+
+      "standalone" : "https://i.postimg.cc/hjbLQKXH/card-Docker.png",
+      "swarm" : "https://i.postimg.cc/x86Lggy5/card-Docker-Swarm.png",
 
       "MacOS" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
       "linux" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
       "Ubuntu" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
-      "Raspbian" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png"
-
-   },
-   "iconsHost" : {
-
-      "standalone" : "https://i.postimg.cc/hjbLQKXH/card-Docker.png",
-      "swarm" : "https://i.postimg.cc/x86Lggy5/card-Docker-Swarm.png"
-
-   },
-   "iconsHardware" : {
+      "Raspbian" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
 
       "other" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
       "apple" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",

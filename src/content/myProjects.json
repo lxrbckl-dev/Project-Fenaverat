@@ -1,7 +1,11 @@
 {
 
-   "iconWiki" : "https://i.postimg.cc/fyzxx1Xk/cardWiki.png",
-   "iconRepository" : "https://i.postimg.cc/d1KR0hV2/card-Repository.png",
+   "icons" : {
+
+      "wiki" : "https://i.postimg.cc/fyzxx1Xk/cardWiki.png",
+      "repository" : "https://i.postimg.cc/d1KR0hV2/card-Repository.png"
+
+   },
 
    "projectCardBackgrounds" : {
 

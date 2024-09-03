@@ -1,9 +1,19 @@
-.aboutMeRow {
+.myProjectsDiv {
 
-   padding: var(--padding);
    background-size: cover;
-   background-position: 50% 50%;
    background-repeat: no-repeat;
+   background-position: 50% 90%;
    background-image: var(--background);
+
+}
+
+
+.myProjectsDescriptionP {
+
+   background-color: red;
+
+   margin: 0;
+   padding: 0;
+   color: var(--colorWhite);
 
 }
