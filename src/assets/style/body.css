@@ -79,7 +79,7 @@
 .buildCardHeaderRow {
 
    margin: 0;
-   padding: 0;
+   padding: 1px 0 0 0;
    border-bottom: var(--borderBlack);
    background-color: var(--colorBlack);
    border-top-left-radius: var(--borderRadius);
@@ -106,7 +106,7 @@
 .buildCardFooterRow {
 
    margin: 0;
-   padding: 5px;
+   padding: 1px 0 4px 0;
    background-color: var(--colorBlack);
    border-bottom-left-radius: var(--borderRadius);
    border-bottom-right-radius: var(--borderRadius);

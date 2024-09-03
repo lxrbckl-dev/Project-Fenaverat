@@ -39,44 +39,64 @@ class myServers(body):
       name,
       iconOS,
       iconHost,
-      properties
+      properties,
+      iconHardware
       
    ):
       '''  '''
 
       return self.buildCard(
          
-         justifyHeader = 'between',
-         header = [
+         headerJustify = 'between',
+         headerChildren = [
             
-            # (title, status) <
+            # title <
+            # (os, hardware) <
             dbc.Col(
                
                width = 'auto',
                children = self.buildMyServersTitle(name)
-                                       
+               
             ),
             dbc.Col(
                
                width = 'auto',
-               children = self.buildMyServersStatus(properties['status'])
+               children = dbc.Stack(
+                  
+                  direction = 'horizontal',
+                  children = [
+                     
+                     dbc.Col(
+                        
+                        width = 'auto',
+                        children = self.buildMyServersIcon(iconOS)
+                        
+                     ),
+                     dbc.Col(
+                        
+                        width = 'auto',
+                        children = self.buildMyServersIcon(iconHardware)
+                        
+                     )
+                     
+                  ]
+                  
+               )
                
             )
             
-            # >
-            
          ],
-                  
-         body = self.buildBadges({'services' : properties['services']}),
          
-         justifyFooter = 'between',
-         footer = [
+         bodyChildren = self.buildBadges({'services' : properties['services']}),
+         
+         footerJustify = 'between',
+         footerChildren = [
             
-            # (os, host) <
+            # (status, host) <
             dbc.Col(
                
                width = 'auto',
-               children = self.buildMyServersIcon(iconOS)
+               children = self.buildMyServersStatus(properties['status'])
                
             ),
             dbc.Col(

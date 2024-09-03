@@ -35,3 +35,10 @@ class myServersManager(loadManager):
       
       try: return self.files['myServers']['iconsHost'][host]
       except KeyError: return None
+      
+      
+   def getIconHardware(self, hardware):
+      '''  '''
+      
+      try: return self.files['myServers']['iconsHardware'][hardware]
+      except KeyError: return None

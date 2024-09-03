@@ -73,11 +73,11 @@ class body:
    def buildCard(
       
       self,
-      body,
-      header, 
-      footer,
-      justifyFooter = 'end',
-      justifyHeader = 'between'
+      bodyChildren,
+      headerChildren, 
+      footerChildren,
+      footerJustify = 'end',
+      headerJustify = 'between'
       
    ):
       '''  '''
@@ -90,21 +90,21 @@ class body:
             # (header, body, footer) <
             dbc.Row(
                
-               children = header,
-               justify = justifyHeader,
+               justify = headerJustify,
+               children = headerChildren,
                className = 'buildCardHeaderRow'
                
             ),
             dbc.Row(
                
-               children = body,
+               children = bodyChildren,
                className = 'buildCardBodyRow'
                
             ),
             dbc.Row(
                
-               children = footer,
-               justify = justifyFooter,
+               justify = footerJustify,
+               children = footerChildren,
                className = 'buildCardFooterRow'
                
             )

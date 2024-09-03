@@ -51,7 +51,8 @@ class myServersCallback(bodyCallback):
                name = name,
                properties = properties,
                iconOS = self.myServersManager.getIconOS(properties['os']),
-               iconHost = self.myServersManager.getIconHost(properties['host'])
+               iconHost = self.myServersManager.getIconHost(properties['host']),
+               iconHardware = self.myServersManager.getIconHardware(properties['hardware'])
                
             )
             
