@@ -47,6 +47,7 @@ class myServers(body):
 
       return self.buildCard(
          
+         cardHeight = '200px',
          headerJustify = 'between',
          headerChildren = [
             
@@ -87,7 +88,6 @@ class myServers(body):
             
          ],
          
-         bodyHeight = '120px',
          bodyChildren = self.buildBadges({'services' : properties['services']}),
          
          footerJustify = 'between',

@@ -73,10 +73,10 @@ class body:
    def buildCard(
       
       self,
-      bodyHeight,
+      cardHeight,
       bodyChildren,
-      headerChildren, 
       footerChildren,
+      headerChildren,
       footerJustify = 'end',
       headerJustify = 'between'
       
@@ -86,6 +86,12 @@ class body:
       return html.Div(
          
          className = 'buildCardDiv',
+         style = {
+            
+            'minHeight' : cardHeight,
+            'maxHeight' : cardHeight
+            
+         },
          children = [
             
             # (header, body, footer) <
@@ -99,13 +105,7 @@ class body:
             dbc.Row(
                
                children = bodyChildren,
-               className = 'buildCardBodyRow',
-               style = {
-                  
-                  'minHeight' : bodyHeight,
-                  'maxHeight' : bodyHeight
-                  
-               }
+               className = 'buildCardBodyRow'
                
             ),
             dbc.Row(

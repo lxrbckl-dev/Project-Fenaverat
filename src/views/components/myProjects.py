@@ -65,7 +65,6 @@ class myProjects(myServers):
             
          ),
          
-         bodyHeight = '200px',
          bodyChildren = None,
          
          footerJustify = 'start',
@@ -86,7 +85,7 @@ class myProjects(myServers):
       
       return html.P(
          
-         children = description,
+         children = f'{description}.',
          className = 'myProjectsDescriptionP'
          
       )

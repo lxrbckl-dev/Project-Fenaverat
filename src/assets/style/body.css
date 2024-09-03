@@ -70,6 +70,8 @@
 
    padding: 0;
    margin: 2px;
+   display: flex;
+   flex-direction: column;
    min-width: var(--cardWidth);
    max-width: var(--cardWidth);
 
@@ -91,6 +93,8 @@
 .buildCardBodyRow {
 
    margin: 0;
+   height: 100%;
+   flex-grow: 1;
    overflow-x: hidden;
    scrollbar-width: none;
    padding: 1px 5px 3px 1px;
@@ -115,8 +119,8 @@
 .buildCardIconImg {
 
    padding: 0;
-   width: 20px;
-   margin: 0 -9px 0 12px;
+   width: 21px;
+   margin: 1px -9px 2px 12px;
 
 }
 
@@ -124,9 +128,10 @@
 .buildCardTitleH4 {
 
    padding: 3px;
+   line-height: 1;
    font-size: 19px;
    color: var(--colorWhite);
-   margin: -2px 0 -1px -13px;
+   margin: 0 0 -1px -13px;
    font-family: Arial, Helvetica, sans-serif;
 
 }
