@@ -73,6 +73,7 @@ class body:
    def buildCard(
       
       self,
+      bodyHeight,
       bodyChildren,
       headerChildren, 
       footerChildren,
@@ -98,7 +99,13 @@ class body:
             dbc.Row(
                
                children = bodyChildren,
-               className = 'buildCardBodyRow'
+               className = 'buildCardBodyRow',
+               style = {
+                  
+                  'minHeight' : bodyHeight,
+                  'maxHeight' : bodyHeight
+                  
+               }
                
             ),
             dbc.Row(

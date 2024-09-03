@@ -11,13 +11,12 @@
 .myProjectsDescriptionP {
 
    font-size: 14px;
+   line-height: 18px;
    padding: 2px 0 0 0;
    font-weight: lighter;
-   line-height: 18px;
    color: var(--colorWhite);
    margin: -3px -7px 0 -7px;
-   font-family: Arial, Helvetica, sans-serif;
-
    border-top: var(--borderWhite);
+   font-family: Arial, Helvetica, sans-serif;
 
 }

@@ -87,6 +87,7 @@ class myServers(body):
             
          ],
          
+         bodyHeight = '120px',
          bodyChildren = self.buildBadges({'services' : properties['services']}),
          
          footerJustify = 'between',

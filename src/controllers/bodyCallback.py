@@ -27,7 +27,7 @@ class bodyCallback:
       
       self.accordionItems = {
          
-         '/' : 'myProjects', # <- default
+         '/' : 'myServers', # <- default
          '/aboutMe' : 'aboutMe',
          '/myServers' : 'myServers',
          '/myProjects' : 'myProjects'
