@@ -14,10 +14,8 @@
    line-height: 18px;
    padding: 2px 0 0 0;
    text-align: justify;
-   font-weight: lighter;
    color: var(--colorWhite);
-   margin: -3px -7px 0 -7px;
-   border-top: var(--borderWhite);
+   margin: -5px -9px 0 -9px;
    font-family: Arial, Helvetica, sans-serif;
 
 }

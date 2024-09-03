@@ -50,6 +50,8 @@ class myProjectsCallback(bodyCallback):
                
                name = name,
                properties = properties,
+               iconWiki = self.myProjectsManager.getIcon('wiki'),
+               iconRepository = self.myProjectsManager.getIcon('repository'),
                backgroundImage = self.myProjectsManager.getCardBackground(name)
                
             )

@@ -38,14 +38,16 @@ class myProjects(myServers):
       
       self,
       name,
+      iconWiki,
       properties,
+      iconRepository,
       backgroundImage
       
    ):
       '''  '''
-      
-      # print(properties)
-      # print('---')
+            
+      print(properties)
+      print('---')
             
       return self.buildCard(
          
@@ -66,13 +68,29 @@ class myProjects(myServers):
             
          ),
          
-         bodyChildren = None,
+         bodyChildren = self.buildBadges({
          
-         footerJustify = 'start',
+            'Languages' : properties['languages'],
+            'Packages' : properties['topics']
+            
+         }),
+         
+         footerJustify = 'between',
          footerChildren = [
             
-            # (repository, wiki) <
-            
+            # (wiki, repository) <
+            dbc.Col(
+               
+               width = 'auto',
+               children = self.buildCardIcon(iconWiki)
+               
+            ),
+            dbc.Col(
+               
+               width = 'auto',
+               children = self.buildCardIcon(iconRepository)
+               
+            )
             
             # >
             
