@@ -49,6 +49,7 @@ class myProjects(myServers):
             
       return self.buildCard(
          
+         cardHeight = '300px',
          headerJustify = 'start',
          headerChildren = dbc.Col(
             
