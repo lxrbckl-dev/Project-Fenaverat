@@ -1,5 +1,6 @@
 # import <
-from ..body import body
+# from ..body import body
+from ..components.myServers import myServers
 
 from dash import (dcc, html)
 import dash_bootstrap_components as dbc
@@ -7,7 +8,7 @@ import dash_bootstrap_components as dbc
 # >
 
 
-class myProjects(body):
+class myProjects(myServers):
    
    
    def __init__(self): super().__init__()
@@ -26,33 +27,58 @@ class myProjects(body):
             children = None,
             id = 'myProjectsStackId',
             direction = 'horizontal',
-            className = 'myProjectsStack'
+            className = 'myServersStack'
             
          )
          
       )
       
+      
+   def buildMyProjectsCard(
+      
+      self,
+      name,
+      properties,
+      backgroundImage
+      
+   ):
+      '''  '''
+      
+      # print(name)
+      # print(properties)
+      # print(backgroundImage) # remove
+      # print('---')
+            
+      return self.buildCard(
+         
+         headerJustify = 'start',
+         headerChildren = dbc.Col(
+            
+            width = 'auto',
+            children = [
+               
+               # (title, description) <
+               self.buildCardTitle(name)
+               
+               # >
+               
+            ]
+            
+         ),
+         
+         bodyChildren = None,
+         
+         footerJustify = 'start',
+         footerChildren = [
+            
+            # (repository, wiki) <
+            
+            
+            # >
+            
+         ]
+         
+      )
+      
+      
    
-   # def buildCard(
-      
-   #    self,
-   #    name,
-   #    properties,
-   #    backgroundImage
-      
-   # ):
-   #    '''  '''
-      
-   #    return html.Div(
-         
-   #       className = 'myServersCard',
-   #       children = [
-            
-   #          # (header, body, footer) <
-            
-            
-   #          # >
-            
-   #       ]
-         
-   #    )

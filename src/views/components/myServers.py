@@ -33,7 +33,7 @@ class myServers(body):
       )
       
       
-   def buildMyServerCard(
+   def buildMyServersCard(
       
       self,
       name,
@@ -55,7 +55,7 @@ class myServers(body):
             dbc.Col(
                
                width = 'auto',
-               children = self.buildMyServersTitle(name)
+               children = self.buildCardTitle(name)
                
             ),
             dbc.Col(
@@ -69,13 +69,13 @@ class myServers(body):
                      dbc.Col(
                         
                         width = 'auto',
-                        children = self.buildMyServersIcon(iconOS)
+                        children = self.buildCardIcon(iconOS)
                         
                      ),
                      dbc.Col(
                         
                         width = 'auto',
-                        children = self.buildMyServersIcon(iconHardware)
+                        children = self.buildCardIcon(iconHardware)
                         
                      )
                      
@@ -96,13 +96,13 @@ class myServers(body):
             dbc.Col(
                
                width = 'auto',
-               children = self.buildMyServersStatus(properties['status'])
+               children = self.buildCardStatus(properties['status'])
                
             ),
             dbc.Col(
                
                width = 'auto',
-               children = self.buildMyServersIcon(iconHost)
+               children = self.buildCardIcon(iconHost)
                
             )
             
@@ -113,18 +113,18 @@ class myServers(body):
       )
 
       
-   def buildMyServersTitle(self, title):
+   def buildCardTitle(self, title):
       '''  '''
       
       return html.H4(
          
-         children = title,
-         className = 'myServersTitleH4'
+         className = 'myServersTitleH4',
+         children = title.replace('-', ' ')
          
       )
       
       
-   def buildMyServersStatus(self, status):
+   def buildCardStatus(self, status):
       '''  '''
       
       return dbc.Spinner(
@@ -139,7 +139,7 @@ class myServers(body):
       )
       
       
-   def buildMyServersIcon(self, icon):
+   def buildCardIcon(self, icon):
       '''  '''
       
       return html.Img(

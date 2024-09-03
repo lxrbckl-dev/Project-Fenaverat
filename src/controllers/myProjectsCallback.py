@@ -46,11 +46,11 @@ class myProjectsCallback(bodyCallback):
          
          return [
             
-            self.myProjects.buildCard(
+            self.myProjects.buildMyProjectsCard(
                
                name = name,
                properties = properties,
-               backgroundImage = self.myProjectsManager.getProjectBackground(name)
+               backgroundImage = self.myProjectsManager.getCardBackground(name)
                
             )
             

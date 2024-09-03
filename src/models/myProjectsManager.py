@@ -1,4 +1,6 @@
 # import <
+from random import shuffle
+
 from .loadManager import loadManager
 
 # >
@@ -22,10 +24,16 @@ class myProjectsManager(loadManager):
       )
       
       
-   def getProjects(self): return self.files['repositoryArchive']
+   def getProjects(self): 
+      
+      projects = self.files['repositoryArchive']
+      keys = list(projects.keys())
+      shuffle(keys)
+      
+      return {k : projects[k] for k in keys}
    
    
-   def getProjectBackground(self, project):
+   def getCardBackground(self, project):
       '''  '''
       
       try: return self.files['myProjects']['projectCardBackgrounds'][project]

@@ -74,25 +74,5 @@ class layout:
             )
             
          ]
-
-         # children = dbc.Col(
-            
-         #    className = 'layoutCol',
-         #    children = [
-               
-               
-               
-         #       # header <
-         #       # body <
-         #       # footer <
-         #       self.header.getProperty(),
-         #       self.body.getProperty(),
-         #       self.footer.getProperty()
-               
-         #       # >
-               
-         #    ]
-            
-         # )
          
       )

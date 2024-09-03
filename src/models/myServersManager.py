@@ -25,19 +25,19 @@ class myServersManager(loadManager):
    def getServers(self): return self.files['nodeArchive']
    
    
-   def getIconOS(self, os): 
+   def getCardIconOS(self, os): 
       
       try: return self.files['myServers']['iconsOS'][os]
       except KeyError: return None
    
    
-   def getIconHost(self, host): 
+   def getCardIconHost(self, host): 
       
       try: return self.files['myServers']['iconsHost'][host]
       except KeyError: return None
       
       
-   def getIconHardware(self, hardware):
+   def getCardIconHardware(self, hardware):
       '''  '''
       
       try: return self.files['myServers']['iconsHardware'][hardware]

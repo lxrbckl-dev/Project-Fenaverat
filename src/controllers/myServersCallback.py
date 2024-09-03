@@ -46,13 +46,13 @@ class myServersCallback(bodyCallback):
 
          return [
 
-            self.myServers.buildMyServerCard(
+            self.myServers.buildMyServersCard(
                
                name = name,
                properties = properties,
-               iconOS = self.myServersManager.getIconOS(properties['os']),
-               iconHost = self.myServersManager.getIconHost(properties['host']),
-               iconHardware = self.myServersManager.getIconHardware(properties['hardware'])
+               iconOS = self.myServersManager.getCardIconOS(properties['os']),
+               iconHost = self.myServersManager.getCardIconHost(properties['host']),
+               iconHardware = self.myServersManager.getCardIconHardware(properties['hardware'])
                
             )
             
