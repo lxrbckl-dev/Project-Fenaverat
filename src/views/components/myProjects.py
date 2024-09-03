@@ -65,6 +65,7 @@ class myProjects(myServers):
             
          ),
          
+         bodyHeight = '200px',
          bodyChildren = None,
          
          footerJustify = 'start',
