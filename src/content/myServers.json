@@ -2,13 +2,13 @@
 
    "icons" : {
 
+      "apple" : "https://i.postimg.cc/jS9gHvTr/icon-Apple.png",
+      "raspberry pi" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
+
       "" : "https://i.postimg.cc/8zZRMm2m/icon-Blank.png",
       "linux" : "https://i.postimg.cc/bwz66Jq7/icon-Ubuntu.png",
       "ubuntu" : "https://i.postimg.cc/bwz66Jq7/icon-Ubuntu.png",
       "raspbian" : "https://i.postimg.cc/Y0ZWQvn5/icon-Raspberry-Pi.png",
-
-      "apple" : "https://i.postimg.cc/jS9gHvTr/icon-Apple.png",
-      "raspberry pi" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
 
       "swarm" : "https://i.postimg.cc/x86Lggy5/icon-Docker-Swarm.png",
       "standalone" : "https://i.postimg.cc/hjbLQKXH/icon-Docker-Standalone.png"
