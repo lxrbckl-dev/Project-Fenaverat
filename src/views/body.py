@@ -134,12 +134,13 @@ class body:
       )
       
       
-   def buildCardTitle(self, title):
+   def buildCardTitle(self, title, fontSize):
       '''  '''
       
       return html.H4(
          
          className = 'buildCardTitleH4',
+         style = {'font-size' : fontSize},
          children = title.replace('-', ' ')
          
       )

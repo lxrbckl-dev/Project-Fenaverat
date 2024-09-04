@@ -59,7 +59,7 @@ class myProjects(myServers):
             children = [
                
                # (title, description) <
-               self.buildCardTitle(name),
+               self.buildCardTitle(name, '22px'),
                self.buildCardDescription(properties['description'])
                
                # >

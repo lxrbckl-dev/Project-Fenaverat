@@ -56,7 +56,7 @@ class myServers(body):
             dbc.Col(
                
                width = 'auto',
-               children = self.buildCardTitle(name)
+               children = self.buildCardTitle(name, '19px')
                
             ),
             dbc.Col(
