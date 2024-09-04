@@ -20,5 +20,3 @@ app = Dash(
    ]
    
 )
-
-server = app.server
