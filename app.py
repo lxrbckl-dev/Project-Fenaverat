@@ -2,8 +2,8 @@
 
 
 # import <
-from src.configs import app
 from src.views.layout import layout
+from src.configs import (app, host, port)
 
 # >
 
@@ -20,6 +20,12 @@ layout.registerCallbacks()
 
 # build application <
 app.layout = layout.property
-app.run(debug = False)
+app.run(
+   
+   host = host,
+   port = port,
+   debug = False
+   
+)
 
 # >

@@ -1,6 +1,15 @@
 # import <
 from dash import Dash
+from os import environ
 from dash_bootstrap_components import themes
+
+# >
+
+
+# referencing outsourced Dockerfile <
+# ref: 
+port = environ.get('port')
+host = environ.get('host')
 
 # >
 
