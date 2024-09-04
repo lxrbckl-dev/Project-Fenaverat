@@ -2,17 +2,15 @@
 
    "icons" : {
 
-      "standalone" : "https://i.postimg.cc/hjbLQKXH/card-Docker.png",
-      "swarm" : "https://i.postimg.cc/x86Lggy5/card-Docker-Swarm.png",
+      "linux" : "https://i.postimg.cc/bwz66Jq7/icon-Ubuntu.png",
+      "ubuntu" : "https://i.postimg.cc/bwz66Jq7/icon-Ubuntu.png",
+      "raspbian" : "https://i.postimg.cc/Y0ZWQvn5/icon-Raspberry-Pi.png",
 
-      "MacOS" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
-      "linux" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
-      "Ubuntu" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
-      "Raspbian" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
+      "apple" : "https://i.postimg.cc/jS9gHvTr/icon-Apple.png",
+      "raspberry pi" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
 
-      "other" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
-      "apple" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png",
-      "raspberry pi" : "https://i.postimg.cc/bwz66Jq7/card-Ubuntu.png"
+      "swarm" : "https://i.postimg.cc/x86Lggy5/icon-Docker-Swarm.png",
+      "standalone" : "https://i.postimg.cc/hjbLQKXH/icon-Docker-Standalone.png"
 
    }
 
