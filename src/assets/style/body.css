@@ -58,7 +58,7 @@
 
    width: 100%;
    padding: 4px;
-   margin: 0 2px 0 1px;
+   margin: 2px 1px 2px 2px;
    color: var(--colorBlack);
    border: var(--borderBlack);
    background-color: #F7F5F1!important;
@@ -75,6 +75,7 @@
    flex-direction: column;
    min-width: var(--cardWidth);
    max-width: var(--cardWidth);
+   border-radius: var(--borderRadius);
 
 }
 
@@ -82,7 +83,7 @@
 .buildCardHeaderRow {
 
    margin: 0;
-   padding: 1px 2px 2px 2px;
+   padding: 0px 2px 2px 2px;
    border-bottom: var(--borderBlack);
    background-color: var(--colorBlack);
    border-top-left-radius: var(--borderRadius);
@@ -98,7 +99,7 @@
    flex-grow: 1;
    overflow-x: hidden;
    scrollbar-width: none;
-   padding: 1px 5px 3px 1px;
+   padding: 3px 5px 5px 3px;
    border-left: var(--borderBlack);
    border-right: var(--borderBlack);
    backdrop-filter: var(--filterBlur);
@@ -109,7 +110,7 @@
 .buildCardFooterRow {
 
    margin: -1px 0 0 0;
-   padding: 1px 2px 4px 0;
+   padding: 2px 2px 3px 0;
    background-color: var(--colorBlack);
    border-bottom-left-radius: var(--borderRadius);
    border-bottom-right-radius: var(--borderRadius);
@@ -122,7 +123,7 @@
    z-index: 100;
    padding: 0;
    width: 21px;
-   margin: 1px -9px 2px 12px;
+   margin: 1px -9px 2px -7px;
 
 }
 
