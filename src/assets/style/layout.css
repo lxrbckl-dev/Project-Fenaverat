@@ -1,15 +1,15 @@
 .layoutRow {
 
    margin: 0;
-   padding: 5%;
    width: 100vw;
    height: 100vh;
+   align-items: center;
    
 }
 
 
 .layoutCol {
 
-   max-width: var(--maxWidth);
+   max-width: var(--layoutMaxWidth);
 
 }

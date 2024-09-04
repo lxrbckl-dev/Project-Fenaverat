@@ -4,7 +4,7 @@
    padding: 5px 17px 5px 17px;
    background-position: 50% 55%;
    background-repeat: no-repeat;
-   background-image: var(--background);
+   background-image: var(--backgroundImage);
 
 }
 
@@ -16,7 +16,7 @@
    overflow-y: scroll;
    scrollbar-width: none;
    border: var(--borderBlack);
-   max-height: var(--maxHeight);
+   max-height: var(--aboutMeMaxHeight);
    border-top-left-radius: var(--borderRadius);
    border-bottom-left-radius: var(--borderRadius);
 
@@ -29,10 +29,10 @@
    overflow-y: scroll;
    scrollbar-width: none;
    padding: 0 5px 5px 5px;
-   max-height: var(--maxHeight);
    border-top: var(--borderBlack);
    border-right: var(--borderBlack);
    border-bottom: var(--borderBlack);
+   max-height: var(--aboutMeMaxHeight);
    border-top-right-radius: var(--borderRadius);
    border-bottom-right-radius: var(--borderRadius);
 

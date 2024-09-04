@@ -78,6 +78,7 @@ class body:
       footerChildren,
       headerChildren,
       footerJustify = 'end',
+      cardBackground = None,
       headerJustify = 'between'
       
    ):
@@ -89,7 +90,8 @@ class body:
          style = {
             
             'minHeight' : cardHeight,
-            'maxHeight' : cardHeight
+            'maxHeight' : cardHeight,
+            'background' : f'url({cardBackground})'
             
          },
          children = [

@@ -50,6 +50,7 @@ class myProjects(myServers):
          
          cardHeight = '275px',
          headerJustify = 'start',
+         cardBackground = backgroundImage,
          headerChildren = dbc.Col(
             
             width = 'auto',

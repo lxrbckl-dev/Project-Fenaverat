@@ -4,6 +4,8 @@
    padding: var(--padding);
    border: var(--borderBlack);
    background: var(--colorWhite);
+   border-top-left-radius: var(--borderRadius);
+   border-top-right-radius: var(--borderRadius);
 
 }
 
