@@ -1,7 +1,7 @@
 .aboutMeRow {
 
    background-size: cover;
-   padding: var(--padding);
+   padding: 5px 15px 5px 15px;
    background-position: 50% 55%;
    background-repeat: no-repeat;
    background-image: var(--background);
@@ -11,39 +11,52 @@
 
 .aboutMeLeftCol {
 
+   margin: 0;
+   padding: 5px;
    overflow-y: scroll;
    scrollbar-width: none;
+   border: var(--borderBlack);
    max-height: var(--maxHeight);
-   padding-right: var(--padding);
-   border-right: var(--borderBlack);
+   border-top-left-radius: var(--borderRadius);
+   border-bottom-left-radius: var(--borderRadius);
 
 }
 
 
 .aboutMeRightCol {
 
+   margin: 0;
    overflow-y: scroll;
    scrollbar-width: none;
+   padding: 0 5px 5px 5px;
    max-height: var(--maxHeight);
-   padding-left: var(--padding);
+   border-top: var(--borderBlack);
+   border-right: var(--borderBlack);
+   border-bottom: var(--borderBlack);
+   border-top-right-radius: var(--borderRadius);
+   border-bottom-right-radius: var(--borderRadius);
 
 }
 
 
 .aboutMePhotoDashPlayer {
 
-   margin: 0;
    padding: 0;
-   border-bottom: var(--borderBlack);
+   width: 100vw;
+   height: 100vh;
+   margin: 0 0 -6px 0;
+   border-radius: var(--borderRadius);
+   overflow: hidden;
 
 }
 
 
 .aboutMeEcosystemDiv {
 
-   padding: 0 0 0 0;
-   margin: 3px -2px 0 -2px;
-
+   margin: 5px 0 0 0;
+   padding: 5px 0 0 0;
+   border-top: var(--borderBlack);
+   
 }
 
 
@@ -52,8 +65,8 @@
    margin: 0;
    padding: 0;
    font-size: 16px;
+   line-height: 22px;
    text-align: justify;
-   border-top: var(--borderBlack);
    backdrop-filter: var(--filterBlur);
    font-family: Arial, Helvetica, sans-serif;
 

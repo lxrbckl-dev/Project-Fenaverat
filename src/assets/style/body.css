@@ -12,28 +12,17 @@
 .buildBadgesDiv {
 
    padding: 0;
-   margin: -1px -2px 0 1px;
-
-}
-
-
-.badgePackages {
-
-   padding: 4px;
-   margin: 0 2px 0 1px;
-   color: var(--colorBlack);
-   border: var(--borderBlack);
-   background-color: #AA7F74!important;
-   font-family: Arial, Helvetica, sans-serif;
+   margin: -1px;
+   line-height: 0;
 
 }
 
 
 .badgeLanguages {
 
-   padding: 4px;
-   margin: 0 2px 0 1px;
+   margin: 1px;
    color: var(--colorBlack);
+   padding: 3px 4px 3px 4px;
    border: var(--borderBlack);
    background-color: #96867F!important;
    font-family: Arial, Helvetica, sans-serif;
@@ -41,11 +30,23 @@
 }
 
 
+.badgePackages {
+
+   margin: 1px;
+   color: var(--colorBlack);
+   padding: 3px 4px 3px 4px;
+   border: var(--borderBlack);
+   background-color: #AA7F74!important;
+   font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
 .badgeOther {
 
-   padding: 4px;
-   margin: 0 2px 0 1px;
+   margin: 1px;
    color: var(--colorBlack);
+   padding: 3px 4px 3px 4px;
    border: var(--borderBlack);
    background-color: #C0A49A!important;
    font-family: Arial, Helvetica, sans-serif;
@@ -81,7 +82,7 @@
 .buildCardHeaderRow {
 
    margin: 0;
-   padding: 2px;
+   padding: 1px 2px 2px 2px;
    border-bottom: var(--borderBlack);
    background-color: var(--colorBlack);
    border-top-left-radius: var(--borderRadius);
@@ -107,7 +108,7 @@
 
 .buildCardFooterRow {
 
-   margin: 0;
+   margin: -1px 0 0 0;
    padding: 1px 2px 4px 0;
    background-color: var(--colorBlack);
    border-bottom-left-radius: var(--borderRadius);
