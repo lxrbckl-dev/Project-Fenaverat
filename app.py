@@ -18,6 +18,6 @@ layout.registerCallbacks()
 
 # build application <
 app.layout = layout.property
-app.run(debug = True)
+app.run(debug = False)
 
 # >
