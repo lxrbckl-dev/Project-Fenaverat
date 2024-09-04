@@ -64,6 +64,7 @@ class myServers(body):
                width = 'auto',
                children = dbc.Stack(
                   
+                  gap = 3,
                   direction = 'horizontal',
                   children = [
                      
