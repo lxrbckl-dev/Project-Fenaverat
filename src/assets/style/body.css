@@ -110,7 +110,7 @@
 .buildCardFooterRow {
 
    margin: -1px 0 0 0;
-   padding: 2px 2px 3px 0;
+   padding: 1px 2px 3px 0;
    background-color: var(--colorBlack);
    border-bottom-left-radius: var(--borderRadius);
    border-bottom-right-radius: var(--borderRadius);
