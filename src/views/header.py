@@ -68,7 +68,7 @@ class header:
                   True : 'headerLetterH1Pixel',
                   False : 'headerLetterH1Normal'
                   
-               }[(randint(1, 4) == 1)]
+               }[(randint(1, 3) == 1)]
                           
             )
             

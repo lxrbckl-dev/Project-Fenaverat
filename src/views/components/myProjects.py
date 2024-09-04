@@ -46,9 +46,6 @@ class myProjects(myServers):
    ):
       '''  '''
             
-      print(properties)
-      print('---')
-            
       return self.buildCard(
          
          cardHeight = '275px',
@@ -82,13 +79,23 @@ class myProjects(myServers):
             dbc.Col(
                
                width = 'auto',
-               children = self.buildCardIcon(iconWiki)
+               children = self.buildCardLink(
+                  
+                  icon = iconWiki,
+                  link = properties['url'] + '/wiki'
+                  
+               )
                
             ),
             dbc.Col(
                
                width = 'auto',
-               children = self.buildCardIcon(iconRepository)
+               children = self.buildCardLink(
+                  
+                  icon = iconRepository,
+                  link = properties['url']
+                  
+               )
                
             )
             
@@ -106,5 +113,17 @@ class myProjects(myServers):
          
          children = f'{description}.',
          className = 'myProjectsDescriptionP'
+         
+      )
+      
+      
+   def buildCardLink(self, link, icon):
+      '''  '''
+      
+      return html.A(
+         
+         href = link,
+         target = '_blank',
+         children = self.buildCardIcon(icon)
          
       )
