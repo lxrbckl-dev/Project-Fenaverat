@@ -3,7 +3,7 @@
 
 # import <
 from src.views.layout import layout
-from src.configs import (app, host, port)
+from src.configs import (app, port, host)
 
 # >
 

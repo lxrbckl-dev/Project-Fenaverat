@@ -8,8 +8,8 @@ from dash_bootstrap_components import themes
 
 # referencing outsourced Dockerfile <
 # ref: 
-port = environ.get('port')
-host = environ.get('host')
+port = environ.get('PORT')
+host = environ.get('HOST')
 
 # >
 
