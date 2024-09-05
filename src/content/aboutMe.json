@@ -59,12 +59,12 @@
          "Git",
          "NPM",
          "PyPI",
+         "Docker Suite",
          "CI/CD",
          "MongoDB",
          "Poetry",
          "Linux",
          "Raspberry Pi",
-         "Docker",
          "Gunicorn",
          "nginx",
          "crontab",
@@ -72,9 +72,6 @@
          "Kubernetes",
          "GitHub Actions",
          "GitHub Workflows",
-         "Docker Swarm",
-         "Docker Compose",
-         "Ubuntu Server",
          "VS Code",
          "PyCharm"
 
