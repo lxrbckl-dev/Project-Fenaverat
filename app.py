@@ -8,24 +8,13 @@ from src.configs import (app, port, host)
 # >
 
 
-# expose Flask server #
-server = app.server
-
-
 # initialize layout #
 # register callbacks #
 layout = layout()
 layout.registerCallbacks()
 
 
-# build application <
+# build application #
+# expose Flask server #
 app.layout = layout.property
-app.run(
-   
-   host = host,
-   port = port,
-   debug = False
-   
-)
-
-# >
+server = app.server
