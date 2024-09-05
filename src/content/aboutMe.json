@@ -12,7 +12,8 @@
          "MariaDB",
          "TypeScript",
          "JavaScript",
-         "PostgreSQL"
+         "PostgreSQL",
+         "MongoDB"
 
       ],
       "packages" : [
@@ -58,6 +59,7 @@
          "Git",
          "NPM",
          "PyPI",
+         "CI/CD",
          "MongoDB",
          "Poetry",
          "Linux",
