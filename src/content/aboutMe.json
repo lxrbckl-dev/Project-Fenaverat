@@ -7,8 +7,12 @@
 
          "Python",
          "C++",
-         "SQL",
-         "Bash"
+         "MySQL",
+         "Bash",
+         "MariaDB",
+         "TypeScript",
+         "JavaScript",
+         "PostgreSQL"
 
       ],
       "packages" : [
@@ -50,19 +54,14 @@
       ],
       "other" : [
 
-         "NodeJS",
-         "MySQL",
-         "PostgreSQL",
+         "Node.js",
          "Git",
          "NPM",
          "PyPI",
          "MongoDB",
          "Poetry",
          "Linux",
-         "CSS",
-         "VS Code",
          "Raspberry Pi",
-         "pyenv",
          "Docker",
          "Gunicorn",
          "nginx",
@@ -74,6 +73,7 @@
          "Docker Swarm",
          "Docker Compose",
          "Ubuntu Server",
+         "VS Code",
          "PyCharm"
 
       ]
