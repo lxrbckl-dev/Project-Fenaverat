@@ -1,6 +1,5 @@
 # import <
 from dash import Dash
-from os import environ
 from dash_bootstrap_components import themes
 
 # >
