@@ -6,14 +6,6 @@ from dash_bootstrap_components import themes
 # >
 
 
-# referencing outsourced Dockerfile <
-# ref: 
-port = environ.get('PORT')
-host = environ.get('HOST')
-
-# >
-
-
 app = Dash(
    
    name = 'lxRbckl',

@@ -2,8 +2,8 @@
 
 
 # import <
+from src.configs import app
 from src.views.layout import layout
-from src.configs import (app, port, host)
 
 # >
 
