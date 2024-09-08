@@ -21,7 +21,7 @@ class bodyCallback:
       '''  '''
       
       self.body = body()
-      self.sleepDuration = 0
+      self.sleepDuration = 2
       self.components = components
       self.bodyManager = bodyManager()
       
