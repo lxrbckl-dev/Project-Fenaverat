@@ -81,8 +81,8 @@
 
       "## I am Alex Arbuckle",
       "Currently active as a software developer residing in Kansas City, Missouri. I graduated cum laude earning a *Bachelor of Science* degree in **Computer Science**. My work experience includes working as an integral software developer for a group of venture capitalists specializing in risk assessment and investment. There, I collaborated with statisticians to build rigorous algorithms and dashboards designed for large sets of data.",
-      "As a software developer, I consider myself a life-long learner, constantly pushing my boundaries to further enhance my understanding of software development and deployment. I embrace both object-oriented and functional paradigms, and find joy in integrating the subjects I learn into projects that are showcased [here](https://www.lxrbckl.com/myProjects).",
-      "I streamline the entire software development lifecycle—from design to deployment and ongoing maintenance—using a custom-built 10-node Raspberry Pi cluster. My applications run using Docker Swarm, with real-time status updates for each node uploaded daily. Check out the current state of my servers and what's running where, [here](https://www.lxrbckl.com/myServers)."
+      "As a software developer, I consider myself a life-long learner, constantly pushing my boundaries to further enhance my understanding of software development and deployment. I embrace both object-oriented and functional paradigms, and find joy in integrating the subjects I learn into projects that are showcased [**here**](https://www.lxrbckl.com/myProjects).",
+      "I streamline the entire software development lifecycle—from design to deployment and ongoing maintenance—using a custom-built 10-node Raspberry Pi cluster. My applications run using Docker Swarm, with real-time status updates for each node uploaded daily. Check out the current state of my servers and what's running where, [**here**](https://www.lxrbckl.com/myServers)."
 
    ]
 
