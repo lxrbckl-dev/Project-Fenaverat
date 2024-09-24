@@ -1,4 +1,4 @@
-# Project Fenaverat 4
+# [Project Fenaverat 4](https://github.com/lxRbckl/Project-Fenaverat/wiki/V4)
 > A website portfolio crafted to showcase details about yourself, your servers, and your projects. V4. Spring 2024.
 
 ---
