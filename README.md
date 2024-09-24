@@ -1,4 +1,4 @@
-# Project Fenaverat 1
+# [Project Fenaverat 1](https://github.com/lxRbckl/Project-Fenaverat/wiki/V1)
 > A website portfolio designed to display information about you, your projects, and your servers. V1. Spring 2022.
 
 ---
