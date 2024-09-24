@@ -1,4 +1,4 @@
-# Project Fenaverat 2
+# [Project Fenaverat 2](https://github.com/lxRbckl/Project-Fenaverat/wiki/V2)
 > A website portfolio crafted to showcase details about yourself, your projects, and your servers. V2. Fall 2022.
 
 ---
