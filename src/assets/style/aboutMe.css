@@ -1,8 +1,7 @@
 .aboutMeRow {
 
    overflow: hidden;
-   border-radius: 15px;
-
+   /* border-radius: 15px; */
    background-size: cover;
    padding: 5px 17px 5px 17px;
    background-position: 50% 55%;

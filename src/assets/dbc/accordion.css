@@ -166,13 +166,16 @@
    border-right: 0;
    border-left: 0;
    border-radius: 0;
- }
+
+  }
  .accordion-flush .accordion-item:first-child {
    border-top: 0;
- }
+
+  }
  .accordion-flush .accordion-item:last-child {
    border-bottom: 0;
- }
+
+  }
  .accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
    border-radius: 0;
  }
