@@ -10,6 +10,7 @@ class myServersManager(loadManager):
    def __init__(self):
       '''  '''
 
+      self.data = 'nodeArchive'
       super().__init__(
          
          resources = {
@@ -22,4 +23,4 @@ class myServersManager(loadManager):
       )
       
       
-   def getServers(self): return self.files['nodeArchive']
+   def getServers(self): return self.files[self.data]

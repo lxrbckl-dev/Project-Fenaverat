@@ -12,6 +12,8 @@ class myProjectsManager(loadManager):
    def __init__(self):
       '''  '''
 
+      self.key = 'myProjects'
+      self.data = 'repositoryArchive'
       super().__init__(
          
          resources = {
@@ -26,7 +28,7 @@ class myProjectsManager(loadManager):
       
    def getProjects(self): 
       
-      projects = self.files['repositoryArchive']
+      projects = self.files[self.data]
       keys = list(projects.keys())
       shuffle(keys)
       
@@ -36,8 +38,8 @@ class myProjectsManager(loadManager):
    def getCardBackground(self, project):
       '''  '''
       
-      try: return self.files['myProjects']['projectCardBackgrounds'][project]
+      try: return self.files[self.key]['projectCardBackgrounds'][project]
       except KeyError: return None
    
    
-   def getCardIcon(self, icon): return self.files['myProjects']['icons'][icon]
+   def getCardIcon(self, icon): return self.files[self.key]['icons'][icon]

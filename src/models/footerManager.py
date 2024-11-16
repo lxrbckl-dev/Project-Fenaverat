@@ -10,6 +10,7 @@ class footerManager(loadManager):
    def __init__(self):
       '''  '''
 
+      self.key = 'footer'
       super().__init__(
          
          resources = {
@@ -21,4 +22,4 @@ class footerManager(loadManager):
       )
 
       
-   def getConnections(self): return self.files['footer']['connections']
+   def getConnections(self): return self.files[self.key]['connections']

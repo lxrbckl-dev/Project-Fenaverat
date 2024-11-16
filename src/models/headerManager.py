@@ -10,6 +10,7 @@ class headerManager(loadManager):
    def __init__(self):
       '''  '''
 
+      self.key = 'header'
       super().__init__(
          
          resources = {
@@ -21,7 +22,7 @@ class headerManager(loadManager):
       )
       
       
-   def getTitle(self): return self.files['header']['title']
+   def getTitle(self): return self.files[self.key]['title']
    
    
-   def getAvatars(self): return self.files['header']['avatars']
+   def getAvatars(self): return self.files[self.key]['avatars']

@@ -10,6 +10,7 @@ class aboutMeManager(loadManager):
    def __init__(self):
       '''  '''
 
+      self.key = 'aboutMe'
       super().__init__(
          
          resources = {
@@ -21,10 +22,10 @@ class aboutMeManager(loadManager):
       )
       
 
-   def getText(self): return self.files['aboutMe']['text']
+   def getText(self): return self.files[self.key]['text']
       
 
-   def getPhoto(self): return self.files['aboutMe']['photo']
+   def getPhoto(self): return self.files[self.key]['photo']
    
    
-   def getEcosystem(self): return self.files['aboutMe']['ecosystem']
+   def getEcosystem(self): return self.files[self.key]['ecosystem']
