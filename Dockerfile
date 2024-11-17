@@ -9,10 +9,10 @@ ENV SERVER="app:server"
 WORKDIR /app
 COPY . /app
 
-RUN pip install poetry
-RUN poetry install
+RUN pip install pipenv
+RUN pipenv install
 
 EXPOSE ${PORT}
 
 # Use Poetry to run gunicorn
-CMD poetry run gunicorn -w ${WORKERS} -b "${HOST}:${PORT}" ${SERVER}
+CMD pipenv run gunicorn -w ${WORKERS} -b "${HOST}:${PORT}" ${SERVER}

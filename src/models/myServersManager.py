@@ -23,8 +23,4 @@ class myServersManager(loadManager):
       )
       
       
-      print('myservers', self.files.keys()) # remove
-      print('nodeArchive', self.files['myServers']) # remove
-      
-      
    def getServers(self): return self.files[self.data]
