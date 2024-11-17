@@ -507,12 +507,12 @@
         },
         "lxrbckl": {
             "hashes": [
-                "sha256:4110287d9c68ef158c8703597000eea6ada5b083b028e0a999ef320814200f1f",
-                "sha256:f4c8bd30579b3113c76df94409ad3a97655ce0501fec1415acfdfd1a1b5ff1e4"
+                "sha256:2b47cd145e8375b73833227eaad1dc85a98d7211199728482ca9394a9790490b",
+                "sha256:f6ea7c9282e8e15f31b1d933b94eb2aec333ecf65e69f29dcaba51b28519daaf"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.8' and python_version < '4.0'",
-            "version": "==3.5.2"
+            "version": "==3.5.3"
         },
         "markupsafe": {
             "hashes": [
