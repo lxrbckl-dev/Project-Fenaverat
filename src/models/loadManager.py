@@ -32,15 +32,10 @@ class loadManager:
    def getIcon(self, icon): return self.files[self.localResourceName]['icons'][icon]
    
    
-   def getResourceName(self, resource): 
-      
-      print(resource.split('/')[-1].replace('.json', '')) # remove
-
-      return resource.split('/')[-1].replace('.json', '')
+   def getResourceName(self, resource): return resource.split('/')[-1].replace('.json', '')
    
    
    def loadLocalResource(self, resource): 
       
       self.localResourceName = self.getResourceName(resource)
-      
       return fileGet(f'{self.resourcePath}/{self.localResourceName}.json')
