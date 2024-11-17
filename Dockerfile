@@ -1,12 +1,10 @@
 FROM python:3.10-slim
 
-
-# environment variables #
+# Environment variables
 ENV PORT=8052
 ENV WORKERS=5
 ENV HOST=0.0.0.0
 ENV SERVER="app:server"
-
 
 WORKDIR /app
 COPY . /app
@@ -16,5 +14,5 @@ RUN poetry install
 
 EXPOSE ${PORT}
 
-
-CMD gunicorn -w ${WORKERS} -b "${HOST}:${PORT}" ${SERVER}
+# Use Poetry to run gunicorn
+CMD poetry run gunicorn -w ${WORKERS} -b "${HOST}:${PORT}" ${SERVER}
