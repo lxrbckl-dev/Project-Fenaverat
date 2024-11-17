@@ -6,9 +6,9 @@ name = "pypi"
 [packages]
 dash = "*"
 dash-bootstrap-components = "*"
-lxrbckl = "*"
 dash-player = "*"
 gunicorn = "*"
+lxrbckl = "*"
 
 [dev-packages]
 
