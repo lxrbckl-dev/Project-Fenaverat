@@ -23,4 +23,8 @@ class myServersManager(loadManager):
       )
       
       
-   def getServers(self): return self.files[self.data]
+   def getServers(self): 
+      
+      print('KEYS', self.files.keys())
+      print('SERVERS', self.files[self.data])
+      return self.files[self.data]

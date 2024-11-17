@@ -26,6 +26,7 @@
    max-height: 15px;
    border-width: 3px;
    margin: 0 0 -1px -6px;
+   animation-duration: 1s;
 
 }
 
@@ -37,6 +38,7 @@
    max-width: 15px;
    max-height: 15px;
    border-width: 3px;
+   animation-duration: 1s;
    margin: 1px 0 -2px -6px;
 
 }

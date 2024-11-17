@@ -71,13 +71,13 @@ class myServers(body):
                      dbc.Col(
                         
                         width = 'auto',
-                        children = self.buildCardIcon(iconOS)
+                        children = self.buildCardIcon(iconHardware)
                         
                      ),
                      dbc.Col(
                         
                         width = 'auto',
-                        children = self.buildCardIcon(iconHardware)
+                        children = self.buildCardIcon(iconOS)
                         
                      )
                      
