@@ -18,3 +18,6 @@ layout.registerCallbacks()
 # expose Flask server #
 app.layout = layout.property
 server = app.server
+
+
+app.run_server(debug = True) # remove

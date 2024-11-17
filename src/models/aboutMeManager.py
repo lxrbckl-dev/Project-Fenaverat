@@ -15,7 +15,7 @@ class aboutMeManager(loadManager):
          
          resources = {
             
-            'local' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/aboutMe.json'
+            'remote' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/aboutMe.json'
             
          }
          
