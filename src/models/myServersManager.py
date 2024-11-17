@@ -1,4 +1,5 @@
 # import <
+from sys import stderr # check
 from .loadManager import loadManager
 
 # >
@@ -23,4 +24,7 @@ class myServersManager(loadManager):
       )
       
       
-   def getServers(self): return self.files[self.data]
+   def getServers(self): 
+      
+      stderr.write('HERE')
+      return self.files[self.data]

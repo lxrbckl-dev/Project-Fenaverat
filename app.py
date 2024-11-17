@@ -2,7 +2,6 @@
 
 
 # import <
-from sys import stderr # check
 from src.configs import app
 from src.views.layout import layout
 
@@ -19,5 +18,3 @@ layout.registerCallbacks()
 # expose Flask server #
 app.layout = layout.property
 server = app.server
-
-stderr.write('HERE')
