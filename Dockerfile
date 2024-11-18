@@ -9,10 +9,9 @@ ENV SERVER="app:server"
 WORKDIR /app
 COPY . /app
 
-RUN pip install pipenv
-RUN pipenv install
+RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE ${PORT}
 
 # Use Poetry to run gunicorn
-CMD pipenv run gunicorn -w ${WORKERS} -b "${HOST}:${PORT}" ${SERVER}
+CMD gunicorn -w ${WORKERS} -b "${HOST}:${PORT}" ${SERVER}
