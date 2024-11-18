@@ -12,10 +12,17 @@ class bodyManager(loadManager):
    
       super().__init__(
          
-         resources = {
+         key = 'body',
+         resources = [
             
-            'local' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/body.json'
+            {
+               
+               'id' : 'body',
+               'load' : 'local',
+               'link' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/body.json'
+               
+            }
             
-         }
+         ]
          
       )

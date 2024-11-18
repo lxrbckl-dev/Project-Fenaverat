@@ -8,33 +8,27 @@ from lxrbckl.remote import requestsGet
 class loadManager:
    
 
-   def __init__(self, resources):
+   def __init__(self, key, resources):
       '''  '''
 
-      self.localResourceName = None
+      self.key = key
       self.resourcePath = '/src/content'
       self.files = {
          
-         self.getResourceName(resource) : {
+         r['id'] : {
             
             'local' : self.loadLocalResource,
             'remote' : self.loadRemoteResource
             
-         }[loadType](resource)
+         }[r['load']](r['link'])
          
-      for loadType, resource in resources.items()}
-            
-   
-   def loadRemoteResource(self, resource): return requestsGet(resource, pShowError = True)
-   
-   
-   def getIcon(self, icon): return self.files[self.localResourceName]['icons'][icon]
-   
-   
-   def getResourceName(self, resource): return resource.split('/')[-1].replace('.json', '')
-   
-   
-   def loadLocalResource(self, resource): 
+      for r in resources}
       
-      self.localResourceName = self.getResourceName(resource)
-      return fileGet(f'{self.resourcePath}/{self.localResourceName}.json')
+      
+   def getIcon(self, icon): return self.files[self.key]['icons'][icon]
+   
+   
+   def loadRemoteResource(self, resource): return requestsGet(resource, pDisplayError = True)
+      
+   
+   def loadLocalResource(self, resource): return fileGet(f'{self.resourcePath}/{self.key}.json')

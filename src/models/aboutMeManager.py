@@ -10,14 +10,20 @@ class aboutMeManager(loadManager):
    def __init__(self):
       '''  '''
 
-      self.key = 'aboutMe'
       super().__init__(
          
-         resources = {
+         key = 'aboutMe',
+         resources = [
             
-            'remote' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/aboutMe.json'
+            {
+               
+               'id' : 'aboutMe',
+               'load' : 'remote',
+               'link' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/aboutMe.json'
+               
+            }
             
-         }
+         ]
          
       )
       

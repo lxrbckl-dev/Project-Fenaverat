@@ -10,14 +10,20 @@ class headerManager(loadManager):
    def __init__(self):
       '''  '''
 
-      self.key = 'header'
       super().__init__(
          
-         resources = {
+         key = 'header',
+         resources = [
             
-            'local' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/header.json'
+            {
+               
+               'id' : 'header',
+               'load' : 'local',
+               'link' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/header.json'
+               
+            }
             
-         }
+         ]
          
       )
       

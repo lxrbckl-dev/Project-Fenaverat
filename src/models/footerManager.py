@@ -10,14 +10,20 @@ class footerManager(loadManager):
    def __init__(self):
       '''  '''
 
-      self.key = 'footer'
       super().__init__(
          
-         resources = {
+         key = 'footer',
+         resources = [
             
-            'local' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/footer.json'
+            {
+               
+               'id' : 'footer',
+               'load' : 'local',
+               'link' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/footer.json'
+               
+            }
             
-         }
+         ]
          
       )
 

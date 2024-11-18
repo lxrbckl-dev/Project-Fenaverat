@@ -12,16 +12,28 @@ class myProjectsManager(loadManager):
    def __init__(self):
       '''  '''
 
-      self.key = 'myProjects'
       self.data = 'repositoryArchive'
       super().__init__(
          
-         resources = {
+         key = 'myProjects',
+         resources = [
             
-            'remote' : 'https://raw.githubusercontent.com/lxRbckl/Project-Heimir/V2/data/repositoryArchive.json',
-            'local' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/myProjects.json'
+            {
+               
+               'load' : 'remote',
+               'id' : 'repositoryArchive',
+               'link' : 'https://raw.githubusercontent.com/lxRbckl/Project-Heimir/V2/data/repositoryArchive.json'
+               
+            },
+            {
+               
+               'load' : 'local',
+               'id' : 'myProjects',
+               'link' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/myProjects.json'
+               
+            }
             
-         }
+         ]
          
       )
       
@@ -40,6 +52,3 @@ class myProjectsManager(loadManager):
       
       try: return self.files[self.key]['projectCardBackgrounds'][project]
       except KeyError: return None
-   
-   
-   def getCardIcon(self, icon): return self.files[self.key]['icons'][icon]

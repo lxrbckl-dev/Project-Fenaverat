@@ -13,12 +13,25 @@ class myServersManager(loadManager):
       self.data = 'nodeArchive'
       super().__init__(
          
-         resources = {
+         key = 'myServers',
+         resources = [
             
-            'local' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/myServers.json',
-            'remote' : 'https://raw.githubusercontent.com/lxRbckl/Project-Acta-Mea/V6/resources/nodeArchive.json'
+            {
+               
+               'load' : 'remote',
+               'id' : 'nodeArchive',
+               'link' : 'https://raw.githubusercontent.com/lxRbckl/Project-Acta-Mea/V6/resources/nodeArchive.json'
+               
+            },
+            {
+               
+               'load' : 'local',
+               'id' : 'myServers',
+               'link' : 'https://raw.githubusercontent.com/lxRbckl/Project-Fenaverat/V4/src/content/myServers.json'
+               
+            }
             
-         }
+         ]
          
       )
       
