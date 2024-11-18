@@ -9,7 +9,7 @@
 [`dash_player`](https://github.com/lxRbckl/lxRbckl/blob/main/Python/dash_player/README.md)
 [`random`](https://github.com/lxRbckl/lxRbckl/blob/main/Python/random/README.md)
 [`flask`](https://github.com/lxRbckl/lxRbckl/blob/main/Python/flask/README.md)
-[`poetry`](https://github.com/lxRbckl/lxRbckl/blob/main/Python/poetry/README.md)
+[`pipenv`](https://github.com/lxRbckl/lxRbckl/blob/main/Python/pipenv/README.md)
 [**`Portfolio`**](https://github.com/lxRbckl/lxRbckl/blob/main/Portfolio/README.md)
 [**`Gunicorn`**](https://github.com/lxRbckl/lxRbckl/blob/main/Gunicorn/README.md)
 [**`CSS`**](https://github.com/lxRbckl/lxRbckl/blob/main/CSS/README.md)
