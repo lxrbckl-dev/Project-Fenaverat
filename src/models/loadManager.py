@@ -1,5 +1,4 @@
 # import <
-from github import Github
 from lxrbckl.local import fileGet
 from lxrbckl.remote import requestsGet
 
