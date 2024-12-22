@@ -84,7 +84,7 @@
    "text" : [
 
       "## My name is Alex Arbuckle",
-      "I'm a software engineer for Herzog and live in Kansas City, Missouri. I graduated cum laude earning a Bachelor of Science degree in Computer Science. My work experience includes working as an software engineer for a group of venture capitalists specializing in risk assessment and investment. There, I collaborated with statisticians to build rigorous algorithms and dashboards designed for large sets of data.",
+      "I'm a software engineer for Herzog and live in Kansas City, Missouri. I graduated cum laude earning a Bachelor of Science degree in Computer Science. My previous work experience includes working as an software engineer for a group of venture capitalists specializing in risk assessment and investment. There, I collaborated with statisticians to build rigorous algorithms and dashboards designed for large sets of data.",
       "As a software engineer, I consider myself a life-long learner, constantly pushing my boundaries to further enhance my understanding of software development and deployment. I embrace both object-oriented and functional paradigms, and find joy in integrating the concepts and systems I learn into projects that are showcased [**here**](https://www.lxrbckl.com/myProjects).",
       "I streamline the entire software development lifecycle—from design to deployment using a custom-built 10-node Raspberry Pi cluster. My applications run using Docker Swarm, with real-time status updates for each node uploaded here daily. Check out the current state of my servers and what's running, [**here**](https://www.lxrbckl.com/myServers)."
 
