@@ -14,7 +14,10 @@
          "TypeScript",
          "JavaScript",
          "PostgreSQL",
-         "MongoDB"
+         "MongoDB",
+         ".NET",
+         "Next.js",
+         "React.js"
 
       ],
       "packages" : [
