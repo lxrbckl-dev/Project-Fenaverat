@@ -16,8 +16,6 @@
          "PostgreSQL",
          "MongoDB",
          ".NET",
-         "Next.js",
-         "React.js"
 
       ],
       "packages" : [
@@ -31,6 +29,7 @@
          "Matplotlib",
          "glob",
          "xlutils",
+         "Next.js",
          "Selenium",
          "suntime",
          "pytest",
@@ -43,6 +42,7 @@
          "multiprocessing",
          "NumPy",
          "Pandas",
+         "React.js",
          "scikit-learn",
          "Tensorflow",
          "PyAutoGUI",
@@ -84,11 +84,11 @@
    },
    "text" : [
 
-      "## My name is Alex Arbuckle",
-      "I'm a software engineer for Herzog and live in Kansas City, Missouri. I graduated cum laude earning a Bachelor of Science degree in Computer Science. My previous work experience includes working as an software engineer for a group of venture capitalists specializing in risk assessment and investment. There, I collaborated with statisticians to build rigorous algorithms and dashboards designed for large sets of data.",
-      "As a software engineer, I consider myself a life-long learner, constantly pushing my boundaries to further enhance my understanding of software development and deployment. I embrace both object-oriented and functional paradigms, and find joy in integrating the concepts and systems I learn into projects that are showcased [**here**](https://www.lxrbckl.com/myProjects).",
-      "I streamline the entire software development lifecycle—from design to deployment using a custom-built 10-node Raspberry Pi cluster. My applications run using Docker Swarm, with real-time status updates for each node uploaded here daily. Check out the current state of my servers and what's running, [**here**](https://www.lxrbckl.com/myServers)."
-
+      "## I am Alex Arbuckle",
+      "I’m a full-stack software engineer at Herzog, based in Kansas City, Missouri. I graduated cum laude with a Bachelor of Science in Computer Science. Before Herzog, I worked as a software engineer for a group of venture capitalists focused on risk assessment and investment. There, I collaborated with statisticians to develop advanced algorithms and interactive dashboards, which played a key role in driving more informed decision-making by enabling deeper insights into large datasets.",
+      "Software engineering is more than just a job for me—I'm a lifelong learner, always exploring new technologies and ways to improve how software is built and deployed. I enjoy working with both object-oriented and functional programming and love applying what I learn to real-world projects. You can check out some of my work [*here*](https://www.lxrbckl.com/myProjects).",
+      "I also run my own 10-node Raspberry Pi cluster to streamline the entire software development lifecycle—from design to deployment. My applications are containerized with Docker Swarm, and I even track real-time status updates for each node. Want to see what’s running? Take a look [*here*](https://www.lxrbckl.com/myServers)."
+      
    ]
 
 }
