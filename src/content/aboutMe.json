@@ -85,7 +85,7 @@
    "text" : [
 
       "## I am Alex Arbuckle",
-      "I’m a full-stack software engineer at Herzog, based in Kansas City, Missouri. Before Herzog, I worked as a software engineer for a group of venture capitalists focused on risk assessment and investment. There, I collaborated with statisticians to develop advanced algorithms and interactive dashboards, which played a key role in driving more informed decision-making by enabling deeper insights into large datasets.",
+      "I’m currently a full-stack software engineer at Herzog, based in Kansas City, Missouri. Before Herzog, I worked as a software engineer for a group of venture capitalists focused on risk assessment and investment. There, I collaborated with statisticians to develop advanced algorithms and interactive dashboards, which played a key role in driving more informed decision-making.",
       "Software engineering is more than just a job for me—I'm a lifelong learner, always exploring new technologies and ways to improve how software is built and deployed. I enjoy working with both object-oriented and functional programming and love applying what I learn to real-world projects. You can check out some of my work [*here*](https://www.lxrbckl.com/myProjects).",
       "I also run my own 10-node Raspberry Pi cluster to streamline the entire software development lifecycle—from design to deployment. My applications are containerized with Docker Swarm, and I even track real-time status updates for each node. Want to see what’s running? Take a look [*here*](https://www.lxrbckl.com/myServers)."
       
