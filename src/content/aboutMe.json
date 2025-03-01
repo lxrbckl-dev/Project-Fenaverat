@@ -54,7 +54,8 @@
          "crypto-js",
          "yolov5",
          "pillow",
-         "ultralytics"
+         "ultralytics",
+         "chart-js"
 
       ],
       "other" : [
