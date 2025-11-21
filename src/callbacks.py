@@ -13,7 +13,7 @@ class Callbacks:
         self.services = services
     
 
-    def register(self):
+    def registerCallbacks(self):
         """  """
 
         self.nIntervalsCallback()
