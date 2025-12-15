@@ -8,7 +8,7 @@ from src.config import (app, fileLayout)
 
 items = loads(fileLayout.read_text()).values()
 app.layout = View(items = items).build
-Callbacks(Services()).register()
+Callbacks(Services()).registerCallbacks()
 server = app.server
 
 

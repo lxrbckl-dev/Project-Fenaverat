@@ -8,7 +8,7 @@ class Callbacks:
     def __init__(self, services):
         """  """
 
-        self.services = services
+        self._services = services
     
 
     def registerCallbacks(self):
@@ -27,4 +27,4 @@ class Callbacks:
             output = Output({"type": "video", "index": ALL}, "autoPlay")
 
         )
-        def func(*args): return self.services.nIntervalService(*args[1:])
+        def func(*args): return self._services.nIntervalService(*args[1:])
