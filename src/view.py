@@ -10,6 +10,7 @@ class View:
         """  """
 
         self.items = items
+        self._uploadRateSeconds = 60
 
 
     def _buildItem(
@@ -85,7 +86,7 @@ class View:
 
                 n_intervals = 0,
                 id = "intervalId",
-                interval = (1000 * 60)
+                interval = (1000 * self._uploadRateSeconds)
 
             ),
             Div(

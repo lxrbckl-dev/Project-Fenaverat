@@ -14,10 +14,10 @@ class Callbacks:
     def registerCallbacks(self):
         """  """
 
-        self.nIntervalsCallback()
+        self._nIntervalsCallback()
 
 
-    def nIntervalsCallback(self):
+    def _nIntervalsCallback(self):
         """  """
 
         @app.callback(

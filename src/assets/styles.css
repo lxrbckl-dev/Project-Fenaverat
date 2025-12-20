@@ -51,55 +51,50 @@ html, body {
     -webkit-user-select: none;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    transition: backdrop-filter 250ms ease;
 }
-.markdownExtended h1 {
-    font-size: 95px;
-    vertical-align: middle;
-    font-family: sans-serif;
-}
-.markdownExtended h1 em {
-    font-size: 85px;
-    font-style: normal;
-    color: var(--colorWhite);
-    font-family: pixeloid !important;
-    background-color: transparent !important;
-}
+/* ## */
 .markdownExtended h2 {
     font-size: 30px;
     margin-top: -4px;
 }
+/* ### */
 .markdownExtended h3 {
     font-size: 25px;
 }
+/* #### */
 .markdownExtended h4 {
     font-size: 20px;
 }
+/* [text](link) */
 .markdownExtended a {
-    padding: 2px;
-    transition: color 250ms ease, background-color 250ms ease;
+    color: var(--colorWhite);
     pointer-events: all !important;
+    transition: color 250ms ease, background-color 250ms ease;
 }
 .markdownExtended a:hover {
-    background-color: red;
+    background-color: var(--colorBlack);
 }
+/* ![alt text](link) */
+.markdownExtended image {
+    color: none;
+}
+/* *text* */
 .markdownExtended em {
     padding: 0 2px 0 2px;
     color: var(--colorBlack);
     background-color: var(--colorWhite);
 }
-.markdownExtended img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+/* **text** */
+.markdownExtended strong {
+    padding: 0 2px 0 2px;
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
 }
+/* `text` */
 .markdownExtended code {
     padding: 2px;
     line-height: 25px;
     color: var(--colorWhite);
     border: 1px solid var(--colorWhite);
-}
-.markdownExtended strong {
-    padding: 0 2px 0 2px;
-    color: var(--colorBlack);
-    background-color: var(--colorWhite);
 }

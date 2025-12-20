@@ -6,7 +6,7 @@
       "header" : true,
       "align" : "center",
       "corpus" : [
-        "# l*x*rbc*k*l"
+        "## lxRbckl"
       ],
       "background" : "https://i.pinimg.com/736x/d9/bb/25/d9bb258e04cf655978fe55ca705519b4.jpg"
     },
@@ -14,7 +14,7 @@
     "row": 1,
     "col": 2,
     "corpus" : [
-      "This is a test"
+      "This is a test of me typing things to see how the text deals with image insertions."
     ],
     "background" : "https://immich.lxrbckl.com/s/my-server"
   },
