@@ -1,6 +1,7 @@
 :root {
     --itemWidth: 6;
     --itemSize: 200px;
+    --easeTime: 375ms;
     --colorWhite: #F7F5F1;
     --colorBlack: #181A1B;
     --borderWhite: 1px solid var(--colorWhite);
@@ -8,10 +9,21 @@
 
 
 html, body {
-    padding: calc(var(--itemSize) / 3);
     min-height: 100vh;
     overscroll-behavior: none;
+    padding: calc(var(--itemSize) / 3);
     background-color: var(--colorBlack);
+    font-family:
+        system-ui,
+        sans-serif,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -41,22 +53,23 @@ html, body {
 
 
 .markdownExtended {
+    width: 100%;
     padding: 5px;
     font-size: 15px;
     user-select: none;
-    text-align: justify;
     pointer-events: none;
-    font-family: sans-serif;
     color: var(--colorWhite);
     -webkit-user-select: none;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    transition: backdrop-filter 250ms ease;
+}
+/* # */
+.markdownExtended h1 {
+    font-size: 55px;
 }
 /* ## */
 .markdownExtended h2 {
     font-size: 30px;
-    margin-top: -4px;
 }
 /* ### */
 .markdownExtended h3 {
@@ -70,31 +83,46 @@ html, body {
 .markdownExtended a {
     color: var(--colorWhite);
     pointer-events: all !important;
-    transition: color 250ms ease, background-color 250ms ease;
+    transition: color var(--easeTime) ease, background-color var(--easeTime) ease;
 }
 .markdownExtended a:hover {
-    background-color: var(--colorBlack);
-}
-/* ![alt text](link) */
-.markdownExtended image {
-    color: none;
+    text-decoration: none;
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
 }
 /* *text* */
 .markdownExtended em {
-    padding: 0 2px 0 2px;
     color: var(--colorBlack);
     background-color: var(--colorWhite);
 }
 /* **text** */
 .markdownExtended strong {
-    padding: 0 2px 0 2px;
     color: var(--colorBlack);
     background-color: var(--colorWhite);
 }
 /* `text` */
 .markdownExtended code {
     padding: 2px;
+    font-size: 14px;
     line-height: 25px;
     color: var(--colorWhite);
     border: 1px solid var(--colorWhite);
+    transition: color var(--easeTime) ease, background-color var(--easeTime) ease;
+}
+.markdownExtended code:hover {
+    background-color: var(--colorBlack);
+}
+/* - text */
+.gridItem .markdownExtended ul,
+.gridItem .markdownExtended ol {
+    width: 100%;
+    display: grid;
+    list-style: none;
+    padding: 0 5px 0 5px;
+    gap: var(--md-gap, 12px);
+    grid-template-columns: repeat(var(--md-cols, 1), minmax(0, 1fr));
+}
+.gridItem .markdownExtended li {
+    text-align: var(--md-item-align, inherit);
+    text-align-last: var(--md-item-align-last, auto);
 }

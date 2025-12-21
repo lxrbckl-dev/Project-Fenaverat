@@ -10,70 +10,88 @@ class View:
         """  """
 
         self.items = items
-        self._uploadRateSeconds = 60
+        self._uploadRateSeconds = 40
 
 
     def _buildItem(
             
-            self,
-            row = 1, 
-            col = 1,
-            style = {},
-            corpus = [],
-            video = None,
-            header = False,
-            visible = True,
-            justify = None,
-            background = None,
-            align = "center-top"
+        self,
+        width = 1, 
+        style = {},
+        height = 1,
+        corpus = None,
+        visible = True,
+        background = None,
+        contentType = "markdown",
+        horizontalAlign = "justify",
+        verticalAlign = "center-top"
 
-        ):
+    ):
         """  """
 
         return Div(
 
             className = "gridItem",
-            children = Video(
+            children = {
 
-                src = video,
-                loop = False,
-                muted = True,
-                className = "videoExtended",
-                id = {"type" : "video", "index" : video}
+                "markdown" : self._buildItemMarkdown,
+                "projects" : self._buildItemProjects,
+                "video" : self._buildItemVideo
 
-            ) if video else Markdown(
-
-                className = "markdownExtended" if corpus else None,
-                children = "\n".join([
-                    
-                    {
-
-                        str: c,
-                        list: " ".join(c) + "\n"
-
-                    }[type(c)]
-
-                for c in corpus]),
-                style = {
-
-                    "justifyContent" : justify,
-                    "width" : "auto" if header else "100%"
-
-                }
-
-            ),
+            }[contentType](corpus) if corpus else None,
             style = {
 
                 **style,
-                "alignItems" : align,
-                "gridRow" : f"span {row}",
-                "gridColumn" : f"span {col}",
+                "gridRow" : f"span {height}",
+                "alignItems" : verticalAlign,
+                "textAlign" : horizontalAlign,
+                "gridColumn" : f"span {width}",
                 "backgroundImage" : f"url({background})",
                 "visibility" : "visible" if visible else "hidden"
 
             }
+            
+        )
+
+
+    def _buildItemMarkdown(self, markdown):
+        """  """
+
+        return Markdown(
+
+            className = "markdownExtended",
+            children = "\n".join([
+                
+                {
+
+                    str: m,
+                    list: " ".join(m) + "\n"
+
+                }[type(m)]
+                
+            for m in markdown])
 
         )
+
+
+    def _buildItemVideo(self, video):
+        """  """
+
+        return Video(
+
+            src = video,
+            loop = False,
+            muted = True,
+            className = "videoExtended",
+            id = {"type" : "video", "index" : video}
+
+        )
+
+
+    def _buildItemProjects(self, projects):
+        """  """
+
+        pass
 
 
     @property
