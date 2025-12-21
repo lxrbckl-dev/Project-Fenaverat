@@ -103,7 +103,7 @@ html, body {
 /* `text` */
 .markdownExtended code {
     padding: 2px;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 25px;
     color: var(--colorWhite);
     border: 1px solid var(--colorWhite);

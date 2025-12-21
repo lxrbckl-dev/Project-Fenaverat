@@ -14,9 +14,9 @@ dirAssets = root / "src" / "assets"
 
 app = Dash(
 
-    name = "Project Fenaverat",
-    title = "Project Fenaverat",
-    assets_folder = "src/assets",
+    name = "lxRbckl",
+    title = "lxRbckl",
+    assets_folder = dirAssets,
     suppress_callback_exceptions = True,
     external_stylesheets = [themes.BOOTSTRAP]
 

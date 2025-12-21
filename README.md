@@ -1,4 +1,5 @@
 # Project Fenaverat
+> A website portfolio crafted to showcase details about yourself, your servers, and your projects. V5. Fall 2025.
 
 ### Installation
 ```bash
@@ -29,4 +30,4 @@ sudo docker run -d -p 8000:8000 fenaverat
 
 ---
 
-[`DockerHub`](https://hub.docker.com/repository/docker/lxrbckl/project-fenaverat/general)
+[`Docker Hub`](https://hub.docker.com/repository/docker/lxrbckl/project-fenaverat/general)
