@@ -1,7 +1,7 @@
 FROM python:3.10-slim
 
 # Runtime configuration (can be overridden at `docker run` time)
-ENV PORT=8080
+ENV PORT=8048
 ENV WORKERS=1
 ENV HOST="0.0.0.0"
 ENV SERVER="app:server"

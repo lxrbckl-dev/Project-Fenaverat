@@ -25,7 +25,7 @@ python app.py
 ### Deployment
 ```bash
 sudo docker build -t fenaverat .
-sudo docker run -d -p 8081:8080 fenaverat
+sudo docker run -d -p 8081:8048 fenaverat
 ```
 
 ---
