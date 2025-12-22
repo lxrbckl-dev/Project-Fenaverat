@@ -11,19 +11,9 @@
 html, body {
     min-height: 100vh;
     overscroll-behavior: none;
+    font-family: "Helvetica Neue";
     padding: calc(var(--itemSize) / 3);
     background-color: var(--colorBlack);
-    font-family:
-        system-ui,
-        sans-serif,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        "Helvetica Neue",
-        Arial;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
 }
 
 
@@ -54,6 +44,7 @@ html, body {
 
 .markdownExtended {
     width: 100%;
+    height: 100%;
     padding: 5px;
     font-size: 15px;
     user-select: none;
@@ -65,7 +56,11 @@ html, body {
 }
 /* # */
 .markdownExtended h1 {
-    font-size: 55px;
+    height: 100%;
+    display: grid;
+    font-size: 70px;
+    font-weight: bold;
+    place-items: center;
 }
 /* ## */
 .markdownExtended h2 {
@@ -93,12 +88,12 @@ html, body {
 /* *text* */
 .markdownExtended em {
     color: var(--colorBlack);
+    font-style: italic;
     background-color: var(--colorWhite);
 }
 /* **text** */
 .markdownExtended strong {
-    color: var(--colorBlack);
-    background-color: var(--colorWhite);
+    font-weight: bolder;
 }
 /* `text` */
 .markdownExtended code {

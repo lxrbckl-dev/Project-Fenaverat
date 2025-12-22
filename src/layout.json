@@ -10,12 +10,8 @@
     "verticalAlign": "center",
     "horizontalAlign": "center",
     "corpus": [
-      "# lxRbckl",
-      "Alex Arbuckle - Full Stack Developer"
+      "# lxRbckl"
     ],
-    "style": {
-      "lineHeight": "0.5"
-    },
     "background": "https://i.pinimg.com/736x/d9/bb/25/d9bb258e04cf655978fe55ca705519b4.jpg"
   },
   "2": {
@@ -54,7 +50,11 @@
   },
   "7221": {
     "width": 2,
-    "height": 4
+    "height": 4,
+    "corpus" : [
+      "### here is some text",
+      "text in the biggest cell we have. what will be next"
+    ]
   },
   "6": {
     "width": 1,
@@ -107,6 +107,12 @@
   "31": {
     "width": 2,
     "height": 2,
+    "corpus": [
+      "### we're going to find out what's *going on*",
+      "here is some more text",
+      "and here",
+      "scrolling features horizontally need to be upgraded."
+    ],
     "background": "https://immich.lxrbckl.com/api/assets/b254eb42-3ee4-4c72-9eda-be4860aea993/thumbnail?slug=my-server&size=preview&c=kvcFBAAwx%2BrbiLuENZn6sZs%2FqQ%3D%3D"
   },
   "32": {

@@ -20,6 +20,7 @@ class View:
         style = {},
         height = 1,
         corpus = None,
+        header = False,
         visible = True,
         background = None,
         contentType = "markdown",
