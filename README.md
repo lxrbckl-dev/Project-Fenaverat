@@ -22,10 +22,19 @@ python app.py
 
 ---
 
-### Deployment
+### Local Deployment
 ```bash
 sudo docker build -t fenaverat .
 sudo docker run -d -p 8081:8048 fenaverat
+```
+
+### Server Deployment
+```bash
+docker run -d \
+  --name fenaverat \
+  --restart unless-stopped \
+  -p 8048:8048 \
+  lxrbckl/project-fenaverat:latest
 ```
 
 ---
