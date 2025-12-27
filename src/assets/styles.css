@@ -11,9 +11,17 @@
 html, body {
     min-height: 100vh;
     overscroll-behavior: none;
-    font-family: "Helvetica Neue";
+    font-family:
+        "Segoe UI Variable",
+        "Segoe UI",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
     padding: calc(var(--itemSize) / 3);
-    background-color: var(--colorBlack);
+    /* background-color: var(--colorBlack); */
 }
 
 
