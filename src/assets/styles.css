@@ -21,7 +21,7 @@ html, body {
         Arial,
         sans-serif;
     padding: calc(var(--itemSize) / 3);
-    /* background-color: var(--colorBlack); */
+    background-color: var(--colorBlack);
 }
 
 

@@ -83,7 +83,7 @@
   },
   "12": {
     "width": 2,
-    "height": 1
+    "height": 2
   },
   "13": {
     "width": 1,
@@ -112,12 +112,12 @@
       "here is some more text",
       "and here",
       "scrolling features horizontally need to be upgraded."
-    ],
-    "background": "https://immich.lxrbckl.com/api/assets/b254eb42-3ee4-4c72-9eda-be4860aea993/thumbnail?slug=my-server&size=preview&c=kvcFBAAwx%2BrbiLuENZn6sZs%2FqQ%3D%3D"
+    ]
   },
-  "32": {
+  "portrait1": {
     "width": 1,
-    "height": 1
+    "height": 1,
+    "background" : "https://immich.lxrbckl.com/api/assets/e4241460-788b-4df2-af09-e6d668bcce49/thumbnail?slug=portrait1&size=preview&c=ESkGFwISnahGyHalTY98w4VpVpb1ZVgP"
   },
   "33": {
     "width": 2,
