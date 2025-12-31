@@ -5,7 +5,7 @@
 
 ### Local Development
 ```bash
-# Initiation
+# Initiate
 python -m venv venv
 ```
 ```bash
