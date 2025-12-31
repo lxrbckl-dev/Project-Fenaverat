@@ -1,8 +1,11 @@
 # Project Fenaverat
 > A website portfolio crafted to showcase details about yourself, your servers, and your projects. V5. Fall 2025.
 
-### Installation
+---
+
+### Local Development
 ```bash
+# Initiation
 python -m venv venv
 ```
 ```bash
@@ -15,12 +18,11 @@ source venv/bin/activate
 python -m pip install -r requirements.txt
 ```
 
-### Run
 ```bash
+# Run
 python app.py
 ```
 
----
 
 ### Local Deployment
 ```bash
