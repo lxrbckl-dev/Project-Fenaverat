@@ -1,0 +1,131 @@
+:root {
+    --itemWidth: 6;
+    --itemSize: 200px;
+    --easeTime: 375ms;
+    --colorWhite: #F7F5F1;
+    --colorBlack: #181A1B;
+    --borderWhite: 1px solid var(--colorWhite);
+}
+
+
+html, body {
+    min-height: 100vh;
+    overscroll-behavior: none;
+    font-family:
+        "Segoe UI Variable",
+        "Segoe UI",
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Helvetica Neue",
+        Arial,
+        sans-serif;
+    padding: calc(var(--itemSize) / 3);
+    background-color: var(--colorBlack);
+}
+
+
+.gridContainer {
+    display: grid;
+    grid-auto-flow: dense;
+    box-sizing: border-box;
+    grid-auto-rows: var(--itemSize);
+    max-width: calc(var(--itemSize) * var(--itemWidth));
+    grid-template-columns: repeat(auto-fill, minmax(var(--itemSize), 1fr));
+}
+.gridItem {
+    display: flex;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-size: cover;
+    justify-content: center;
+    border: var(--borderWhite);
+    background-repeat: no-repeat;
+}
+
+
+.videoExtended {
+    width: 110% !important;
+    height: 100% !important;
+}
+
+
+.markdownExtended {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    font-size: 15px;
+    user-select: none;
+    pointer-events: none;
+    color: var(--colorWhite);
+    -webkit-user-select: none;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+/* # */
+.markdownExtended h1 {
+    height: 100%;
+    display: grid;
+    font-size: 70px;
+    font-weight: bold;
+    place-items: center;
+}
+/* ## */
+.markdownExtended h2 {
+    font-size: 30px;
+}
+/* ### */
+.markdownExtended h3 {
+    font-size: 25px;
+}
+/* #### */
+.markdownExtended h4 {
+    font-size: 20px;
+}
+/* [text](link) */
+.markdownExtended a {
+    color: var(--colorWhite);
+    pointer-events: all !important;
+    transition: color var(--easeTime) ease, background-color var(--easeTime) ease;
+}
+.markdownExtended a:hover {
+    text-decoration: none;
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
+}
+/* *text* */
+.markdownExtended em {
+    color: var(--colorBlack);
+    font-style: italic;
+    background-color: var(--colorWhite);
+}
+/* **text** */
+.markdownExtended strong {
+    font-weight: bolder;
+}
+/* `text` */
+.markdownExtended code {
+    padding: 2px;
+    font-size: 13px;
+    line-height: 25px;
+    color: var(--colorWhite);
+    border: 1px solid var(--colorWhite);
+    transition: color var(--easeTime) ease, background-color var(--easeTime) ease;
+}
+.markdownExtended code:hover {
+    background-color: var(--colorBlack);
+}
+/* - text */
+.gridItem .markdownExtended ul,
+.gridItem .markdownExtended ol {
+    width: 100%;
+    display: grid;
+    list-style: none;
+    padding: 0 5px 0 5px;
+    gap: var(--md-gap, 12px);
+    grid-template-columns: repeat(var(--md-cols, 1), minmax(0, 1fr));
+}
+.gridItem .markdownExtended li {
+    text-align: var(--md-item-align, inherit);
+    text-align-last: var(--md-item-align-last, auto);
+}

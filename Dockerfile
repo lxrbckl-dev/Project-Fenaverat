@@ -1,24 +1,20 @@
 FROM python:3.10-slim
 
-# environment variables <
-ENV PORT=8058
-ENV WORKERS=5
-ENV HOST=0.0.0.0
+# Runtime configuration (can be overridden at `docker run` time)
+ENV PORT=8048
+ENV WORKERS=1
+ENV HOST="0.0.0.0"
 ENV SERVER="app:server"
 
-ENV PROJECT_NAME=${PROJECT_NAME}
-ENV GITHUB_EMAIL=${GITHUB_EMAIL}
-ENV GITHUB_TOKEN=${GITHUB_TOKEN}
-ENV PROJECT_VERSION=${PROJECT_VERSION}
-
-# >
+# Application Configuration
+ENV PROJECT_NAME="Project Fenaverat"
 
 WORKDIR /app
 COPY . /app
 
+# Install dependencies + gunicorn (not included in requirements.txt)
 RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE ${PORT}
 
-# use Poetry to run gunicorn
 CMD gunicorn -w ${WORKERS} -b "${HOST}:${PORT}" ${SERVER}

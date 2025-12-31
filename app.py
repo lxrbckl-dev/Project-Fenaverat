@@ -1,20 +1,16 @@
-# < Project Fenaverat 4 by Alex Arbuckle > #
+from json import loads
+
+from src.view import View
+from src.services import Services
+from src.callbacks import Callbacks
+from src.config import (app, fileLayout)
 
 
-# import <
-from src.configs import app
-from src.views.layout import layout
-
-# >
-
-
-# initialize layout #
-# register callbacks #
-layout = layout()
-layout.registerCallbacks()
-
-
-# build application #
-# expose Flask server #
-app.layout = layout.property
+items = loads(fileLayout.read_text()).values()
+app.layout = View(items = items).build
 server = app.server
+
+Callbacks(Services()).registerCallbacks()
+
+
+if (__name__ == "__main__"): app.run(debug = True)

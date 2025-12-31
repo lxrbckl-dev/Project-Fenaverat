@@ -1,19 +1,42 @@
-# [Project Fenaverat 4](https://github.com/lxRbckl/Project-Fenaverat/wiki/V4)
-> A website portfolio crafted to showcase details about yourself, your servers, and your projects. V4. Spring 2024.
+# Project Fenaverat
+> A website portfolio crafted to showcase details about yourself, your servers, and your projects. V5. Fall 2025.
+
+### Installation
+```bash
+python -m venv venv
+```
+```bash
+# Windows (PowerShell)
+.\venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+
+# macOS / Linux
+source venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+### Run
+```bash
+python app.py
+```
 
 ---
 
-[**`Python`**](https://github.com/lxRbckl/lxRbckl/blob/main/Python/README.md)
-[`dash`](https://github.com/lxRbckl/lxRbckl/blob/main/Python/dash/README.md)
-[`dash_bootstrap_components`](https://github.com/lxRbckl/lxRbckl/blob/main/Python/dash_bootstrap_components/README.md)
-[`dash_player`](https://github.com/lxRbckl/lxRbckl/blob/main/Python/dash_player/README.md)
-[`random`](https://github.com/lxRbckl/lxRbckl/blob/main/Python/random/README.md)
-[`flask`](https://github.com/lxRbckl/lxRbckl/blob/main/Python/flask/README.md)
-[`pipenv`](https://github.com/lxRbckl/lxRbckl/blob/main/Python/pipenv/README.md)
-[**`Portfolio`**](https://github.com/lxRbckl/lxRbckl/blob/main/Portfolio/README.md)
-[**`Gunicorn`**](https://github.com/lxRbckl/lxRbckl/blob/main/Gunicorn/README.md)
-[**`CSS`**](https://github.com/lxRbckl/lxRbckl/blob/main/CSS/README.md)
-[**`Docker`**](https://github.com/lxRbckl/lxRbckl/blob/main/Docker/README.md)
-[**`Portfolio`**](https://github.com/lxRbckl/lxRbckl/blob/main/Portfolio/README.md)
+### Local Deployment
+```bash
+sudo docker build -t fenaverat .
+sudo docker run -d -p 8081:8048 fenaverat
+```
 
-# 
+### Server Deployment
+```bash
+docker run -d \
+  --name fenaverat \
+  --restart unless-stopped \
+  -p 8048:8048 \
+  lxrbckl/project-fenaverat:latest
+```
+
+---
+
+[`Docker Hub`](https://hub.docker.com/repository/docker/lxrbckl/project-fenaverat/general)

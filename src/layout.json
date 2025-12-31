@@ -1,0 +1,150 @@
+{
+  "7": {
+    "width": 1,
+    "height": 1,
+    "background": "https://i.postimg.cc/52RHKLnG/Chat-GPT-Image-Sep-14-2025-at-12-03-13-AM.png"
+  },
+  "1": {
+    "width": 4,
+    "height": 1,
+    "verticalAlign": "center",
+    "horizontalAlign": "center",
+    "corpus": [
+      "# lxRbckl"
+    ],
+    "background": "https://i.pinimg.com/736x/d9/bb/25/d9bb258e04cf655978fe55ca705519b4.jpg"
+  },
+  "2": {
+    "width": 2,
+    "height": 1,
+    "corpus": [
+      "This is a test of me typing things to see how the text deals with image insertions."
+    ],
+    "background": "https://immich.lxrbckl.com/s/my-server"
+  },
+  "4": {
+    "width": 1,
+    "height": 1,
+    "visible": false
+  },
+  "5": {
+    "width": 2,
+    "height": 3,
+    "corpus": [
+      "## My Tech *Stack* here is some more text",
+      "and some more text\n\n",
+      [
+        "[`Python`](https://google.com)",
+        "`Uber`",
+        "`Demo`",
+        "[`Python`](https://google.com)"
+      ],
+      "Everything left behind."
+    ],
+    "background": "https://i.pinimg.com/736x/d9/bb/25/d9bb258e04cf655978fe55ca705519b4.jpg"
+  },
+  "7211": {
+    "width": 1,
+    "height": 1,
+    "visible": false
+  },
+  "7221": {
+    "width": 2,
+    "height": 4,
+    "corpus" : [
+      "### here is some text",
+      "text in the biggest cell we have. what will be next"
+    ]
+  },
+  "6": {
+    "width": 1,
+    "height": 3
+  },
+  "10": {
+    "width": 1,
+    "height": 1
+  },
+  "722321": {
+    "width": 1,
+    "height": 1
+  },
+  "71221": {
+    "width": 1,
+    "height": 1
+  },
+  "72321": {
+    "width": 1,
+    "height": 1
+  },
+  "11": {
+    "width": 1,
+    "height": 3,
+    "visible": false
+  },
+  "12": {
+    "width": 2,
+    "height": 2
+  },
+  "13": {
+    "width": 1,
+    "height": 1
+  },
+  "15": {
+    "width": 1,
+    "height": 2
+  },
+  "16": {
+    "width": 1,
+    "height": 1,
+    "visible": false
+  },
+  "3121": {
+    "width": 2,
+    "height": 2,
+    "contentType": "video",
+    "corpus": "https://packaged-media.redd.it/trpitzpvmyrc1/pb/m2-res_720p.mp4?m=DASHPlaylist.mpd&v=1&e=1712034000&s=50d9261a18c06fcca04749e563daa35df77afca7#t=2.88"
+  },
+  "31": {
+    "width": 2,
+    "height": 2,
+    "corpus": [
+      "### we're going to find out what's *going on*",
+      "here is some more text",
+      "and here",
+      "scrolling features horizontally need to be upgraded."
+    ]
+  },
+  "portrait1": {
+    "width": 1,
+    "height": 1,
+    "background" : "https://immich.lxrbckl.com/api/assets/e4241460-788b-4df2-af09-e6d668bcce49/thumbnail?slug=portrait1&size=preview&c=ESkGFwISnahGyHalTY98w4VpVpb1ZVgP"
+  },
+  "33": {
+    "width": 2,
+    "height": 1,
+    "background": "https://immich.lxrbckl.com/api/assets/b254eb42-3ee4-4c72-9eda-be4860aea993/thumbnail?slug=my-server&size=preview&c=kvcFBAAwx%2BrbiLuENZn6sZs%2FqQ%3D%3D"
+  },
+  "323232": {
+    "width": 1,
+    "height": 1
+  },
+  "33242": {
+    "width": 1,
+    "height": 1
+  },
+  "34322": {
+    "width": 4,
+    "height": 1,
+    "style": {
+      "--md-cols": 4,
+      "--md-item-align": "justify",
+      "--md-item-align-last": "left"
+    },
+    "corpus": [
+      "- This is a test of the [GitHub](https://github.com/lxrbckl) link. How much text can we put here?",
+      "- LinkedIn",
+      "- Email",
+      "- Phone here is my phone number: **123-456-7890** because you can call people on the phone"
+    ]
+  }
+}
