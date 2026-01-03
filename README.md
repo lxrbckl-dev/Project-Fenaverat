@@ -1,7 +1,7 @@
 # Project Fenaverat 5
 > A website portfolio crafted to showcase details about yourself, your servers, and your projects. V5. Fall 2025.
 >
-> **`Python`** **`Docker`** `dash` `dash-bootstrap-components` `dash-mantine-components` `flask` `gunicorn` `plotly` `requests` `github-actions`
+> **`Python`** **`Docker`** `dash` `dash-bootstrap-components` `dash-mantine-components` `flask` `gunicorn` `plotly` `json` `requests` `github-actions`
 
 ---
 
