@@ -79,11 +79,6 @@
     ]
   },
 
-  "block-10": {
-    "width": 1,
-    "height": 1
-  },
-
   "block-11": {
     "width": 2,
     "height": 2
@@ -97,7 +92,8 @@
 
   "block-14": {
     "width": 1,
-    "height": 3
+    "height": 4,
+    "background" : "https://immich.lxrbckl.com/api/assets/52d09dfb-75f3-439e-abee-00dc3c6ce956/thumbnail?key=_vIPvq4VLElKU9i5qDdtOTWIoYa7xj7z9i_9bSNAANZHN322w46mADOZaeBbb4aHomk&size=preview&c=0viJCQAPdm%2FX1saXgPDGP3D9hstCGZM%3D"
   },
 
   "block-18a": {
