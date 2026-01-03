@@ -2,9 +2,8 @@
   "block-1": {
     "width": 1,
     "height": 1,
-    "contentType": "video",
     "style": { "borderTopLeftRadius": "10px" },
-    "corpus": "https://immich.lxrbckl.com/api/assets/4a1151b9-7ca9-4c0f-bdae-b676c0598183/video/playback?key=M0A5o4zVnme4KdII0W0PXeQMAJKHp1SArHDbvRGkijSbEXFkLNRjYlt2TSpXR9MJtlA&c=GfgJDwSYh4Z%2FiHVlh3p4qGmIdy8DxjAA"
+    "background" : "https://immich.lxrbckl.com/api/assets/611f7c7c-5096-4f5a-9390-d0b8e0dbc907/thumbnail?key=sVTYLkP3KM2Pzjspk8PNwtpm5B_OtvlpmUKt6mImm6LiIRFycjJu4wehGnuZNt8C68g&size=preview&c=jxgOHwQId5d0d3h1i0eHh4iHd5AXB3oB"
   },
 
   "block-2": {
@@ -103,7 +102,9 @@
 
   "block-19": {
     "width": 1,
-    "height": 1
+    "height": 1,
+    "contentType": "video",
+    "corpus": "https://immich.lxrbckl.com/api/assets/4a1151b9-7ca9-4c0f-bdae-b676c0598183/video/playback?key=M0A5o4zVnme4KdII0W0PXeQMAJKHp1SArHDbvRGkijSbEXFkLNRjYlt2TSpXR9MJtlA&c=GfgJDwSYh4Z%2FiHVlh3p4qGmIdy8DxjAA"
   },
 
   "block-20": {
@@ -119,7 +120,7 @@
       "- This is a test of the [GitHub](https://github.com/lxrbckl) link. How much text can we put here?",
       "- LinkedIn",
       "- Email",
-      "- Phone here is my phone number: **123-456-7890** because you can call people on the phone"
+      "- [![Google Logo](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png)](https://www.google.com)"
     ]
   },
 
