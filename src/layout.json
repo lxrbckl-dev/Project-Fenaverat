@@ -1,33 +1,37 @@
 {
-  "7": {
+  "block-1": {
     "width": 1,
     "height": 1,
-    "background": "https://i.postimg.cc/52RHKLnG/Chat-GPT-Image-Sep-14-2025-at-12-03-13-AM.png"
+    "contentType": "video",
+    "style": { "borderTopLeftRadius": "10px" },
+    "corpus": "https://immich.lxrbckl.com/api/assets/4a1151b9-7ca9-4c0f-bdae-b676c0598183/video/playback?key=M0A5o4zVnme4KdII0W0PXeQMAJKHp1SArHDbvRGkijSbEXFkLNRjYlt2TSpXR9MJtlA&c=GfgJDwSYh4Z%2FiHVlh3p4qGmIdy8DxjAA"
   },
-  "1": {
-    "width": 4,
+
+  "block-2": {
+    "width": 5,
     "height": 1,
+    "corpus": ["# lxRbckl"],
     "verticalAlign": "center",
     "horizontalAlign": "center",
-    "corpus": [
-      "# lxRbckl"
-    ],
-    "background": "https://i.pinimg.com/736x/d9/bb/25/d9bb258e04cf655978fe55ca705519b4.jpg"
+    "style": { "borderTopRightRadius": "10px" },
+    "background": "https://immich.lxrbckl.com/api/assets/47450938-d6ce-4a73-8211-9d7180242c34/thumbnail?key=ceJrdVPhKSle8zoqn2tKW-0Hx6Be14nHWJm9pc34MSoELC6uQG3s4WsTzdP9oFuvHFg&size=preview&c=0AcKAYJ3d3iAhyd3mZB8CIk%3D"
   },
-  "2": {
+
+  "block-3": {
     "width": 2,
     "height": 1,
     "corpus": [
       "This is a test of me typing things to see how the text deals with image insertions."
     ],
-    "background": "https://immich.lxrbckl.com/s/my-server"
+    "background": ""
   },
-  "4": {
+
+  "block-4": {
     "width": 1,
-    "height": 1,
-    "visible": false
+    "height": 1
   },
-  "5": {
+
+  "block-5": {
     "width": 2,
     "height": 3,
     "corpus": [
@@ -41,70 +45,30 @@
       ],
       "Everything left behind."
     ],
-    "background": "https://i.pinimg.com/736x/d9/bb/25/d9bb258e04cf655978fe55ca705519b4.jpg"
+    "background": ""
   },
-  "7211": {
+
+  "block-6": {
     "width": 1,
-    "height": 1,
-    "visible": false
+    "height": 1
   },
-  "7221": {
+
+  "block-7": {
     "width": 2,
     "height": 4,
-    "corpus" : [
+    "corpus": [
       "### here is some text",
       "text in the biggest cell we have. what will be next"
-    ]
+    ],
+    "background": ""
   },
-  "6": {
+
+  "block-8": {
     "width": 1,
     "height": 3
   },
-  "10": {
-    "width": 1,
-    "height": 1
-  },
-  "722321": {
-    "width": 1,
-    "height": 1
-  },
-  "71221": {
-    "width": 1,
-    "height": 1
-  },
-  "72321": {
-    "width": 1,
-    "height": 1
-  },
-  "11": {
-    "width": 1,
-    "height": 3,
-    "visible": false
-  },
-  "12": {
-    "width": 2,
-    "height": 2
-  },
-  "13": {
-    "width": 1,
-    "height": 1
-  },
-  "15": {
-    "width": 1,
-    "height": 2
-  },
-  "16": {
-    "width": 1,
-    "height": 1,
-    "visible": false
-  },
-  "3121": {
-    "width": 2,
-    "height": 2,
-    "contentType": "video",
-    "corpus": "https://packaged-media.redd.it/trpitzpvmyrc1/pb/m2-res_720p.mp4?m=DASHPlaylist.mpd&v=1&e=1712034000&s=50d9261a18c06fcca04749e563daa35df77afca7#t=2.88"
-  },
-  "31": {
+
+  "block-9": {
     "width": 2,
     "height": 2,
     "corpus": [
@@ -114,31 +78,51 @@
       "scrolling features horizontally need to be upgraded."
     ]
   },
-  "portrait1": {
+
+  "block-10": {
     "width": 1,
-    "height": 1,
-    "background" : "https://immich.lxrbckl.com/api/assets/e4241460-788b-4df2-af09-e6d668bcce49/thumbnail?slug=portrait1&size=preview&c=ESkGFwISnahGyHalTY98w4VpVpb1ZVgP"
+    "height": 1
   },
-  "33": {
+
+  "block-11": {
     "width": 2,
+    "height": 2
+  },
+
+  "block-12": {
+    "width": 1,
+    "height": 1
+  },
+
+  "block-13": {
+    "width": 6,
     "height": 1,
-    "background": "https://immich.lxrbckl.com/api/assets/b254eb42-3ee4-4c72-9eda-be4860aea993/thumbnail?slug=my-server&size=preview&c=kvcFBAAwx%2BrbiLuENZn6sZs%2FqQ%3D%3D"
+    "background": "https://immich.lxrbckl.com/api/assets/01cca33e-a847-41cd-a9ba-3fdc475727d2/thumbnail?key=svi4JbG7miuhiZxkTk4Wc5ojCbHPDBcO7W9rBe_qlqVAF3MaI-bKuSTtMmD7GGquHlA&size=preview&c=CfgFAYB1ZYePZ4d4mHAXBKg%3D"
   },
-  "323232": {
+
+  "block-14": {
+    "width": 1,
+    "height": 2
+  },
+
+  "block-18a": {
+    "width": 4,
+    "height": 2
+  },
+
+  "block-19": {
     "width": 1,
     "height": 1
   },
-  "33242": {
-    "width": 1,
-    "height": 1
-  },
-  "34322": {
+
+  "block-20": {
     "width": 4,
     "height": 1,
     "style": {
       "--md-cols": 4,
       "--md-item-align": "justify",
-      "--md-item-align-last": "left"
+      "--md-item-align-last": "left",
+      "borderBottomLeftRadius": "10px"
     },
     "corpus": [
       "- This is a test of the [GitHub](https://github.com/lxrbckl) link. How much text can we put here?",
@@ -146,5 +130,12 @@
       "- Email",
       "- Phone here is my phone number: **123-456-7890** because you can call people on the phone"
     ]
+  },
+
+  "block-21": {
+    "width": 2,
+    "height": 1,
+    "style": { "borderBottomRightRadius": "10px" },
+    "background": "https://immich.lxrbckl.com/api/assets/d8a582ec-fb21-428d-ac35-232a72de5dbb/thumbnail?key=tljb8vWucZWtc0Hqz66LrbWCOuaaMJ-sYgWd4XXjrzea4rLZlQ8-4KTLU_zn8cFUIEE&size=preview&c=UOcFFIKPV4ZVVoZ0qXZ%2FUvQmNA%3D%3D"
   }
 }

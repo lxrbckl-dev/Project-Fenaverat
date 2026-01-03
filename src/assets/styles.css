@@ -2,6 +2,7 @@
     --itemWidth: 6;
     --itemSize: 200px;
     --easeTime: 375ms;
+    --filterBlur: 4px;
     --colorWhite: #F7F5F1;
     --colorBlack: #181A1B;
     --borderWhite: 1px solid var(--colorWhite);
@@ -59,14 +60,14 @@ html, body {
     pointer-events: none;
     color: var(--colorWhite);
     -webkit-user-select: none;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(var(--filterBlur));
+    -webkit-backdrop-filter: blur(var(--filterBlur));
 }
 /* # */
 .markdownExtended h1 {
     height: 100%;
     display: grid;
-    font-size: 70px;
+    font-size: 85px;
     font-weight: bold;
     place-items: center;
 }
