@@ -27,8 +27,11 @@
   "block-4": {
     "width": 2,
     "height": 3,
-    "contentType" : "my-tech-stack",
-    "corpus": ""
+    "corpus": [
+      "## ***My Server***",
+      "text in the biggest cell we have. what will be next"
+    ],
+    "background" : "https://immich.lxrbckl.com/api/assets/6ea1bda4-d755-40d5-9b35-723d27d42581/thumbnail?key=_bMnWPXNbt2caguVRBcOBNY7lTiMh3yV0QnoRHtYxYl2JFBol06EFL_hY289G8AIbY0&size=preview&c=kfcFBQBgYmWsJYdpO4qHivfBjT%2F9"
   },
 
   "block-5": {
@@ -40,11 +43,8 @@
   "block-6": {
     "width": 2,
     "height": 4,
-    "corpus": [
-      "## ***My Server***",
-      "text in the biggest cell we have. what will be next"
-    ],
-    "background": "https://immich.lxrbckl.com/api/assets/6cabafdb-fc1f-49cb-ad26-284206114187/thumbnail?key=lz3b5Db5zgTJfxSrVlTFVeGx3T7eFL1ptw0yzCc09DMoP3vQK-Z8kVURC2i24kK51fg&size=preview&c=kveFAwAPcIeM6qv5wo8%2F64eHj3eA%2BAg%3D"
+    "contentType" : "my-tech-stack",
+    "corpus" : ""
   },
 
   "block-7": {
