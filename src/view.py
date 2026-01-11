@@ -20,12 +20,9 @@ class View:
         style = {},
         height = 1,
         corpus = None,
-        header = False,
         visible = True,
         background = None,
         contentType = "markdown",
-        horizontalAlign = "justify",
-        verticalAlign = "center-top"
 
     ):
         """  """
@@ -44,8 +41,6 @@ class View:
 
                 **style,
                 "gridRow" : f"span {height}",
-                "alignItems" : verticalAlign,
-                "textAlign" : horizontalAlign,
                 "gridColumn" : f"span {width}",
                 "backgroundImage" : f"url({background})",
                 "visibility" : "visible" if visible else "hidden"

@@ -3,21 +3,21 @@
     "width": 1,
     "height": 1,
     "style": { "borderTopLeftRadius": "10px" },
-    "background" : "https://immich.lxrbckl.com/api/assets/611f7c7c-5096-4f5a-9390-d0b8e0dbc907/thumbnail?key=sVTYLkP3KM2Pzjspk8PNwtpm5B_OtvlpmUKt6mImm6LiIRFycjJu4wehGnuZNt8C68g&size=preview&c=jxgOHwQId5d0d3h1i0eHh4iHd5AXB3oB"
+    "background" : "https://immich.lxrbckl.com/api/assets/3c0e9918-94f8-49a8-a0a3-12074fe10cbd/thumbnail?key=nYyUaRdvsHldpGxZoXVOrslRiXAtCW9gl43L7lgIElzhdpNvUAd599kyn7GFgw8gFDc&size=preview&c=pSgGFwbpd4dPqaa5iIhWl5eX%2BMUlCXgC"
   },
 
   "block-2": {
     "width": 5,
     "height": 1,
-    "corpus": ["# lxRbckl"],
-    "verticalAlign": "center",
-    "horizontalAlign": "center",
+    "corpus": [
+      "# **lxRbckl**"
+    ],
     "style": { "borderTopRightRadius": "10px" },
     "background": "https://immich.lxrbckl.com/api/assets/47450938-d6ce-4a73-8211-9d7180242c34/thumbnail?key=ceJrdVPhKSle8zoqn2tKW-0Hx6Be14nHWJm9pc34MSoELC6uQG3s4WsTzdP9oFuvHFg&size=preview&c=0AcKAYJ3d3iAhyd3mZB8CIk%3D"
   },
 
   "block-3": {
-    "width": 2,
+    "width": 3,
     "height": 1,
     "corpus": [
       "This is a test of me typing things to see how the text deals with image insertions."
@@ -25,24 +25,12 @@
     "background": ""
   },
 
-  "block-4": {
-    "width": 1,
-    "height": 1
-  },
-
   "block-5": {
     "width": 2,
     "height": 3,
     "corpus": [
-      "## My Tech *Stack* here is some more text",
-      "and some more text\n\n",
-      [
-        "[`Python`](https://google.com)",
-        "`Uber`",
-        "`Demo`",
-        "[`Python`](https://google.com)"
-      ],
-      "Everything left behind."
+      "## My Tech *Stack*",
+      "<my-tech-stack>"
     ],
     "background": ""
   },
@@ -57,7 +45,7 @@
     "width": 2,
     "height": 4,
     "corpus": [
-      "### here is some text",
+      "## ***My Server***",
       "text in the biggest cell we have. what will be next"
     ],
     "background": "https://immich.lxrbckl.com/api/assets/6cabafdb-fc1f-49cb-ad26-284206114187/thumbnail?key=lz3b5Db5zgTJfxSrVlTFVeGx3T7eFL1ptw0yzCc09DMoP3vQK-Z8kVURC2i24kK51fg&size=preview&c=kveFAwAPcIeM6qv5wo8%2F64eHj3eA%2BAg%3D"
@@ -74,7 +62,7 @@
     "width": 2,
     "height": 2,
     "corpus": [
-      "### we're going to find out what's *going on*",
+      "## we're going to find out what's *going on*",
       "here is some more text",
       "and here",
       "scrolling features horizontally need to be upgraded."
@@ -82,25 +70,18 @@
   },
 
   "block-11": {
-    "width": 4,
-    "height": 2
-  },
-
-  "block-13": {
     "width": 6,
-    "height": 1,
-    "background": "https://immich.lxrbckl.com/api/assets/01cca33e-a847-41cd-a9ba-3fdc475727d2/thumbnail?key=svi4JbG7miuhiZxkTk4Wc5ojCbHPDBcO7W9rBe_qlqVAF3MaI-bKuSTtMmD7GGquHlA&size=preview&c=CfgFAYB1ZYePZ4d4mHAXBKg%3D"
+    "height": 2,
+    "corpus" : [
+      "## My Projects",
+      "<my-projects>"
+    ]
   },
 
   "block-14": {
     "width": 1,
     "height": 4,
     "background" : "https://immich.lxrbckl.com/api/assets/52d09dfb-75f3-439e-abee-00dc3c6ce956/thumbnail?key=_vIPvq4VLElKU9i5qDdtOTWIoYa7xj7z9i_9bSNAANZHN322w46mADOZaeBbb4aHomk&size=preview&c=0viJCQAPdm%2FX1saXgPDGP3D9hstCGZM%3D"
-  },
-
-  "block-18a": {
-    "width": 2,
-    "height": 2
   },
 
   "block-19": {
@@ -113,9 +94,8 @@
   "block-20a": {
     "width" : 2,
     "height" : 1,
-    "style" : {"borderBottomLeftRadius" : "10px"},
     "corpus" : [
-      "### My Socials",
+      "## My *Socials*",
       "[LinkedIn](https://www.linkedin.com/in/lxrbckl), ",
       "[GitHub](https://github.com/lxRbckl), ",
       "[Email](mailto:lxRbckl@protonmail.com), and ",
@@ -130,17 +110,26 @@
   "block-20d": {
     "width" : 1,
     "height" : 1,
-    "background" : "https://immich.lxrbckl.com/api/assets/3c0e9918-94f8-49a8-a0a3-12074fe10cbd/thumbnail?key=nYyUaRdvsHldpGxZoXVOrslRiXAtCW9gl43L7lgIElzhdpNvUAd599kyn7GFgw8gFDc&size=preview&c=pSgGFwbpd4dPqaa5iIhWl5eX%2BMUlCXgC"
+    "background" : "https://immich.lxrbckl.com/api/assets/611f7c7c-5096-4f5a-9390-d0b8e0dbc907/thumbnail?key=sVTYLkP3KM2Pzjspk8PNwtpm5B_OtvlpmUKt6mImm6LiIRFycjJu4wehGnuZNt8C68g&size=preview&c=jxgOHwQId5d0d3h1i0eHh4iHd5AXB3oB"
   },
 
   "block-122" : {
-
+    "background" : "https://immich.lxrbckl.com/api/assets/f066f322-31d3-4287-82d4-13776f2af01d/thumbnail?key=ax9gf7jrfjX4n3p1DX-hGKxwCEJ7lsUDDDOb-ToqdwmqewNgjFGfNYQ76EwSrsxVRdQ&size=preview&c=SxUGHwQHm6WGiYeEaohoaKh5d7%2BYBIgD"
   },
 
   "block-21": {
     "width": 2,
     "height": 1,
-    "style": { "borderBottomRightRadius": "10px" },
-    "background": "https://immich.lxrbckl.com/api/assets/d8a582ec-fb21-428d-ac35-232a72de5dbb/thumbnail?key=tljb8vWucZWtc0Hqz66LrbWCOuaaMJ-sYgWd4XXjrzea4rLZlQ8-4KTLU_zn8cFUIEE&size=preview&c=UOcFFIKPV4ZVVoZ0qXZ%2FUvQmNA%3D%3D"
+    "background" : "https://immich.lxrbckl.com/api/assets/95af80b3-deff-4b4d-9524-ea6bdd135e1f/thumbnail?key=2zc4oGeWacf_4U3vBkM7X6hzPia5J7jPKT5e86pSaaG7NTlRooYZ-G-8YcYC3_idbXw&size=preview&c=nMYRLIRlaYiPeHiHiHaKcKcGdg%3D%3D"
+  },
+
+  "block-13": {
+    "width": 6,
+    "height": 1,
+    "style" : {
+      "borderBottomLeftRadius" : "10px",
+      "borderBottomRightRadius" : "10px"
+    },
+    "background": "https://immich.lxrbckl.com/api/assets/01cca33e-a847-41cd-a9ba-3fdc475727d2/thumbnail?key=svi4JbG7miuhiZxkTk4Wc5ojCbHPDBcO7W9rBe_qlqVAF3MaI-bKuSTtMmD7GGquHlA&size=preview&c=CfgFAYB1ZYePZ4d4mHAXBKg%3D"
   }
 }

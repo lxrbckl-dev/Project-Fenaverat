@@ -6,21 +6,14 @@
     --colorWhite: #F7F5F1;
     --colorBlack: #181A1B;
     --borderWhite: 1px solid var(--colorWhite);
+    --fontFamily: sans-serif;
 }
 
 
 html, body {
     min-height: 100vh;
     overscroll-behavior: none;
-    font-family:
-        "Segoe UI Variable",
-        "Segoe UI",
-        system-ui,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Helvetica Neue",
-        Arial,
-        sans-serif;
+    font-family: var(--fontFamily);
     padding: calc(var(--itemSize) / 3);
     background-color: var(--colorBlack);
 }
@@ -39,7 +32,6 @@ html, body {
     overflow: hidden;
     box-sizing: border-box;
     background-size: cover;
-    justify-content: center;
     border: var(--borderWhite);
     background-repeat: no-repeat;
 }
@@ -66,10 +58,11 @@ html, body {
 /* # */
 .markdownExtended h1 {
     height: 100%;
-    display: grid;
+    display: flex;
     font-size: 85px;
-    font-weight: bold;
-    place-items: center;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fontFamily);
 }
 /* ## */
 .markdownExtended h2 {
