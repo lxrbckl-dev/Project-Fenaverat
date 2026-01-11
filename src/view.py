@@ -32,9 +32,10 @@ class View:
             className = "gridItem",
             children = {
 
+                "video" : self._buildItemVideo,
                 "markdown" : self._buildItemMarkdown,
-                "projects" : self._buildItemProjects,
-                "video" : self._buildItemVideo
+                "my-projects" : self._buildItemProjects,
+                "my-tech-stack" : self._buildItemTechStack
 
             }[contentType](corpus) if corpus else None,
             style = {
@@ -85,6 +86,12 @@ class View:
 
 
     def _buildItemProjects(self, projects):
+        """  """
+
+        pass
+
+
+    def _buildItemTechStack(self, techStack):
         """  """
 
         pass
