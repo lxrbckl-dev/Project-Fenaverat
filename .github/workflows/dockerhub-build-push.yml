@@ -1,4 +1,4 @@
-name: DockerHub
+name: dockerhub-build-push
 
 on:
   push:
