@@ -39,7 +39,7 @@ docker run -d \
   --name fenaverat \
   --restart unless-stopped \
   -p 8048:8048 \
-  lxrbckl/project-fenaverat:latest
+  lxrbckl/project-fenaverat:v5
 ```
 
 ---
