@@ -26,7 +26,6 @@ python -m pip install -r requirements.txt
 python app.py
 ```
 
-
 ### Local Deployment
 ```bash
 sudo docker build -t fenaverat .
