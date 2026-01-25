@@ -1,5 +1,5 @@
 from requests import get
-from random import choice
+from random import (choice, shuffle, sample)
 
 
 class Services:
@@ -36,5 +36,8 @@ class Services:
 
                 if (k in data.keys()): data[k].extend(v)
                 else: data[k] = v
+
+        shuffledRepositories = sample(list(data["repositories"].keys()), k = len(data["repositories"]))
+        data["repositories"] = {k: data["repositories"][k] for k in shuffledRepositories}
 
         return data
