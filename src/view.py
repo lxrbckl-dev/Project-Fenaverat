@@ -1,4 +1,5 @@
 from dash.html import (Div, Video)
+from dash_iconify import DashIconify
 import dash_mantine_components as dmc
 from dash.dcc import (Markdown, Interval)
 
@@ -7,10 +8,11 @@ class View:
 
 
     def __init__(self, items):
-        """  """
+        """Initialize the view with a list of grid item configs."""
 
         self.items = items
-        self._uploadRateSeconds = 40
+        self._videoIntervalSeconds = 1
+        self._dataIntervalMinutes = 60
 
 
     def _buildItem(
@@ -25,17 +27,17 @@ class View:
         contentType = "markdown",
 
     ):
-        """  """
+        """Build a single grid item container with optional content."""
 
         return Div(
 
             className = "gridItem",
             children = {
 
-                "video" : self._buildItemVideo,
-                "markdown" : self._buildItemMarkdown,
-                "my-projects" : self._buildItemProjects,
-                "my-tech-stack" : self._buildItemTechStack
+                "video" : View.buildItemVideo,
+                "markdown" : View.buildItemMarkdown,
+                "my-projects" : lambda i : Div(id = "my-projects", className = "myProjectsDiv "),
+                "my-tech-stack" : lambda i : Div(id = "my-tech-stack", className = "myTechStackDiv")
 
             }[contentType](corpus) if corpus else None,
             style = {
@@ -51,12 +53,28 @@ class View:
         )
 
 
-    def _buildItemMarkdown(self, markdown):
-        """  """
+    @staticmethod
+    def buildItemVideo(video):
+        """Build a video component for a given video URL."""
+
+        return Video(
+
+            src = video,
+            loop = False,
+            muted = True,
+            className = "videoExtended",
+            id = {"type" : "video", "index" : video}
+
+        )
+
+
+    @staticmethod
+    def buildItemMarkdown(markdown, className = "blur"):
+        """Build a Markdown component from a list of markdown blocks."""
 
         return Markdown(
 
-            className = "markdownExtended",
+            className = f"markdownExtended {className}",
             children = "\n".join([
                 
                 {
@@ -71,43 +89,130 @@ class View:
         )
 
 
-    def _buildItemVideo(self, video):
-        """  """
+    @staticmethod
+    def buildItemProjects(data):
+        """Build a list of project cards from repository data."""
 
-        return Video(
+        return [
 
-            src = video,
-            loop = False,
-            muted = True,
-            className = "videoExtended",
-            id = {"type" : "video", "index" : video}
+            View.buildItemProjectCard(
+                
+                url = v["url"],
+                title = v["title"],
+                stack = v["stack"],
+                description = v["description"],
+                background = data.get("repositoryBackgrounds").get(k)
+
+            )
+
+        for k, v in data["repositories"].items()] if (data and type(data) == dict) else None
+
+
+    @staticmethod
+    def buildItemProjectCard(
+
+        url,
+        stack,
+        title,
+        description,
+        iconWidth = 25,
+        background = None,
+        iconGithub = "ion:logo-github",
+        iconChevron = "tabler-chevron-right"
+
+    ):
+        """Build a single project card with a link and metadata."""
+
+        return Div(
+
+            className = "myProjectsSubDiv blur",
+            style = {"backgroundImage" : f"url({background})"},
+            children = [
+
+                Div(
+
+                    className = "projectCardHeader",
+                    children = View.buildItemMarkdown(
+                        
+                        className = None,
+                        markdown = [f"## **{title}**", description]
+                        
+                    )
+
+                ),
+                Div(
+
+                    className = "projectCardBody",
+                    children = View.buildItemMarkdown(
+                        
+                        className = None,
+                        markdown = [stack]
+                        
+                    )
+
+                ),
+                Div(
+
+                    className = "projectCardFooter",
+                    children = dmc.NavLink(
+
+                        href = url,
+                        active = True,
+                        label = "See More",
+                        variant = "filled",
+                        target = "_blank",
+                        className = "navlinkExtended",
+                        leftSection = DashIconify(icon = iconGithub, width = iconWidth),
+                        rightSection = DashIconify(icon = iconChevron, width = iconWidth)
+
+                    )
+                    
+                )
+            ]
 
         )
 
 
-    def _buildItemProjects(self, projects):
-        """  """
+    @staticmethod
+    def buildItemTechstack(data, fields = ["languages", "packages", "tools"]):
+        """Build the tech stack section from categorized data fields."""
 
-        pass
+        return [
 
+            Div(children = View.buildItemMarkdown(markdown = ["## My *Tech Stack*"])),
+            *[Div(
 
-    def _buildItemTechStack(self, techStack):
-        """  """
+                className = "myTechStackSubDiv",
+                children = View.buildItemMarkdown(markdown = [
+                    
+                    f"### {f.capitalize()}",
+                    " ".join(f"`{i}`" for i in data[f])
 
-        pass
+                ]),
+
+            ) for f in fields]
+            
+        ] if (data and type(data) == dict) else None
 
 
     @property
     def build(self):
-        """  """
+        """Return the complete Dash layout for this view."""
 
         return dmc.MantineProvider(children = dmc.Center(children = [
 
             Interval(
 
                 n_intervals = 0,
-                id = "intervalId",
-                interval = (1000 * self._uploadRateSeconds)
+                id = "videoIntervalId",
+                interval = (1000 * self._videoIntervalSeconds)
+
+            ),
+            Interval(
+
+                n_intervals = 0,
+                id = "dataIntervalId",
+                interval = (1000 * (self._dataIntervalMinutes * 60))
 
             ),
             Div(

@@ -5,8 +5,8 @@
     --filterBlur: 4px;
     --colorWhite: #F7F5F1;
     --colorBlack: #181A1B;
-    --borderWhite: 1px solid var(--colorWhite);
     --fontFamily: sans-serif;
+    --borderWhite: 1px solid var(--colorWhite);
 }
 
 
@@ -38,6 +38,8 @@ html, body {
 
 
 .videoExtended {
+    color: none;
+    background-color: none;
     width: 110% !important;
     height: 100% !important;
 }
@@ -52,8 +54,6 @@ html, body {
     pointer-events: none;
     color: var(--colorWhite);
     -webkit-user-select: none;
-    backdrop-filter: blur(var(--filterBlur));
-    -webkit-backdrop-filter: blur(var(--filterBlur));
 }
 /* # */
 .markdownExtended h1 {
@@ -109,17 +109,83 @@ html, body {
 .markdownExtended code:hover {
     background-color: var(--colorBlack);
 }
-/* - text */
-.gridItem .markdownExtended ul,
-.gridItem .markdownExtended ol {
-    width: 100%;
-    display: grid;
-    list-style: none;
-    padding: 0 5px 0 5px;
-    gap: var(--md-gap, 12px);
-    grid-template-columns: repeat(var(--md-cols, 1), minmax(0, 1fr));
+
+
+.blur {
+    overflow: hidden;
+    position: relative;
+    backdrop-filter: blur(var(--filterBlur));
+    -webkit-backdrop-filter: blur(var(--filterBlur));
 }
-.gridItem .markdownExtended li {
-    text-align: var(--md-item-align, inherit);
-    text-align-last: var(--md-item-align-last, auto);
+.blur::before {
+    inset: 0;
+    z-index: 0;
+    content: "";
+    position: absolute;
+    transform: scale(1.1);
+    background-size: inherit;
+    background-image: inherit;
+    background-repeat: inherit;
+    background-position: inherit;
+    filter: blur(var(--filterBlur));
+}
+.blur > * {
+    z-index: 1;
+    position: relative;
+}
+
+
+.myProjectsDiv {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    flex-direction: row;
+}
+.myProjectsSubDiv {
+    flex: 1;
+    min-width: 300px;
+    max-width: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left: var(--borderWhite);
+    border-right: var(--borderWhite);
+    min-height: calc(var(--itemSize) * 2);
+    max-height: calc(var(--itemSize) * 2);
+}
+
+
+.projectCardHeader {
+    min-height: var(--itemSize);
+    max-height: var(--itemSize);
+}
+.projectCardBody {
+    min-height: calc(var(--itemSize) * 0.75);
+    max-height: calc(var(--itemSize) * 0.75);
+}
+.projectCardFooter {
+    display: flex;
+    align-items: bottom;
+    min-height: calc(var(--itemSize) * 0.25);
+    max-height: calc(var(--itemSize) * 0.25);
+}
+
+
+.navlinkExtended {
+    color: var(--colorWhite);
+    background-color: var(--colorBlack);
+    transition: color var(--easeTime) ease, background-color var(--easeTime) ease;
+}
+.navlinkExtended:hover {
+    color: var(--colorBlack);
+    background-color: var(--colorWhite);
+}
+
+
+.myTechStackDiv {
+    display: flex;
+    flex-direction: column;
+}
+.myTechStackSubDiv {
+    flex: 1;
 }

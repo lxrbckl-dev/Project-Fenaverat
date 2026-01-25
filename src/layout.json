@@ -40,11 +40,14 @@
     "background" : "https://immich.lxrbckl.com/api/assets/276f620b-c3bf-47ce-af84-a9a69f10881e/thumbnail?key=Y8GJidaGEtt9MJzuEboobxIOr-Fo8KXABnrJTtZVVCHtkGlslmbmaWY6NIJW-sz7-w4&size=preview&c=SzkGFwIIsnl5aIdhu2aWeYeYe2EGCHYA"
   },
 
-  "block-6": {
+  "my-tech-stack": {
     "width": 2,
     "height": 4,
+    "corpus": "my-tech-stack",
     "contentType" : "my-tech-stack",
-    "corpus" : ""
+    "style" : {
+      "text-align" : "justify"
+    }
   },
 
   "block-7": {
@@ -65,11 +68,11 @@
     ]
   },
 
-  "block-9": {
+  "my-projects": {
     "width": 6,
     "height": 2,
-    "contentType" : "my-projects",
-    "corpus" : ""
+    "corpus": "my-projects",
+    "contentType" : "my-projects"
   },
 
   "block-10": {
