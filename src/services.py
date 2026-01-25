@@ -27,7 +27,7 @@ class Services:
 
 
     def fetchRemoteData(self):
-        """Fetch and merge JSON data from the configured remote URLs."""
+        """Fetch and merge JSON data from configured remote URLs."""
 
         data = {}
         for f in map(lambda url: get(url = url, headers = self.requestHeaders).json(), self.dataUrls):
