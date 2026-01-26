@@ -34,7 +34,7 @@ sudo docker run -d -p 8081:8048 fenaverat
 
 ### Server Deployment
 ```bash
-docker run -d \
+docker run --pull=always -d \
   --name fenaverat \
   --restart unless-stopped \
   -p 8048:8048 \
