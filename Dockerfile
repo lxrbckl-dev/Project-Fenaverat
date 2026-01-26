@@ -12,7 +12,6 @@ ENV PROJECT_NAME="Project Fenaverat"
 WORKDIR /app
 COPY . /app
 
-# Install dependencies + gunicorn (not included in requirements.txt)
 RUN pip install --no-cache-dir -r requirements.txt
 
 EXPOSE ${PORT}
