@@ -7,6 +7,8 @@
     --colorBlack: #181A1B;
     --fontFamily: sans-serif;
     --borderWhite: 1px solid var(--colorWhite);
+    --transition: color var(--easeTime) ease, background-color var(--easeTime) ease;
+
 }
 
 
@@ -41,7 +43,7 @@ html, body {
     color: none;
     background-color: none;
     width: 110% !important;
-    height: 100% !important;
+    height: 110% !important;
 }
 
 
@@ -79,8 +81,8 @@ html, body {
 /* [text](link) */
 .markdownExtended a {
     color: var(--colorWhite);
+    transition: var(--transition);
     pointer-events: all !important;
-    transition: color var(--easeTime) ease, background-color var(--easeTime) ease;
 }
 .markdownExtended a:hover {
     text-decoration: none;
@@ -103,8 +105,9 @@ html, body {
     font-size: 13px;
     line-height: 25px;
     color: var(--colorWhite);
+    transition: var(--transition);
     border: 1px solid var(--colorWhite);
-    transition: color var(--easeTime) ease, background-color var(--easeTime) ease;
+    background-color: var(--colorBlack);
 }
 .markdownExtended code:hover {
     background-color: var(--colorBlack);
@@ -136,6 +139,7 @@ html, body {
 
 
 .myProjectsDiv {
+
     display: flex;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -173,8 +177,8 @@ html, body {
 
 .navlinkExtended {
     color: var(--colorWhite);
+    transition: var(--transition);
     background-color: var(--colorBlack);
-    transition: color var(--easeTime) ease, background-color var(--easeTime) ease;
 }
 .navlinkExtended:hover {
     color: var(--colorBlack);

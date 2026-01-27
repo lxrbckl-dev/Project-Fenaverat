@@ -11,8 +11,8 @@ class View:
         """Initialize the view with a list of grid item configs."""
 
         self.items = items
-        self._videoIntervalSeconds = 1
         self._dataIntervalMinutes = 60
+        self._videoIntervalSeconds = 60
 
 
     def _buildItem(
@@ -36,7 +36,7 @@ class View:
 
                 "video" : View.buildItemVideo,
                 "markdown" : View.buildItemMarkdown,
-                "my-projects" : lambda i : Div(id = "my-projects", className = "myProjectsDiv "),
+                "my-projects" : lambda i : Div(id = "my-projects", className = "myProjectsDiv"),
                 "my-tech-stack" : lambda i : Div(id = "my-tech-stack", className = "myTechStackDiv")
 
             }[contentType](corpus) if corpus else None,
@@ -125,8 +125,8 @@ class View:
 
         return Div(
 
-            className = "myProjectsSubDiv blur",
             style = {"backgroundImage" : f"url({background})"},
+            className = f"myProjectsSubDiv {'blur' if background else ''}",
             children = [
 
                 Div(
