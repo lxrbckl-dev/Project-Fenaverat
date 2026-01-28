@@ -31,7 +31,7 @@ class View:
 
         return Div(
 
-            className = "gridItem",
+            className = f"gridItem {'blur' if (corpus and background) else ''}",
             children = {
 
                 "video" : View.buildItemVideo,
@@ -69,12 +69,12 @@ class View:
 
 
     @staticmethod
-    def buildItemMarkdown(markdown, className = "blur"):
+    def buildItemMarkdown(markdown):
         """Build a Markdown component from a list of markdown blocks."""
 
         return Markdown(
 
-            className = f"markdownExtended {className}",
+            className = "markdownExtended",
             children = "\n".join([
                 
                 {
@@ -132,23 +132,18 @@ class View:
                 Div(
 
                     className = "projectCardHeader",
-                    children = View.buildItemMarkdown(
+                    children = View.buildItemMarkdown(markdown = [
                         
-                        className = None,
-                        markdown = [f"## **{title}**", description]
-                        
-                    )
+                        f"## **{title}**", 
+                        description
+                    
+                    ])
 
                 ),
                 Div(
 
                     className = "projectCardBody",
-                    children = View.buildItemMarkdown(
-                        
-                        className = None,
-                        markdown = [stack]
-                        
-                    )
+                    children = View.buildItemMarkdown(markdown = [stack])
 
                 ),
                 Div(
@@ -158,9 +153,9 @@ class View:
 
                         href = url,
                         active = True,
+                        target = "_blank",
                         label = "See More",
                         variant = "filled",
-                        target = "_blank",
                         className = "navlinkExtended",
                         leftSection = DashIconify(icon = iconGithub, width = iconWidth),
                         rightSection = DashIconify(icon = iconChevron, width = iconWidth)

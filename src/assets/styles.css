@@ -154,6 +154,7 @@ html, body {
     background-repeat: no-repeat;
     border-left: var(--borderWhite);
     border-right: var(--borderWhite);
+    border-bottom: var(--borderWhite);
     min-height: calc(var(--itemSize) * 2);
     max-height: calc(var(--itemSize) * 2);
 }
